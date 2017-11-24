@@ -15,7 +15,7 @@
 html, body{
     max-width: 1268px;
     margin: auto;
-    font-family: "Roboto", Helvetica, Verdana, Arial, sans-serif;
+    font-family: 'Roboto', Helvetica, Verdana, Arial, sans-serif;
     font-size: 100%;
     background-size: 100% auto;
 }
@@ -72,11 +72,12 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 15%;
+    width: 20%;
     background-color: #f1f1f1;
     height: 100%;
     overflow: auto;
     float: left;
+    display: block;
 }
 
 #pagina_corrente_home{
@@ -101,6 +102,15 @@ body{
     text-decoration: none;
 }
 
+#pagina_corrente{
+    border: 1px solid #444;
+    background-color: darkgrey;
+    display: block;
+    color: #000;
+    padding: 0.5em 1.5em;
+    text-decoration: none;
+}
+
 #punto_sito a {
     display: block;
     color: #000;
@@ -109,7 +119,7 @@ body{
 }
 
 #punto_sito a.active {
-    background-color: #4CAF50;
+    background-color: #00A86B;
     color: white;
 }
 

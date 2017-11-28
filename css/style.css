@@ -36,7 +36,7 @@ body{
 /*header*/
 
 #header{
-    font-family: Roboto_Thin, Helvetica, Verdana, Arial;
+    font-family: 'Roboto_Thin', Helvetica, Verdana, Arial;
     overflow: auto;
     text-align: center;
     color: #1d4e7c;
@@ -130,17 +130,56 @@ body{
 
 /*middle*/
 
-#immagini_middle_home{
-    margin: 0.5em;
-    float:left;
-    width: 25%;
+#middle{
+    margin-left: 20%;
     overflow: auto;
+    border-left: 1px solid black;
+}
+
+#immagini_middle_home{
+    margin: 1em;
+    float:left;
+    width: 30%;
+    overflow: auto;
+    
 }
 
 #middle h1{
     text-align: center;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
+    font-size: 2.5em;
+}
+
+#middle p{
+    overflow:auto;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+/*footer*/
+#footer{
+    display: inline-block;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align:center;
+    width:100%;
+}
+
+#html{
+    float: left;
+    min-width: 3em;
+    width: 8%;
+    margin:0.5em;
+}
+
+#footer p{
+    float: left;
+    font-size: 0.8em;
+    font-style: italic;
+    text-align: center;
+    width: 80%;
 }
 
 

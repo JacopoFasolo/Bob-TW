@@ -63,7 +63,8 @@ body{
 #breadcrumb p{
     color: white;
     font-weight: bold;
-    padding: 0.5em;    
+    padding: 0.5em;
+        
 }
 
 /*menu*/
@@ -173,7 +174,7 @@ body{
 }
 
 #css{
-    float: left;
+    float: right;
     min-width: 3.5em;
     width: 8%;
     margin:0.7em;
@@ -186,4 +187,18 @@ body{
     width: 84%;
 }
 
+/*chi siamo*/
+
+#piste{
+    margin: 1em;
+    float: left;
+    width: 50%;
+}
+
+#recapiti{
+    text-align: center;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    font-size: 0.5em;
+}
 

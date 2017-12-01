@@ -11,7 +11,6 @@
     <meta name="author" content="Carlotta Segna, Alessio Brunetta, Jacopo Fasolo" />
     <meta name="language" content="italian it" />
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
-    <!-- asd -->
     <link href="css/mobile.css" media="handheld, screen and (max-width:1024px), only screen and (max-device-width:1024px)" rel="stylesheet"
         type="text/css" />
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
@@ -29,6 +28,7 @@
     <div id="breadcrumb">
         <p> Ti trovi in: <a href="index.html">Home</a> &gt;&gt; Chi siamo</p>
     </div>
+    <!--breadcrumb-->
 
     <div id="menu">
         <ul id="menu_sito">
@@ -53,11 +53,9 @@
             </li>
         </ul>
     </div>
-    <!--breadcrumb-->
+    <!--menu-->
 
-    <div id="middle">
-
-        
+    <div id="middle">        
         <h1>La storia</h1>
         <img id="piste" src="img/anteprima-cartina.png" alt="copertura attuale della rete di piste e impianti"/>
         <p>La costruzione degli impianti è iniziata nel 1934.
@@ -68,7 +66,7 @@
         </p>
         <p> In seguito alla sempre maggiore affluenza di sciatori e turisti si sta pianificando l'estensione della rete di piste verso Vallone Dolonne.</p>
 
-        <h1 id="recapiti">Recapiti</h1>
+        <h1 id="h1_recapiti">Recapiti</h1>
         <ul id="Recapiti_lista">
             <li>Telefono impianti: 068594125</li>
             <li>Telefono direzione: 068594726</li>
@@ -80,14 +78,18 @@
         <a href="come_raggiungerci.html">Come Raggiungerci</a>
         
         <div id="map"></div><!-- questo è il div in cui verrà inserita la mappa, con JS -->
-        <!--middle-->
+    </div>
+    <!--middle-->
     
     <div id="footer">
-        <img src="img/valid-xhtml10.png" alt="HTML Valido">
-        <p> Il sito &egrave; stato creato nell'ambito del corso di Tecnologie Web come progetto universitario.
-            <br> A cura di Alessio Brunetta, Jacopo Fasolo e Segna Carlotta</p>
-        <img src="img/vcss-blue.gif" alt="CSS Valido">
-        <!--immagine html5-->
+        <img id="html"src="img/valid-xhtml10.png" alt="HTML Valido">
+        <p>
+            <strong>Recapiti:</strong>
+            <span class="recapiti">Telefono:</span>01652545548,
+            <span class="recapiti" xml: lang="en">Email:</span>bob@impiantidirisalita.com</p>
+            <p> Il sito &egrave; stato creato nell'ambito del corso di Tecnologie Web come progetto universitario.
+                <br> A cura di Alessio Brunetta, Jacopo Fasolo e Carlotta Segna</p>
+        <img id="css" src="img/vcss-blue.gif" alt="CSS Valido">
     </div><!--footer-->
 
 </body>

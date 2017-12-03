@@ -28,7 +28,7 @@ body{
 }
 
 #logo{
-    float:left;
+float:left;
     width: 12em;
     margin: 0.5em;
 }
@@ -64,7 +64,6 @@ body{
     color: white;
     font-weight: bold;
     padding: 0.5em;
-        
 }
 
 /*menu*/
@@ -133,7 +132,6 @@ body{
 
 #middle{
     margin-left: 20%;
-    overflow: auto;
     border-left: 1px solid #DDD;
 }
 
@@ -141,11 +139,11 @@ body{
     margin: 1em;
     float:left;
     width: 30%;
-    overflow: auto;
-    
+    overflow: auto;    
 }
 
 #middle h1{
+    color: #1d4e7c;
     text-align: center;
     padding-top: 0.3em;
     padding-bottom: 0.3em;
@@ -153,6 +151,7 @@ body{
 }
 
 #middle p{
+    margin-right: 0.5em;
     overflow:auto;
     font-size: 1em;
     line-height: 1.5em;
@@ -204,9 +203,11 @@ body{
     font-size: 0.5em;
 }
 
-#h1_recapiti{
+#h2_recapiti{
+    color: #1d4e7c;
+    padding-top: 0.5em;
     text-align: center;
-    font-size: 0.5em;
+    font-size: 1.5em;
 }
 
 #Recapiti_lista{
@@ -214,3 +215,63 @@ body{
     list-style-type: none;
 }
 
+#link_cr{
+    margin: 0.5em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#Recapiti_lista li{
+    font-size: 0.9em; 
+}
+
+/* Come raggiungerci */
+
+#immagine_arrivi{
+    margin-right: 2em;
+    float:right;
+    width: 50%;
+}
+
+#h2_distanze{
+    color: #1d4e7c;
+    padding: 0.3em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#h3_distanze{
+    text-align: left;
+    margin-left: 1.5em;
+    color: #2b2785;
+
+}
+
+#come_raggiungerci_p{
+    padding: 0.5em;
+    font-weight: bolder;
+}
+
+/* liste */
+#come_raggiungerci_lista{
+    list-style-type: none;
+}
+
+#come_raggiungerci_lista li{
+    list-style-type: none;
+}
+
+#sottolista li{
+    list-style-type: none;
+}
+
+#distanze{
+    text-align: left;
+    padding-bottom: 0.3em;
+    margin-left: 2em;
+}
+
+#distanze li{    
+    list-style-type: square;
+    font-size: 1em;
+}

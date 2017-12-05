@@ -259,15 +259,7 @@ float:left;
 
 /* liste */
 #come_raggiungerci_lista{
-    list-style-type: none;
-}
-
-#come_raggiungerci_lista li{
-    list-style-type: none;
-}
-
-#sottolista li{
-    list-style-type: none;
+    list-style-type: square;
 }
 
 #distanze{

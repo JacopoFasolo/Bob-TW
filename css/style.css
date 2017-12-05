@@ -228,18 +228,24 @@ float:left;
     width: 50%;
 }
 
-#h2_distanze{
+.h2_distanze1{
+    color: #1d4e7c;
+    padding: 0.3em;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+.h2_distanze{
     color: #1d4e7c;
     padding: 0.3em;
     text-align: center;
     font-size: 1.5em;
 }
 
-#h3_distanze{
+.h3_distanze{
     text-align: left;
     margin-left: 1.5em;
     color: #2b2785;
-
 }
 
 #come_raggiungerci_p{

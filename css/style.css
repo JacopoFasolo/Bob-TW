@@ -161,19 +161,18 @@ float:left;
 
 #middle p{
     margin-right: 0.5em;
-    overflow:auto;
+    overflow: auto;
+    display: inline;
     font-size: 1em;
     line-height: 1.5em;
 }
 
 /*footer*/
 #footer{
-    padding-top: 0.4em;
     display: inline-block;
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #DDD;
     width:100%;
-    height: 60px;
 }
 
 #html{
@@ -184,6 +183,7 @@ float:left;
 
 #footer p{
     padding-top: 0.5em;
+    padding-bottom: 0.5em;
     font-size: 0.8em;
     font-style: italic;
     text-align:center;
@@ -214,10 +214,14 @@ float:left;
     font-size: 0.5em;
 }
 
-#link_cr{
-    margin: 0.5em;
+#link_comeraggiungerci{
+    padding: 0.5em; 
+    display: block;
     text-align: center;
-    font-size: 0.9em;
+}
+
+#Recapiti_lista{
+    text-align: center;
 }
 
 /* Come raggiungerci */

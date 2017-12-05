@@ -228,15 +228,8 @@ float:left;
 
 #immagine_arrivi{
     margin-right: 2em;
-    float:right;
+    float: right;
     width: 50%;
-}
-
-.h2_distanze1{
-    color: #1d4e7c;
-    padding: 0.3em;
-    text-align: left;
-    font-size: 1.5em;
 }
 
 .h2_distanze{
@@ -247,8 +240,7 @@ float:left;
 }
 
 .h3_distanze{
-    text-align: left;
-    margin-left: 1.5em;
+    margin-left: -0.5em;
     color: #2b2785;
 }
 

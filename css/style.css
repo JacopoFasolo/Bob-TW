@@ -169,6 +169,7 @@ float:left;
 
 /*footer*/
 #footer{
+    padding-top: 1em: 
     display: inline-block;
     border-top: 1px solid #DDD;
     border-bottom: 1px solid #DDD;
@@ -227,9 +228,10 @@ float:left;
 /* Come raggiungerci */
 
 #immagine_arrivi{
-    margin-right: 2em;
-    float: right;
-    width: 50%;
+    padding-left: 15%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 70%;
 }
 
 .h2_distanze{
@@ -240,7 +242,6 @@ float:left;
 }
 
 .h3_distanze{
-    margin-left: -0.5em;
     color: #2b2785;
 }
 
@@ -254,13 +255,12 @@ float:left;
     list-style-type: square;
 }
 
-#distanze{
-    text-align: left;
-    padding-bottom: 0.3em;
-    margin-left: 2em;
+.distanze{
+    padding-bottom: 1em;
+    padding-left: 3em;
+    line-height: 1.5em;
 }
 
-#distanze li{    
+.distanze li{    
     list-style-type: square;
-    font-size: 1em;
-}
+}2

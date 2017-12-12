@@ -264,3 +264,21 @@ float:left;
 .distanze li{    
     list-style-type: square;
 }
+
+/*biglietti & prezzi*/
+
+table{
+    width: 80%;
+    margin-left: 7%;
+    margin-right: 9%;
+}
+
+table caption{
+    color: #1d4e7c;
+    padding-top: 1em;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: bold;
+}

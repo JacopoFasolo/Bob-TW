@@ -139,8 +139,6 @@ li{
 
 #middle p{
 	margin-right: 0.5em;
-	/*overflow: auto;*/
-	/*display: inline;*/
 	font-size: 1em;
 	line-height: 1.5em;
 }
@@ -245,20 +243,28 @@ li{
 
 table{
 	width: 80%;
-	padding: 1%;
 	margin-left: 8%;
 	margin-right: 10%;
 	background-color: #E9E9E9;
+	border-collapse: collapse;
 }
 
-tr{
-	height: 2em;
+th{
+	border: 1px solid black;
+	background-color: #00A86B;
+	padding: 0.3em;
+	color: white;
+}
+
+td{
+	text-align: center;
+	border: 1px solid black;
+	padding: 0.3em;
 }
 
 table caption{
 	color: #1d4e7c;
-	padding-top: 1em;
-	width: 100%;
+	padding-top: 0.5em;
 	text-align: center;
 	padding-bottom: 0.5em;
 	font-size: 1.5em;

@@ -29,10 +29,17 @@ body{
 
 ul{
 	padding-left: 1em;
+	list-style-type: none;
 }
 
 li{
-	list-style-type: none;
+	padding-top: 0.2em;
+}
+
+td{
+	border: 1px solid black;
+	padding-left: 0.5em;
+	height: 1.65em;
 }
 
 #logo{
@@ -198,7 +205,6 @@ li{
 #Recapiti_lista{
 	text-align: center;
 }
-
 /* Come raggiungerci */
 
 #immagine_arrivi{
@@ -226,7 +232,7 @@ li{
 
 /* liste */
 #come_raggiungerci_lista{
-	list-style-type: square;
+	list-style-type: none;
 }
 
 .distanze{
@@ -241,7 +247,7 @@ li{
 
 /*biglietti & prezzi*/
 
-table{
+#tablebiglietti{
 	width: 80%;
 	margin-left: 8%;
 	margin-right: 10%;
@@ -256,7 +262,7 @@ th{
 	color: white;
 }
 
-td{
+#tablebiglietti td{
 	text-align: center;
 	border: 1px solid black;
 	padding: 0.3em;
@@ -270,3 +276,41 @@ table caption{
 	font-size: 1.5em;
 	font-weight: bold;
 }
+
+/*Impianti*/
+
+.difficolta{
+	width: 1em;
+	float: left;
+	padding-right: 0.2em;
+}
+
+#piste1{
+	float: left;
+}
+
+#piste2{
+	margin-left: 50%;
+}
+
+#piste1 td, #piste2 td{
+
+}
+
+#piste1, #piste2{
+	width: 48%;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	margin-top: 0.5em;
+}
+
+#impianti_di_risalita{
+	width: 98%;
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#piste_ul{
+	list-style-type: square;
+}
+

@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/TR/html5/" xml:lang="it" lang="it">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it" >
 
 <head>
     <title> Bob - Gli impianti</title>
@@ -19,7 +19,7 @@
 
 <body>
     <div id="header">
-        <img id="logo" src="img/logo.jpg" alt="Logo dell'azienda Bob">
+        <img id="logo" src="img/logo.jpg" alt="Logo dell'azienda Bob"/>
         <h1> BOB - La montagna in ogni stagione </h1>
         <p>
             <span xml:lang="fr">Courmayeur</span>, nel cuore della montagna </p>
@@ -65,14 +65,14 @@
         <p>Il nostro comprensorio comprende 31 piste e 9 impianti di risalita.
             Nei periodi di alta stagione, in caso di assenza o scarsa di neve, gli innevatori vengono in nostro soccorso,
             in modo tale da rendere la vostra permanenza il piu' piacevolo possibile all'interno del
-            nostro comprensorio.<br>
-            Il comprensorio &eacute; aperto dalle ore 8:30 alle ore 17:30.
+            nostro comprensorio.<br/>
+            Il comprensorio &egrave; aperto dalle ore 8:30 alle ore 17:30.
         </p>
 
         <p>
-            Ecco a voi la lista dei nostri impianti:
+            I nostri impianti:
         </p>
-        <ul>
+        <ul id="piste_ul">
             <li><span xml:lang="FR">Courmayeur</span>, funivia</li>
             <li>Dolonne, telecabina</li>
             <li>Val <span xml:lang="FR">Veny</span>, funivia</li>
@@ -85,46 +85,52 @@
             <li>Arp, funivia</li>
             <li><span xml:lang="FR">Youla</span>, funivia</li>
         </ul>
-        <img id="impianti_di_risalita" src="img/skirama.jpg" alt="Cartina degli impianti e delle piste">
-        <p>La lista delle nostre piste con la loro difficolt&aacute;.<br> In ordine di difficolta' ci sono il blu, il rosso ed infine il
-            nero.
-        </p>        
-        <div id="lista">
-            <ul>
-                <li>Gigante - Rossa</li>
-                <li>Val Veny - Blu</li>
-                <li><span xml:lang="FR">Chetif</span> - Blu</li>
-                <li>Campo Prato - Blu</li>
-                <li>Pista dell'Orso - Nera</li>
-                <li>Pra Neyron - Blu</li>
-                <li>Dzeleuna - Rossa</li>
-                <li>Diretta - Nera</li>
-                <li>Diagonale <span xml:lang="FR">Peindent</span> - Blu</li>
-                <li>Tzaly - Blu</li>
-                <li><span xml:lang="FR">Le Greye</span> - Rossa</li>
-                <li><span xml:lang="FR">Lavechon</span> - Rossa</li>
-                <li><span xml:lang="FR">Checrouit</span> - Rossa</li>
-                <li><span xml:lang="FR">Aretu</span> - Rossa</li>
-                <li><span xml:lang="FR">Maison Vielle</span></li>
-                <li>Stadio Slalom - Rossa</li>
-                <li>Chiecco - Blu</li>
-                <li>Internazionale - Rossa</li>
-                <li>Comba Moretta - Rossa</li>
-                <li><span xml:lang="EN">Lazey</span> - Rossa</li>
-                <li><span xml:lang="EN">Youla</span> - Rossa</li>
-                <li><span xml:lang="FR">Courba</span> - Blu</li>
-                <li><span xml:lang="FR">Des Eves</span> - Nera</li>
-                <li>Rocce Bianche - Nera</li>
-                <li><span xml:lang="FR">Dolonne</span> - Rossa</li>
-                <li><span xml:lang="EN">Snowpark</span> - Rossa</li>
-                <li><span xml:lang="EN">Lassy</span> - Rossa</li>
-                <li>Variante Verde - Blu</li>
-                <li>Pista del Corvo - Rosso</li>
-                <li>Raccordo Piste <span xml:lang="FR">Plan Checrouit</span> - Blu</li>
-                <li>Canalino - Rossa</li>
-            </ul>
-        </div> 
-        <!--lista-->
+        <img id="impianti_di_risalita" src="img/skirama.jpg" alt="Cartina degli impianti e delle piste"/>
+        <p>La lista delle nostre piste con la loro difficolt&agrave;.<br/> In ordine di difficolt&agrave; ci sono Blu, Rossa ed infine Nera.
+        </p>
+        <table id="piste1">
+            <tr>
+                <th>Pista</th>
+                <th>Difficolt&agrave;</th>
+            </tr>
+            <tr><td>Gigante</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td>Val Veny</td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td><span xml:lang="FR">Chetif</span></td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Campo Prato</td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Pista dell'Orso</td><td><img class="difficolta" src="img/pallozzonero.png" alt=""/> Nera</td></tr>
+            <tr><td>Pra Neyron</td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Dzeleuna</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td>Diretta</td><td><img class="difficolta" src="img/pallozzonero.png" alt=""/> Nera</td></tr>
+            <tr><td>Diagonale <span xml:lang="FR">Peindent</span></td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Tzaly</td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td><span xml:lang="FR">Le Greye</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="FR">Lavechon</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="FR">Checrouit</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="FR">Aretu</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="FR">Maison Vielle</span></td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Stadio Slalom</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+        </table>
+        <table id="piste2">
+            <tr>
+                <th>Pista</th>
+                <th>Difficolt&agrave;</th>
+            </tr>
+            <tr><td>Chiecco</td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Internazionale</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td>Comba Moretta</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="EN">Lazey</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="EN">Youla</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="FR">Courba</span></td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td><span xml:lang="FR">Des Eves</span></td><td><img class="difficolta" src="img/pallozzonero.png" alt=""/> Nera</td></tr>
+            <tr><td>Rocce Bianche</td><td><img class="difficolta" src="img/pallozzonero.png" alt=""/> Nera</td></tr>
+            <tr><td><span xml:lang="FR">Dolonne</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="EN">Snowpark</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td><span xml:lang="EN">Lassy</span></td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td>Variante Verde</td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Pista del Corvo</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+            <tr><td>Raccordo Piste <span xml:lang="FR">Plan Checrouit</span></td><td><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td></tr>
+            <tr><td>Canalino</td><td><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td></tr>
+        </table>
     </div>
     <!--middle-->
     
@@ -134,9 +140,9 @@
         <p>
             <strong>Recapiti:</strong>
             Telefono: 068594125,
-            <span xml: lang="EN">Email</span>:bob@impiantidirisalita.com<br>
+            <span xml:lang="EN">Email</span>:bob@impiantidirisalita.com<br/>
             Il sito &egrave; stato creato nell'ambito del corso di Tecnologie Web come progetto universitario.
-                <br> A cura di Alessio Brunetta, Jacopo Fasolo e Carlotta Segna</p>
+                <br/> A cura di Alessio Brunetta, Jacopo Fasolo e Carlotta Segna</p>
     </div><!--footer-->
 
 </body>

@@ -67,7 +67,7 @@ td{
 	font-style: oblique;
 }
 
-/*breadcrumb*/
+/*\breadcrumb*/
 
 #breadcrumb{
 	height: 2em;
@@ -77,8 +77,8 @@ td{
 #breadcrumb p{
 	color: white;
 	font-weight: bold;
-	padding-top: 0.3em;
-	padding-left: 2em;
+	padding-top: 0.4em;
+	padding-left: 1em;
 }
 
 /*menu*/
@@ -316,17 +316,20 @@ table caption{
 
 /*Galleria*/
 
-dl#foto figure{
+dl#foto dd{
 	width: 30%;
 	float: left;
 	padding: 0.6em;
+	min-height: 5em;
+	display: block;
 }
 
-dl#foto figure img{
+dl#foto dd img{
 	width: 100%;
 }
 
 dl#foto dt{
+	color: #1d4e7c;
 	font-size: 1.2em;
 	font-weight: bold;
 	display: block;
@@ -337,7 +340,7 @@ dl#foto{
 	margin: 0.5%;
 }
 
-.dopoFoto{
+.successivo{
 	clear: both;
 	padding-top: 1em;
 	font-size: 1em;

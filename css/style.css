@@ -338,6 +338,7 @@ dl#foto dt{
 dl#foto{
 	width: 100%;
 	margin: 0.5%;
+	display: inline-block;
 }
 
 .successivo{

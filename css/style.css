@@ -320,7 +320,7 @@ dl#foto dd{
 	width: 30%;
 	float: left;
 	padding: 0.6em;
-	min-height: 5em;
+	min-height: 14em;
 	display: block;
 }
 
@@ -330,9 +330,18 @@ dl#foto dd img{
 
 dl#foto dt{
 	color: #1d4e7c;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	font-weight: bold;
+	padding-bottom: 0.3em;
 	display: block;
+}
+
+dd p{
+	width: 90%;
+	margin-left: 5%;
+	font-size: 0.8em;
+	color: #555;
+	text-align: center;
 }
 
 dl#foto{

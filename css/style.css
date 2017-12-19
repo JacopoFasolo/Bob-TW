@@ -5,7 +5,7 @@
 
 @font-face{
 	font-family: 'Roboto';
-	src:local('Roboto') 
+	src:source('Roboto'),
 		url(../font/Roboto_Regular.ttf) format("truetype"),
 		url(../font/Roboto_Thin.ttf) format("truetype");
 	font-weight: normal;
@@ -48,10 +48,22 @@ td{
 	margin: 0.5em;
 }
 
+/* login */
+#login{
+	overflow: hidden;
+	background-color: white;
+}
+#login p{
+	float: right;
+	padding: 0.5em 1em 0.5em 0.5em;
+	display: block;
+	vertical-align: top;
+}
+
 /*header*/
 
 #header{
-	font-family: 'Roboto_Thin', Helvetica, Verdana, Arial;
+	font-family: 'Roboto', Helvetica, Verdana, Arial;
 	overflow: auto;
 	text-align: center;
 	color: #1d4e7c;
@@ -123,6 +135,8 @@ td{
 /*middle*/
 
 #middle{
+	width: 80%;
+	margin-right: 5%;
 	margin-left: 20%;
 	padding-left: 2%;
 	border-left: 1px solid #DDD;

@@ -51,13 +51,15 @@ td{
 /* login */
 #login{
 	overflow: hidden;
-	background-color: white;
+	background-color: #00A86B;
 }
+
 #login p{
 	float: right;
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;
 	vertical-align: top;
+	color: #FFF;
 }
 
 /*header*/
@@ -135,7 +137,7 @@ td{
 /*middle*/
 
 #middle{
-	width: 80%;
+	width: 76%;
 	margin-right: 5%;
 	margin-left: 20%;
 	padding-left: 2%;
@@ -159,7 +161,6 @@ td{
 }
 
 #middle p{
-	margin-right: 0.5em;
 	font-size: 1em;
 	line-height: 1.5em;
 }

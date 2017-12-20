@@ -51,7 +51,6 @@ td{
 /* login */
 #login{
 	overflow: hidden;
-	background-color: #00A86B;
 }
 
 #login p{
@@ -59,7 +58,7 @@ td{
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;
 	vertical-align: top;
-	color: #FFF;
+	color: #00A86B;
 }
 
 /*header*/
@@ -83,7 +82,7 @@ td{
 
 /*\breadcrumb*/
 
-#breadcrumb{
+#breadcrumb{	background-color: #00A86B;
 	height: 2em;
 	background-color: #00A86B;
 }
@@ -103,7 +102,7 @@ td{
 	padding: 0;
 	width: 20%;
 	background-color: #f1f1f1;
-	height: 100%;
+	/* height:80vh; */
 	overflow: auto;
 	float: left;
 	display: block;

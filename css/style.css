@@ -6,10 +6,19 @@
 @font-face{
 	font-family: 'Roboto';
 	src:source('Roboto'),
-		url(../font/Roboto_Regular.ttf) format("truetype"),
-		url(../font/Roboto_Thin.ttf) format("truetype");
+		url(../font/Roboto_Regular.ttf) format("truetype");
 	font-weight: normal;
 	font-style: normal;
+}
+
+@media all and (max-width: 1268px) {
+    #menu{display:block;}
+    #menu_mobile{display:none;}
+}
+
+@media all and (max-width: 720px) {
+    #menu{display:none;}
+    #btn{display:block;}
 }
 
 html, body{
@@ -80,7 +89,7 @@ td{
 	font-style: oblique;
 }
 
-/*\breadcrumb*/
+/*breadcrumb*/
 
 #breadcrumb{	background-color: #00A86B;
 	height: 2em;

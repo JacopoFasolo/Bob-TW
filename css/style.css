@@ -51,7 +51,7 @@ td{
 /* login */
 #login{
 	overflow: hidden;
-	background-color: #00A86B;
+	background-color: #1d4e7c;
 }
 
 #login p{
@@ -59,7 +59,10 @@ td{
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;
 	vertical-align: top;
-	color: #FFF;
+}
+
+#ogin a{
+	color: white;
 }
 
 /*header*/

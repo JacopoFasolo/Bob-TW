@@ -6,10 +6,19 @@
 @font-face{
 	font-family: 'Roboto';
 	src:source('Roboto'),
-		url(../font/Roboto_Regular.ttf) format("truetype"),
-		url(../font/Roboto_Thin.ttf) format("truetype");
+		url(../font/Roboto_Regular.ttf) format("truetype");
 	font-weight: normal;
 	font-style: normal;
+}
+
+@media all and (max-width: 1268px) {
+    #menu{display:block;}
+    #menu_mobile{display:none;}
+}
+
+@media all and (max-width: 720px) {
+    #menu{display:none;}
+    #btn{display:block;}
 }
 
 html, body{
@@ -51,7 +60,6 @@ td{
 /* login */
 #login{
 	overflow: hidden;
-	background-color: #1d4e7c;
 }
 
 #login p{
@@ -59,10 +67,7 @@ td{
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;
 	vertical-align: top;
-}
-
-#ogin a{
-	color: white;
+	color: #00A86B;
 }
 
 /*header*/
@@ -84,9 +89,9 @@ td{
 	font-style: oblique;
 }
 
-/*\breadcrumb*/
+/*breadcrumb*/
 
-#breadcrumb{
+#breadcrumb{	background-color: #00A86B;
 	height: 2em;
 	background-color: #00A86B;
 }
@@ -106,7 +111,7 @@ td{
 	padding: 0;
 	width: 20%;
 	background-color: #f1f1f1;
-	height: 100%;
+	/* height:80vh; */
 	overflow: auto;
 	float: left;
 	display: block;

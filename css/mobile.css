@@ -7,13 +7,13 @@ body{
     margin: 0;
     padding: 0;
     min-width: 0;
-    width: auto;
+    width: 100%;
 }
 
 /* Login */
 
 #login{
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 /* Header */
@@ -23,16 +23,43 @@ body{
 }
 
 #header h1{
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #header p{
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 /* menu */
 
-#main {
+#menu{
+    float: none;
+    width: 100%;
+}
+
+/* breadcrumb */
+
+#breadcrumb a{
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: block;
+    height: 2em;
+    border-left: 1px solid white;
+}
+
+#breadcrumb a img{
+    width: 1.6em;
+    padding: 0.2em;
+}
+
+#breadcrumb a p{
+    float: left;
+    display: block;
+    padding: 0.5em;
+}
+
+/*#main {
   z-index: 2;
   position: relative;
   height: 100%;
@@ -140,15 +167,27 @@ nav {
     position: relative;
     margin-top: 9.3em;
     text-align: center;
-}
+}*/
 
 /* middle */
 
+#middle{
+    margin: 0;
+    padding-left: 2%;
+    width: 96%;
+}
+
 #middle p{
-    font-size: 0.8em;
+    font-size: 1em;
 }
 
 #middle img{
     display: none;
 }
+
+/* footer */
+#footer img{
+    width: 15%;
+    padding: 0;
+ }
 

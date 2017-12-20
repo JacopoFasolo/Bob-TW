@@ -11,7 +11,7 @@
 	font-style: normal;
 }
 
-@media all and (max-width: 1268px) {
+/*@media all and (max-width: 1268px) {
     #menu{display:block;}
     #menu_mobile{display:none;}
 }
@@ -19,7 +19,7 @@
 @media all and (max-width: 720px) {
     #menu{display:none;}
     #btn{display:block;}
-}
+}*/
 
 html, body{
 	max-width: 1268px;
@@ -53,21 +53,21 @@ td{
 
 #logo{
 	float:left;
-	width: 12em;
-	margin: 0.5em;
+	width: 13em;
 }
 
 /* login */
 #login{
 	overflow: hidden;
+	background-color: #1d4e7c;
 }
 
-#login p{
+#login a{
 	float: right;
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;
 	vertical-align: top;
-	color: #00A86B;
+	color: white;
 }
 
 /*header*/
@@ -80,12 +80,12 @@ td{
 }
 
 #header h1{
-	font-size: 2.7em;
-	margin-top: 1em;
+	font-size: 2.5em;
+	margin-top: 0.5em;
 }
 
 #header p{
-	font-size: 2em;
+	font-size: 1.7em;
 	font-style: oblique;
 }
 
@@ -101,20 +101,29 @@ td{
 	font-weight: bold;
 	padding-top: 0.4em;
 	padding-left: 1em;
+	display: inline-block;
+}
+
+#breadcrumb a{
+	display: none;
 }
 
 /*menu*/
 
-#menu_sito {
+#menu{
+	background-color: #f1f1f1;
+	float: left;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	width: 20%;
-	background-color: #f1f1f1;
-	/* height:80vh; */
 	overflow: auto;
-	float: left;
 	display: block;
+}
+
+#menu_sito {
+	margin: 0;
+	padding:0;
 }
 
 #pagina_corrente{
@@ -132,12 +141,16 @@ td{
 	text-decoration: none;
 }
 
+.punto_sito a:visited{
+	background-color: #CCC;
+}
+
 .punto_sito a.active {
 	background-color: #00A86B;
 	color: white;
 }
 
-.punto_sito a:hover:not(.active) {
+.punto_sito a:hover {
 	background-color: #555;
 	color: white;
 }

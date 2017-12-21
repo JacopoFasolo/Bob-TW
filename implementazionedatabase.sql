@@ -1,6 +1,19 @@
+DROP TABLE IF EXIST Commento_ins;
+DROP TABLE IF EXIST Commento;
+DROP TABLE IF EXIST Snowboard;
+DROP TABLE IF EXIST Caschi;
+DROP TABLE IF EXIST Scarponi;
+DROP TABLE IF EXIST Ciaspole;
+DROP TABLE IF EXIST Piccozze;
+DROP TABLE IF EXIST Sci;
+DROP TABLE IF EXIST Id_oggetti;
+DROP TABLE IF EXIST Biglietti;
+DROP TABLE IF EXIST Utente;
+
 CREATE TABLE Utente
 (
-Username char(16) primary key,
+Id_utente int AUTO_INCREMENT primary key,
+Username char(16) NOT NULL,
 Email varchar(50) NOT NULL,
 Password varchar(20) NOT NULL,
 Cognome varchar(50) NOT NULL,
@@ -92,9 +105,11 @@ Testo varchar(255) NOT NULL
 CREATE TABLE Commento_ins
 (
 Id_com int,
-id_ogg int,
+Id_ogg int,
+Id_ut int,
 FOREIGN KEY (Id_com) REFERENCES Commento(Id_commento),
 FOREIGN KEY (Id_ogg) REFERENCES Id_oggetti(Id_oggetto),
+FOREIGN KEY (Id_ut) REFERENCES Utente(Id_utente),
  	ON DELETE CASCADE
     ON UPDATE NO ACTION
     

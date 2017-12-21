@@ -11,15 +11,15 @@
 	font-style: normal;
 }
 
-/*@media all and (max-width: 1268px) {
+@media screen and (min-width: 1025px) {
     #menu{display:block;}
     #menu_mobile{display:none;}
 }
 
-@media all and (max-width: 720px) {
+@media screen and (max-width: 1024px) {
     #menu{display:none;}
     #btn{display:block;}
-}*/
+}
 
 html, body{
 	max-width: 1268px;
@@ -91,7 +91,7 @@ td{
 
 /*breadcrumb*/
 
-#breadcrumb{	background-color: #00A86B;
+#breadcrumb{
 	height: 2em;
 	background-color: #00A86B;
 }
@@ -102,10 +102,6 @@ td{
 	padding-top: 0.4em;
 	padding-left: 1em;
 	display: inline-block;
-}
-
-#breadcrumb a{
-	display: none;
 }
 
 /*menu*/
@@ -136,13 +132,9 @@ td{
 
 .punto_sito a {
 	display: block;
-	color: #000;
+	/*color: #000;*/
 	padding: 0.5em 1.5em;
 	text-decoration: none;
-}
-
-.punto_sito a:visited{
-	background-color: #CCC;
 }
 
 .punto_sito a.active {

@@ -42,19 +42,9 @@ body{
 #breadcrumb a{
     padding: 0;
     margin: 0;
-    float: right;
-    display: block;
-    height: 2em;
-    border-left: 1px solid white;
-}
-
-#breadcrumb a img{
-    width: 1.6em;
-    padding: 0.2em;
 }
 
 #breadcrumb a p{
-    float: left;
     display: block;
     padding: 0.5em;
 }

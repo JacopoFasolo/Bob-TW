@@ -17,37 +17,70 @@
 </head>
 
 <body>
-    <div id="middle">
-        
-        <form id="login" method="get">
-            <label for="Username">Username:</label>
-            <input type="text" class="input" size="20" name="login_username"/>
-            <label for="Password">Password:</label>
-            <input type="password" class="input" size="20" name="login_password"/>
-            <input type="submit" value="Login"/>
-        </form>
 
-        <form id="registrazione" method="get">
-            <label for="Username">Username:</label>
-            <input type="text" class="input" size="20" name="reg_username"/>
-            <label for="Password">Password:</label>
-            <input type="password" class="input" size="20" name="reg_password"/>
-            <label for="Nome">Nome:</label>
-            <input type="text" class="input" size="20" name="reg_name"/>
-            <label for="Cognome">Cognome:</label>
-            <input type="text" class="input" size="20" name="reg_surname"/>
-            <label for="Email"><span xml:lang="en">Email</span>:</label>
-            <input type="email" class="input" size="20" name="reg_email"/>
-            <label for="Sesso M">M</label>
-            <input type="radio" class="input" size="20" name="reg_male"/>
-            <label for="Sesso F">F</label>
-            <input type="radio" class="input" size="20" name="reg_female"/>
-            <label for="Data di nascita">Data di nascita:</label>
-            <input type="date" class="input" size="20" name="reg_birth"/>
-            <input type="submit" value="Registrati"/>
-            <input type="reset" value="Cancella"/>
-        </form>
+    <div id="menu">
+        <ul id="menu_sito">
+            <li class="punto_sito">
+                <a href="index.html"><span xml:lang="en"> Home </span></a>
+            </li>
+            <li class="punto_sito">
+                <a href="chi_siamo.html"> Chi siamo </a>
+            </li>
+            <li class="punto_sito">
+                <a href="come_raggiungerci.html"> Come raggiungerci</a>
+            </li>
+            <li class="punto_sito">
+                <a href="impianti.html"> Impianti </a>
+            </li>
+            <li class="punto_sito">
+                <a href="biglietti_prezzi.html"> Biglietti &amp; prezzi</a>
+            </li>
+            <li class="punto_sito">
+                <a href="noleggio_attrezzatura.html"> Noleggio attrezzature </a>
+            </li>
+            <li class="punto_sito">
+                <a href="foto.html"> Galleria </a>
+            </li>
+        </ul>
+    </div>
 
+    <div id="middle_form">
+        <div id="login_div">
+            <form id="login" method="get">
+                <h1>Login</h1>
+                <label for="Username">Username:</label>
+                <input type="text" class="input" size="20" name="login_username" value="Username"/>
+                <br/>
+                <label for="Password">Password:</label>
+                <input type="password" class="input" size="20" name="login_password" value="Password"/>
+                <br/>
+                <input class="button"type="submit" value="Login"/>
+            </form>
+        </div>
+
+        <div id="registrazione_div">
+            <form id="registrazione" method="get">
+                <h1>Registrati</h1>
+                <label for="Username">Username:</label>
+                <input type="text" class="input" size="20" name="reg_username" value="Username"/><br/>
+                <label for="Password">Password:</label>
+                <input type="password" class="input" size="20" name="reg_password" value="Password"/><br/>
+                <label for="Nome">Nome:</label>
+                <input type="text" class="input" size="20" name="reg_name" value="Nome"/><br/>
+                <label for="Cognome">Cognome:</label>
+                <input type="text" class="input" size="20" name="reg_surname" value="Cognome"/> <br/>
+                <label for="Email"><span xml:lang="en">Email</span>:</label>
+                <input type="email" class="input" size="20" name="reg_email" value="E-mail"/> <br/>
+                <label for="Sesso M">M</label>
+                <input type="radio" class="input" size="20" name="gender"/>
+                <label for="Sesso F">F</label>
+                <input type="radio" class="input" size="20" name="gender"/><br/>
+                <label for="Data di nascita">Data di nascita:</label>
+                <input type="date" class="input" size="20" name="reg_birth"/><br/>
+                <input class="button"type="submit" value="Registrati"/>
+                <input class="button" type="reset" value="Cancella"/>
+        </form>
+        </div>
     </div>
     <!-- middle -->
 

@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if(!isset($_SESSION["login"])){ // non loggato
-		echo file_get_contents("../Pezzi di pagina/header_login.html");
+		echo file_get_contents("../Pezzi_di_pagina/header_login.html");
 	}else{ //loggato
 ?>
 
@@ -14,4 +14,4 @@
         </form>
     </div>
 </body>
-<?php } ?>
+<?php ?>

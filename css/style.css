@@ -57,12 +57,12 @@ td{
 }
 
 /* login */
-#login{
+#login_link{
 	overflow: hidden;
 	background-color: #1d4e7c;
 }
 
-#login a{
+#login_link a{
 	float: right;
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;
@@ -113,6 +113,7 @@ td{
 	margin: 0;
 	padding: 0;
 	width: 20%;
+	min-height: 500px;
 	overflow: auto;
 	display: block;
 }
@@ -383,4 +384,67 @@ dl#foto{
 	padding-top: 1em;
 	font-size: 1em;
 	font-weight: bold;
+}
+
+/* login_pagina */
+
+h1{
+	font-size: 1.5em;
+	color:#1d4e7c;
+}
+
+#login #registrazione{
+	text-align: left;
+	margin-left: 2em;
+}
+
+input[type=text]{
+    width: 30%;
+    padding: .5em 1em;
+    margin: 0.5ex 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* border-radius: 4px;
+    box-sizing: border-box; */
+}
+
+input[type=password]{
+    width: 30%;
+    padding: .5em 1em;
+    margin: 0.5ex 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    /* border-radius: 4px;
+    box-sizing: border-box; */
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=reset]{
+	width: 30%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1d4e7c;
+}
+
+#middle_form{
+	margin-top: 1em;
+    margin-left: 1em;
 }

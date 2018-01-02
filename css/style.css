@@ -11,12 +11,12 @@
 	font-style: normal;
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 992px) {
     #menu{display:block;}
     #menu_mobile{display:none;}
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     #menu{display:none;}
     #btn{display:block;}
 }
@@ -150,7 +150,7 @@ td{
 
 /*middle*/
 
-#middle{
+#middle #middle_galleria{
 	width: 76%;
 	margin-right: 5%;
 	margin-left: 20%;
@@ -398,24 +398,15 @@ h1{
 	margin-left: 2em;
 }
 
-input[type=text]{
-    width: 30%;
-    padding: .5em 1em;
-    margin: 0.5ex 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    /* border-radius: 4px;
-    box-sizing: border-box; */
-}
 
-input[type=password]{
+input[type=password], input[type=email], input[type=text], input[type=date]{
     width: 30%;
     padding: .5em 1em;
     margin: 0.5ex 0;
     display: inline-block;
     border: 1px solid #ccc;
-    /* border-radius: 4px;
-    box-sizing: border-box; */
+    /* border-radius: 4px; */
+    box-sizing: border-box;
 }
 
 input[type=submit] {

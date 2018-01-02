@@ -47,6 +47,11 @@ body{
 #breadcrumb a p{
     display: block;
     padding: 0.5em;
+    font-size: 1em;
+}
+
+#menu{
+    text-align: center;
 }
 
 /*#main {

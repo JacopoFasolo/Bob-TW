@@ -166,7 +166,7 @@ nav {
 
 /* middle */
 
-#middle{
+#middle, #middle_galleria{
     margin: 0;
     padding-left: 2%;
     width: 96%;
@@ -186,3 +186,11 @@ nav {
     padding: 0;
  }
 
+/* galleria */
+
+dl#foto dd{
+    width: 80%;
+    float: none;
+    padding-left: 10%;
+    padding-right: 10%;
+}

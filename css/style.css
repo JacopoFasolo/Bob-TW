@@ -11,15 +11,15 @@
 	font-style: normal;
 }
 
-@media screen and (min-width: 992px) {
+/*@media screen and (min-width: 1024px) {      non dovrebbe servire perchè basta dare diversi stili allo stesso menu, lascio qua per avere un backup
     #menu{display:block;}
     #menu_mobile{display:none;}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1023px) {
     #menu{display:none;}
     #btn{display:block;}
-}
+}*/
 
 html, body{
 	max-width: 1268px;
@@ -30,7 +30,7 @@ html, body{
 }
 
 body{
-	border: 1px solid #DDD;   
+	border: 1px solid #CCC; 
 	margin-left:auto;
 	margin-right:auto;
 	width: 80%;
@@ -104,6 +104,10 @@ td{
 	display: inline-block;
 }
 
+#page{
+	background-color: #f1f1f1;
+}
+
 /*menu*/
 
 #menu{
@@ -111,9 +115,7 @@ td{
 	float: left;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
 	width: 20%;
-	min-height: 500px;
 	overflow: auto;
 	display: block;
 }
@@ -150,23 +152,24 @@ td{
 
 /*middle*/
 
-#middle #middle_galleria{
+#middle, #middle_galleria{
+	background-color: white;
 	width: 76%;
-	margin-right: 5%;
+	padding-right: 1.9%;
 	margin-left: 20%;
 	padding-left: 2%;
-	border-left: 1px solid #DDD;
+	border-left: 1px solid #CCC;
 	padding-bottom: 0.5em;
 }
 
 .immagini_middle_home{
 	margin: 1em;
 	float:left;
-	width: 30%;
+	width: 40%;
 	overflow: auto;    
 }
 
-#middle h1{
+#middle h1, #middle_galleria h1{
 	color: #1d4e7c;
 	text-align: center;
 	padding-top: 0.3em;
@@ -174,7 +177,7 @@ td{
 	font-size: 2em;
 }
 
-#middle p{
+#middle p,#middle_galleria p{
 	font-size: 1em;
 	line-height: 1.5em;
 }
@@ -182,8 +185,8 @@ td{
 /*footer*/
 #footer{
 	display: inline-block;
-	border-top: 1px solid #DDD;
-	border-bottom: 1px solid #DDD;
+	border-top: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
 	width:100%;
 }
 
@@ -402,30 +405,19 @@ h1{
 input[type=password], input[type=email], input[type=text], input[type=date]{
     width: 30%;
     padding: .5em 1em;
-    margin: 0.5ex 0;
+    margin: 0.5em 0;
     display: inline-block;
     border: 1px solid #ccc;
     /* border-radius: 4px; */
     box-sizing: border-box;
 }
 
-input[type=submit] {
+input[type=submit], input[type=reset] {
     width: 30%;
     background-color: #4CAF50;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=reset]{
-	width: 30%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
+    padding: 1em 1.5em;
+    margin: .5em 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;

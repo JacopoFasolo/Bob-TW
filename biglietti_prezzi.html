@@ -12,7 +12,7 @@
 	<meta name="language" content="italian it" />
 	<link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
 	<!-- asd -->
-	<link href="css/mobile.css" media="handheld, screen and (max-width:1024px), only screen and (max-device-width:1024px)" rel="stylesheet"
+	<link href="css/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" rel="stylesheet"
 		type="text/css" />
 	<link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
 </head>
@@ -22,132 +22,134 @@
 	<div id="breadcrumb">
 		<p> Ti trovi in: <a href="index.html"> Home</a> &gt;&gt; Biglietti &amp; prezzi</p>
 	</div>
-	<!--breadcrumb-->
+		<!--breadcrumb-->
+	<div id="page">	
+		<div id="menu">
+			<ul id="menu_sito">
+				<li class="punto_sito">
+					<a href="index.html"><span xml:lang="en">Home</span></a>
+				</li>
+				<li class="punto_sito">
+					<a href="chi_siamo.html"> Chi Siamo </a>
+				</li>
+				<li class="punto_sito">
+					<a href="come_raggiungerci.html">
+						Come raggiungerci
+					</a>
+				</li>
+				<li class="punto_sito">
+					<a href="impianti.html">Impianti</a>
+				</li>
+				<li id="pagina_corrente">
+					Biglietti &amp; prezzi
+				</li>
+				<li class="punto_sito">
+					<a href="noleggio_attrezzatura.html"> Noleggio attrezzature </a>
+				</li>
+				<li class="punto_sito">
+					<a href="foto.html"> Galleria </a>
+				</li>
+			</ul>
+		</div>
+		<!--menu-->
+		
+		<div id="middle">
+		<h1>Biglietti &amp; prezzi</h1>
+		<!-- Tabella con scope  -->
+		<table id="tablebiglietti">
+			<thead>
+				<tr>
+					<th scope="col">
+						Tipo biglietto
+					</th>
+					<th scope="col">
+						Ridotto <abbr title="bassa stagione">b.s.</abbr>
+					</th>
+					<th scope="col">
+						Intero <abbr title="bassa stagione">b.s.</abbr>
+					</th>
+					<th scope="col">
+						Ridotto <abbr title="alta stagione">a.s.</abbr>
+					</th>
+					<th scope="col">
+						Intero <abbr title="alta stagione">a.s.</abbr>
+					</th>
+				</tr>
+			</thead>
 	
-	<div id="menu">
-		<ul id="menu_sito">
-			<li class="punto_sito">
-				<a href="index.html"><span xml:lang="en">Home</span></a>
-			</li>
-			<li class="punto_sito">
-				<a href="chi_siamo.html"> Chi Siamo </a>
-			</li>
-			<li class="punto_sito">
-				<a href="come_raggiungerci.html">
-					Come raggiungerci
-				</a>
-			</li>
-			<li class="punto_sito">
-				<a href="impianti.html">Impianti</a>
-			</li>
-			<li id="pagina_corrente">
-				Biglietti &amp; prezzi
-			</li>
-			<li class="punto_sito">
-				<a href="noleggio_attrezzatura.html"> Noleggio attrezzature </a>
-			</li>
-			<li class="punto_sito">
-				<a href="foto.html"> Galleria </a>
-			</li>
-		</ul>
-	</div>
-	<!--menu-->
-	
-	<div id="middle">
-	<!-- Tabella con scope  -->
-	
-	<table id="tablebiglietti">
-		<caption>Biglietti &amp; prezzi</caption>
-		<thead>
 			<tr>
-				<th scope="col">
-					Tipo biglietto
+				<th scope="row">
+					Giornaliero
 				</th>
-				<th scope="col">
-					Ridotto <abbr title="bassa stagione">b.s.</abbr>
-				</th>
-				<th scope="col">
-					Intero <abbr title="bassa stagione">b.s.</abbr>
-				</th>
-				<th scope="col">
-					Ridotto <abbr title="alta stagione">a.s.</abbr>
-				</th>
-				<th scope="col">
-					Intero <abbr title="alta stagione">a.s.</abbr>
-				</th>
+				<td>&euro;50.00</td>
+				<td>&euro;65.00</td>
+				<td>&euro;70.00</td>
+				<td>&euro;85.00</td>
 			</tr>
-		</thead>
-
-		<tr>
-			<th scope="row">
-				Giornaliero
-			</th>
-			<td>&euro;50.00</td>
-			<td>&euro;65.00</td>
-			<td>&euro;70.00</td>
-			<td>&euro;85.00</td>
-		</tr>
-
-		<tr> 
-			<th scope="row">Settimanale</th>
-			<td>&euro;300.00</td>
-			<td>&euro;400.00</td>
-			<td>&euro;440.00</td>
-			<td>&euro;570.00</td>
-		</tr>
-
-		<tr>
-			<th scope="row">Due settimane</th>
-			<td>&euro;550.00</td>
-			<td>&euro;750.00</td>
-			<td>&euro;830.00</td>
-			<td>&euro;1090.00</td>
-		</tr>
-
-		<tr>
-			<th scope="row">10 ingressi</th>
-			<td>&euro;400.00</td>
-			<td>&euro;550.00</td>
-			<td>&euro;600.00</td>
-			<td>&euro;700.00</td>
-		</tr>
-		<tr>
-			<th scope="row">
-				Mezza Stagione
-			</th>
-			<td>&euro;850.00</td>
-			<td>&euro;900.00</td>
-			<td>&euro;950.00</td>
-			<td>&euro;1100.00</td>
-		</tr>
-
-		<tr>
-			<th scope="row">
-				Stagionale
-			</th>
-			<td>
-				 &euro;1300.00
-			</td>
-			<td>&euro;1800.00</td>
-			<td>&euro;1300.00</td>
-			<td>&euro;1800.00</td>
-		</tr>
-	</table>
 	
-	<ul id="legenda">
-		<li>a.s. = Alta stagione</li>
-		<li>b.s. = Bassa stagione</li>
-	</ul>
-
-	<h1>Informazioni generali:</h1>
-	<p>Il biglietto ridotto e' valido per anziani (over 65 anni), studenti, bambini sotto i 14 anni. Per poter usufruire delle agevolazioni &egrave; necessario presentare carta d'identit&agrave; o badge universitario.</p>
-	<p>Il periodo di bassa stagione comincia l'1 Novembre e termina il 16 Dicembre.</p>
-	<p>Il periodo di alta stagione comincia il 17 Dicembre e terminale il 28 Febbraio (29 in caso di anno bisestile).</p>
-	<p>Il biglietto &egrave; nominale e non pu&ograve; essere venduto a terzi.</p>	
-
+			<tr> 
+				<th scope="row">Settimanale</th>
+				<td>&euro;300.00</td>
+				<td>&euro;400.00</td>
+				<td>&euro;440.00</td>
+				<td>&euro;570.00</td>
+			</tr>
+	
+			<tr>
+				<th scope="row">Due settimane</th>
+				<td>&euro;550.00</td>
+				<td>&euro;750.00</td>
+				<td>&euro;830.00</td>
+				<td>&euro;1090.00</td>
+			</tr>
+	
+			<tr>
+				<th scope="row">10 ingressi</th>
+				<td>&euro;400.00</td>
+				<td>&euro;550.00</td>
+				<td>&euro;600.00</td>
+				<td>&euro;700.00</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					Mezza Stagione
+				</th>
+				<td>&euro;850.00</td>
+				<td>&euro;900.00</td>
+				<td>&euro;950.00</td>
+				<td>&euro;1100.00</td>
+			</tr>
+	
+			<tr>
+				<th scope="row">
+					Stagionale
+				</th>
+				<td>
+					 &euro;1300.00
+				</td>
+				<td>&euro;1800.00</td>
+				<td>&euro;1300.00</td>
+				<td>&euro;1800.00</td>
+			</tr>
+		</table>
+		
+		<ul id="legenda">
+			<li>a.s. = Alta stagione</li>
+			<li>b.s. = Bassa stagione</li>
+		</ul>
+	
+		<h1>Informazioni generali:</h1>	
+		<p>Il biglietto ridotto e' vali	do per anziani (over 65 anni), studenti, bambini sotto i 14 anni. Per poter usufruire delle agevolazioni &egrave; 	necessario presentare carta d'i	dentit&agrave; o badge universitario.</p>	
+		<p>Il periodo di bassa stagione comincia l'1 Novembre e termina il 16 Dicembre.</p>	
+		<p>Il periodo di alta stagione comincia il 17 Dicembre e terminale il 28 Febbraio (29 in caso di anno bisestile).</p>
+		<p>Il biglietto &egrave; nominale e non pu&ograve; essere venduto a terzi.</p>	
+	
+		</div>
+		<!--middle-->
 	</div>
-	<!--middle-->
-
+	<!--page-->
+	
+	
 </body>
 
 

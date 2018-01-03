@@ -35,23 +35,24 @@ body{
 #menu{
     float: none;
     width: 100%;
+    text-align: center;
 }
 
 /* breadcrumb */
 
+#breadcrumb{
+    height: 5em;
+}
+
 #breadcrumb a{
-    padding: 0;
+    padding: 0.2em;
     margin: 0;
 }
 
-#breadcrumb a p{
+#breadcrumb p{
     display: block;
     padding: 0.5em;
-    font-size: 1em;
-}
-
-#menu{
-    text-align: center;
+    font-size: 2em;
 }
 
 /*#main {
@@ -180,6 +181,12 @@ nav {
     display: none;
 }
 
+/* Impianti */
+
+#piste_ul{
+    padding-left: 3em;
+}
+
 /* footer */
 #footer img{
     width: 15%;
@@ -194,3 +201,19 @@ dl#foto dd{
     padding-left: 10%;
     padding-right: 10%;
 }
+
+#piste2, #piste1{
+    width: 96%;
+    margin-right:2%;
+    margin-left: 2%;
+    zoom: 3;
+}
+
+#tablebiglietti{
+    zoom: 2;
+}
+
+#middle_galleria dt{
+    text-align: center;
+}
+

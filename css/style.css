@@ -325,10 +325,6 @@ table caption{
 	margin-left: 50%;
 }
 
-#piste1 td, #piste2 td{
-
-}
-
 #piste1, #piste2{
 	width: 48%;
 	border-collapse: collapse;
@@ -348,7 +344,7 @@ table caption{
 
 /*Galleria*/
 
-dl#foto dd{
+dl #foto dd{
 	width: 30%;
 	float: left;
 	padding: 0.6em;
@@ -368,7 +364,7 @@ dl#foto dt{
 	display: block;
 }
 
-dd p{
+#middle_galleria dd p{
 	width: 90%;
 	margin-left: 5%;
 	font-size: 0.8em;
@@ -429,5 +425,5 @@ input[type=submit]:hover {
 
 #middle_form{
 	margin-top: 1em;
-    margin-left: 1em;
+    margin-left: 1.5em;
 }

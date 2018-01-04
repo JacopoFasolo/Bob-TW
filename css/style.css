@@ -344,7 +344,7 @@ table caption{
 
 /*Galleria*/
 
-dl #foto dd{
+dl#foto dd{
 	width: 30%;
 	float: left;
 	padding: 0.6em;

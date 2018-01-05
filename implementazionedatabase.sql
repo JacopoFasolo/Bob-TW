@@ -117,3 +117,9 @@ ON UPDATE NO ACTION
 
 INSERT INTO Utente (Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
 VALUES ('BOB','bob@bob.bob','bob','Bob','Bob','M','1993-12-25');
+
+INSERT INTO Id_oggetti (Id_oggetto)
+VALUES ('1'),('2');
+
+INSERT INTO Sci (Id_s, Prezzo, Marca)
+VALUES ('1','200','Rossignol'),('2','400','Atomic');

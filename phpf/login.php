@@ -24,5 +24,5 @@
 </div>
 
 <?php
-	echo file_get_contents("../Pezzi di pagina/footer.html");
+	echo file_get_contents("../Pezzi_di_pagina/footer.html");
 ?>

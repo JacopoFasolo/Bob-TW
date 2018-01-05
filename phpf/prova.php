@@ -14,4 +14,7 @@
         </form>
     </div>
 </body>
-<?php ?>
+
+<?php
+}//parentesi graffa chiusa
+?>

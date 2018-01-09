@@ -106,6 +106,7 @@ td{
 
 #page{
 	background-color: #f1f1f1;
+	border-top: 1px solid #CCC;
 }
 
 /*menu*/
@@ -387,25 +388,39 @@ dl#foto{
 
 /* login_pagina */
 
+#login, #registrazione{
+	width: 48%;
+	display: inline-block;
+}
+
+#login{
+	float: left;
+}
+
+#registrazione{
+	padding-left: 2%;
+	margin-left: 50%;
+	border-left: 1px solid #CCC;
+}
+
 h1{
+	text-align: center;
 	font-size: 1.5em;
 	color:#1d4e7c;
 }
 
-#login #registrazione{
-	text-align: left;
-	margin-left: 2em;
+input[type=password], input[type=email], input[type=text], input[type=date]{
+	width: 60%;
+	padding: .5em;
+	margin: .5em 0 .5em 35%;
+	display: inline-block;
+	border: 1px solid #ccc;
+	/* border-radius: 4px; */
+	box-sizing: border-box;
 }
 
-
-input[type=password], input[type=email], input[type=text], input[type=date]{
-    width: 30%;
-    padding: .5em 1em;
-    margin: 0.5em 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    /* border-radius: 4px; */
-    box-sizing: border-box;
+input[type=radio]{
+	margin-left: 1em;
 }
 
 input[type=submit], input[type=reset] {

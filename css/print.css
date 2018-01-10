@@ -1,12 +1,25 @@
 html, body{
     font-size: 12pt;
-    width: 100%;
+    width: 98%;
     font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+
+#breadcrumb a:link{
+    color: black;
+    font-weight: bold;
+}
+
+#breadcrumb a:visited{
+    color: black;
+}
+
+#login_link{
+    display: none;
 }
 
 #header{
     padding: 1.0em 0em 1.0em 0em;
-    text-align: left;
+    text-align: center;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
@@ -21,16 +34,104 @@ html, body{
 }
 
 #breadcrumb{
-    /* margin-top: 0.5em;
-    padding: 0.5em 0em 0.5em 0em;
+    padding: 0.3em 0em 0.3em 0em;
     font-size:1.0em;
     font-weight: bold;
-    border-top: 1px bold black;
-    border-bottom: 1px bold black;
-    color: black; */
-    display: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
 }
 
 #menu{
+    display: none;
+}
+
+#middle h1{
+    text-align: center;
+}
+
+#middle p{
+    display: inherit;
+}
+
+#middle .immagini_middle_home{
+    display: none;
+}
+
+#middle img{
+    display: none;
+}
+
+/* chi siamo */
+
+#Recapiti_lista{
+    list-style-type: none;
+    text-align: center;
+}
+
+#link_comeraggiungerci{
+    display: none;
+}
+
+/* come raggiungerci */
+
+#come_raggiungerci_lista{
+    list-style-type: none;
+}
+
+.distanze{
+    list-style-type: circle;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+/* piste */
+
+table, th, td{
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+
+/* galleria */
+dl#foto dd{
+	width: 30%;
+	float: left;
+	padding: 0.6em;
+	min-height: 14em;
+	display: block;
+}
+
+dl#foto dd img{
+	width: 100%;
+}
+
+dl#foto dt{
+	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 0.3em;
+	display: block;
+}
+
+#middle_galleria dd{
+	width: 90%;
+	margin-left: 5%;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+dl#foto{
+	width: 100%;
+	margin: 0.5%;
+	display: inline-block;
+}
+
+#piste1{
+    page-break-before: always;
+}
+
+#footer{
     display: none;
 }

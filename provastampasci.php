@@ -1,6 +1,7 @@
 <?php
-	require "connessione.php";
-	echo file_get_contents("../Pezzi_di_pagina/header_login.html");
+	require "phpf/connessione.php";
+	echo file_get_contents("Pezzi_di_pagina/header_login.html");
+	echo file_get_contents("Pezzi_di_pagina/footer.html");
 ?>
 <div id="tabsci">
 

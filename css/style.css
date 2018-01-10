@@ -57,12 +57,19 @@ td{
 }
 
 /* login */
-#login_link{
+#login_link, #utenteloggato{
 	overflow: hidden;
 	background-color: #1d4e7c;
 }
 
-#login_link a{
+#utenteloggato p{
+	float: right;
+	padding: 0.5em 1em 0.5em 0.5em;
+	display: block;
+	vertical-align: top;
+}
+
+#login_link a, #utenteloggato a{
 	float: right;
 	padding: 0.5em 1em 0.5em 0.5em;
 	display: block;

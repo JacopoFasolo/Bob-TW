@@ -11,8 +11,8 @@
         $_SESSION["login"]="1";//crea una var session globale per vedere se c'è login
         $_SESSION["USER"]=$uname;//creo var session globale per mantenere il nome utente
         $_SESSION["IDUSER"]=$idutente['Id_utente'];//crea var session globale per mantenere Id_utente
-        header("location:../index.html"); //utente valido
+        header("location:../provastampasci.php"); //utente valido
     } else {
-        header("location:login.php?err=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
+        header("location:../login.php?err=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
     }
 ?>

@@ -1,7 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html, body{
     font-size: 12pt;
-    width: 98%;
+    width: 100%;
     font-family: Georgia, 'Times New Roman', Times, Serif;
+}
+#page{
+    width: 100%
+}
+
+#breadcrumb p{
+    padding-left: 10%;
 }
 
 #breadcrumb a:link{
@@ -50,6 +62,12 @@ html, body{
     text-align: center;
 }
 
+#middle, #middle_galleria{
+    padding-top: 1em;
+    width: 70%;
+    margin-left: 15%;
+}
+
 #middle p{
     display: inherit;
 }
@@ -96,40 +114,54 @@ table, th, td{
 }
 
 /* galleria */
-dl#foto dd{
-	width: 30%;
+
+#foto dd{
+	width: 45%;
 	float: left;
-	padding: 0.6em;
-	min-height: 14em;
+	padding: 1em;
+	min-height: 16em;
 	display: block;
 }
 
-dl#foto dd img{
+#foto dd img{
 	width: 100%;
 }
 
-dl#foto dt{
+#foto dt{
+    width: 100%;
 	font-size: 1.5em;
 	font-weight: bold;
 	padding-bottom: 0.3em;
 	display: block;
 }
 
-#middle_galleria dd{
-	width: 90%;
-	margin-left: 5%;
-	font-size: 0.8em;
-	text-align: center;
+#middle_galleria p{
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
-dl#foto{
+dl #foto{
 	width: 100%;
 	margin: 0.5%;
 	display: inline-block;
 }
 
+.successivo{
+    clear: both;
+    padding-top: .5em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Impianti */
+
 #piste1{
     page-break-before: always;
+    float: left;
+}
+
+#piste2{
+    margin-left: 50%;
 }
 
 #footer{

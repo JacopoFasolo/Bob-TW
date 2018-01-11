@@ -56,7 +56,7 @@ td{
 	width: 13em;
 }
 
-/* login */
+/* pulsante login */
 #login_link, #utenteloggato{
 	overflow: hidden;
 	background-color: #1d4e7c;
@@ -130,7 +130,12 @@ td{
 
 #menu_sito {
 	margin: 0;
-	padding:0;
+	padding: 0;
+}
+
+.punto_sito{
+	margin: 0;
+	padding: 0;
 }
 
 #pagina_corrente{
@@ -352,7 +357,7 @@ table caption{
 
 /*Galleria*/
 
-dl#foto dd{
+#foto dd{
 	width: 30%;
 	float: left;
 	padding: 0.6em;
@@ -360,11 +365,11 @@ dl#foto dd{
 	display: block;
 }
 
-dl#foto dd img{
+#foto dd img{
 	width: 100%;
 }
 
-dl#foto dt{
+#foto dt{
 	color: #1d4e7c;
 	font-size: 1.5em;
 	font-weight: bold;
@@ -380,7 +385,7 @@ dl#foto dt{
 	text-align: center;
 }
 
-dl#foto{
+#foto{
 	width: 100%;
 	margin: 0.5%;
 	display: inline-block;
@@ -388,7 +393,6 @@ dl#foto{
 
 .successivo{
 	clear: both;
-	padding-top: 1em;
 	font-size: 1em;
 	font-weight: bold;
 }
@@ -397,7 +401,7 @@ dl#foto{
 
 #login, #registrazione{
 	width: 48%;
-	display: inline-block;
+	display: block;
 }
 
 #login{
@@ -410,24 +414,24 @@ dl#foto{
 	border-left: 1px solid #CCC;
 }
 
-h1{
-	text-align: center;
-	font-size: 1.5em;
-	color:#1d4e7c;
+label{
+	float: left;
+	display: block;
 }
 
 input[type=password], input[type=email], input[type=text], input[type=date]{
 	width: 60%;
 	padding: .5em;
-	margin: .5em 0 .5em 35%;
-	display: inline-block;
+	margin-left: 35%;
+	margin-top: -0.3em;
+	display: block;
 	border: 1px solid #ccc;
 	/* border-radius: 4px; */
 	box-sizing: border-box;
 }
 
 input[type=radio]{
-	margin-left: 1em;
+	margin-left: .5em;
 }
 
 input[type=submit], input[type=reset] {

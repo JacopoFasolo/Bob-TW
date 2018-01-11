@@ -1,4 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+    
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
@@ -45,35 +48,33 @@
         </div>
 
         <div id="middle">
-            <form id="login" action="phpf/controlloconnessione.php" method="post">
+            <form name="form_login" method="post" action="logins.php">
                 <h1>Login</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username"/>
+                <input type="text" class="input" size="20" name="login_username" value="Username"/>
                 <br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="upassword" id="upassword" placeholder="********"/>
+                <input type="password" class="input" size="20" name="login_password" value="Password"/>
                 <br/>
-                 
                 <input class="button"type="submit" value="Login"/>
-                
             </form>
 
-            <form id="registrazione" method="post" action="phpf/inserisciutente.php">
+            <form name="form_registration" method="post" action="registration.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="reg_username" placeholder="Username" required=""/><br/>
+                <input type="text" class="input" size="20" name="username_reg" value="Username"/><br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="reg_password" placeholder="********" required=""/><br/>
+                <input type="password" class="input" size="20" name="password_reg" value="Password"/><br/>
                 <label for="Nome">Nome:</label>
-                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome" required=""/><br/>
+                <input type="text" class="input" size="20" name="name_reg" value="Nome"/><br/>
                 <label for="Cognome">Cognome:</label>
-                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome" required=""/> <br/>
+                <input type="text" class="input" size="20" name="reg_surname" value="Cognome"/> <br/>
                 <label for="Email"><span xml:lang="en">Email</span>:</label>
-                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required=""/> <br/>
+                <input type="email" class="input" size="20" name="email_reg" value="E-mail"/> <br/>
                 <label for="Sesso M">M</label>
-                <input type="radio" class="input" size="20" name="gender" value="M" required=""/>
+                <input type="radio" class="input" size="20" name="gender"/>
                 <label for="Sesso F">F</label>
-                <input type="radio" class="input" size="20" name="gender" value="F"/><br/>
+                <input type="radio" class="input" size="20" name="gender"/><br/>
                 <label for="Data di nascita">Data di nascita:</label>
                 <input type="date" class="input" size="20" name="reg_birth"/><br/>
                 <input class="button"type="submit" value="Registrati"/>

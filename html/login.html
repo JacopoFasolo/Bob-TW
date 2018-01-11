@@ -58,22 +58,22 @@
                 
             </form>
 
-            <form id="registrazione" method="get">
+            <form id="registrazione" method="post" action="phpf/inserisciutente.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="reg_username" value="Username"/><br/>
+                <input type="text" class="input" size="20" name="reg_username" placeholder="Username" required=""/><br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="reg_password" value="Password"/><br/>
+                <input type="password" class="input" size="20" name="reg_password" placeholder="********" required=""/><br/>
                 <label for="Nome">Nome:</label>
-                <input type="text" class="input" size="20" name="reg_name" value="Nome"/><br/>
+                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome" required=""/><br/>
                 <label for="Cognome">Cognome:</label>
-                <input type="text" class="input" size="20" name="reg_surname" value="Cognome"/> <br/>
+                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome" required=""/> <br/>
                 <label for="Email"><span xml:lang="en">Email</span>:</label>
-                <input type="email" class="input" size="20" name="reg_email" value="E-mail"/> <br/>
+                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required=""/> <br/>
                 <label for="Sesso M">M</label>
-                <input type="radio" class="input" size="20" name="gender"/>
+                <input type="radio" class="input" size="20" name="gender" value="M" required=""/>
                 <label for="Sesso F">F</label>
-                <input type="radio" class="input" size="20" name="gender"/><br/>
+                <input type="radio" class="input" size="20" name="gender" value="F"/><br/>
                 <label for="Data di nascita">Data di nascita:</label>
                 <input type="date" class="input" size="20" name="reg_birth"/><br/>
                 <input class="button"type="submit" value="Registrati"/>

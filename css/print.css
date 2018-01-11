@@ -122,6 +122,10 @@ dl#foto dt{
 	text-align: center;
 }
 
+#middle_galleria h1{
+    text-align: center;
+}
+
 dl#foto{
 	width: 100%;
 	margin: 0.5%;

@@ -16,7 +16,7 @@ html, body{
     padding-left: 10%;
 }
 
-#breadcrumb a:link{
+W#breadcrumb a:link{
     color: black;
     font-weight: bold;
 }
@@ -116,10 +116,10 @@ table, th, td{
 /* galleria */
 
 #foto dd{
-	width: 45%;
+	width: 42%;
 	float: left;
 	padding: 1em;
-	min-height: 16em;
+	min-height: 14em;
 	display: block;
 }
 
@@ -147,6 +147,7 @@ dl #foto{
 }
 
 .successivo{
+    page-break-before: always;
     clear: both;
     padding-top: .5em;
     font-size: 1em;

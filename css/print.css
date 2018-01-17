@@ -16,7 +16,7 @@ html, body{
     padding-left: 10%;
 }
 
-W#breadcrumb a:link{
+#breadcrumb a:link{
     color: black;
     font-weight: bold;
 }
@@ -155,6 +155,10 @@ dl #foto{
 }
 
 /* Impianti */
+
+#download_cartina{
+    display: none;
+}
 
 #piste1{
     page-break-before: always;

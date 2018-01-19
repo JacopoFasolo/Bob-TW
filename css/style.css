@@ -425,11 +425,10 @@ label{
 	display: block;
 }
 
-input[type=password], input[type=email], input[type=text], {
+input[type=password], input[type=email], input[type=text]{
 	width: 60%;
 	padding: .5em;
 	margin-left: 35%;
-	/* margin-top: -0.3em; */
 	display: block;
 	border: 1px solid #ccc;
 	/* border-radius: 4px; */
@@ -463,10 +462,4 @@ input[type=submit]:hover {
 #middle_form{
 	margin-top: 1em;
     margin-left: 1.5em;
-}
-
-#data_nascita input[type=text]{
-	width: 10%;
-	margin: 0;
-	float: none;
 }

@@ -27,36 +27,40 @@
         </div>
 
         <div id="middle">
-            <form name="form_login" method="post" action="logins.php">
+            <form id="form_login" method="post" action="phpf/logins.php">
                 <h1>Login</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="login_username" value="Username"/>
+                <input type="text" class="input" size="20" name="login_username" placeholder="Username"/>
                 <br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="login_password" value="Password"/>
+                <input type="password" class="input" size="20" name="login_password" placeholder="Password"/>
                 <br/>
                 <input class="button"type="submit" value="Login"/>
             </form>
 
-            <form name="form_registration" method="post" action="registration.php">
+            <form id="form_registrazione" method="post" action="registration.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="username_reg" value="Username"/><br/>
+                <input type="text" class="input" size="20" name="username_reg" placeholder="Username"/><br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="password_reg" value="Password"/><br/>
+                <input type="password" class="input" size="20" name="password_reg" placeholder="Password"/><br/>
                 <label for="Nome">Nome:</label>
-                <input type="text" class="input" size="20" name="name_reg" value="Nome"/><br/>
+                <input type="text" class="input" size="20" name="name_reg" placeholder="Nome"/><br/>
                 <label for="Cognome">Cognome:</label>
-                <input type="text" class="input" size="20" name="reg_surname" value="Cognome"/> <br/>
+                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome"/> <br/>
                 <label for="Email"><span xml:lang="en">Email</span>:</label>
-                <input type="email" class="input" size="20" name="reg_email" value="E-mail"/> <br/>
+                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail"/> <br/>
                 <label for="Sesso M">Sesso: </label>
-                M
-                <input type="radio" class="input" size="20" name="gender"/>
-                F
-                <input type="radio" class="input" size="20" name="gender"/><br/>
+                <div id="sesso_form">
+                    M<input type="radio" class="input" size="20" name="gender" checked="checked"/>
+                    F<input type="radio" class="input" size="20" name="gender"/><br/>
+                </div>
                 <label for="Data di nascita">Data di nascita:</label>
-                <input type="date" class="input" size="20" name="reg_birth"/><br/>
+                <div id="data_nascita">
+                    <input type="text" class="input" size="20" name="giorno_nascita_reg" placeholder="DD"/>
+                    /<input type="text" class="input" size="20" name="mese_nascita_reg" placeholder="MM"/>
+                    /<input type="text" class="input" size="20" name="anno_nascita_reg" placeholder="AAAA"/>
+                </div>
                 <input class="button"type="submit" value="Registrati"/>
                 <input class="button" type="reset" value="Cancella"/>
             </form>

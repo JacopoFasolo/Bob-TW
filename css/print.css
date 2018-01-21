@@ -172,3 +172,60 @@ dl #foto{
 #footer{
     display: none;
 }
+
+#form_login, #form_registrazione{
+	height: 100%;
+	width: 48%;
+	display: block;
+}
+
+#form_login{
+	float: left;
+}
+
+#form_registrazione{
+	padding-left: 2%;
+	margin-left: 50%;
+	border-left: 1px solid #CCC;
+}
+
+label{
+    float: left;
+    padding: 0.5em;
+	display: block;
+}
+
+input[type=password], input[type=email], input[type=text]{
+	width: 60%;
+	padding: .5em;
+	margin-left: 35%;
+	display: block;
+	border: 1px solid #ccc;
+	/* border-radius: 4px; */
+	box-sizing: border-box;
+}
+
+input[type=radio]{
+	margin-left: .5em;
+}
+
+input[type=submit], input[type=reset] {
+    width: 30%;
+    background-color: White;
+    color: black;
+    padding: 1em 1.5em;
+    margin: .5em 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#sesso_form{
+	margin-left: 35%;
+	margin-bottom: 1em;
+}
+
+#middle_form{
+	margin-top: 1em;
+    margin-left: 1.5em;
+}

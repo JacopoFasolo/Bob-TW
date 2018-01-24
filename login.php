@@ -1,7 +1,7 @@
 <!-- Prova caricamento pagina princale -->
 <?php
     $titolo = "Bob - Login";
-
+    
     #importo il doctype e l'head della pagina
     echo file_get_contents("Pezzi_di_pagina/doctype(modificare).html");
     

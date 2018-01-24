@@ -12,7 +12,8 @@
         $_SESSION["USER"]=$uname;//creo var session globale per mantenere il nome utente
         $_SESSION["IDUSER"]=$idutente['Id_utente'];//crea var session globale per mantenere Id_utente
 
-        header("location:../provastampasci.php"); //utente valido
+        //header("location:javascript:history.back()"); //utente valido
+        header("location:../index.php");
     } else {
         header("location:../login.php?err=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
     }

@@ -15,6 +15,6 @@
         //header("location:javascript:history.back()"); //utente valido
         header("location:../index.php");
     } else {
-        header("location:../login.php?err=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
+        header("location:../login.php?errl=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
     }
 ?>

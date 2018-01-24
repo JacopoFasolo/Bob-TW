@@ -9,10 +9,11 @@
     echo "<body>";
 
     #controllo se utente loggato cosi da far vedere la triscia superiore di login o la striscia superiore ciao utente se già loggato
+    session_start();
     if(!isset($_SESSION["login"]))
     	echo file_get_contents("Pezzi_di_pagina/login.html");
     else
-    	echo file_get_contents("Pezzi_di_pagina/loggedin.html");
+    	include ("phppage/loggedin.php");
     
     #includo header della pagina
     echo file_get_contents("Pezzi_di_pagina/header.html");

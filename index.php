@@ -13,7 +13,7 @@
     if(!isset($_SESSION["login"]))
     	echo file_get_contents("Pezzi_di_pagina/login.html");
     else
-        include ("Pezzi_di_pagina/loggedina.php");
+        include ("phppage/loggedin.php");
     
     #includo header della pagina
     echo file_get_contents("Pezzi_di_pagina/header.html");

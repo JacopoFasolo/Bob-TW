@@ -49,8 +49,16 @@ if(($reg_y > 1900 && $reg_y < 2000) && ($reg_d >= 1 && $reg_d <= 31) && ($reg_m 
 	}
 }
 
+$controlloutente = "select * from utente where Username='".$reg_username."'";
+$rescontrolloutente = mysqli_query($conn,$controlloutente);
+$contautente = mysqli_num_rows($rescontrolloutente);
+
+$controllomail = "select * from utente where Email='".$reg_email."'";
+$rescontrollomail = mysqli_query($conn,$controllomail);
+$contamail = mysqli_num_rows($rescontrollomail);
+
 //inserting data
-if($controlloq == 1){
+if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) ){
 	$toinsert = "INSERT INTO utente
 		(Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
 		VALUES
@@ -63,6 +71,15 @@ if($controlloq == 1){
 		header("location:../login.php?err=1");
 	}
 }else{//dati da inserire sbaglaiti
-	header("location:../login.php?err=2");
+	echo "$controlloq"."$contamail"."$contautente";
+	if($controlloq == 0){
+		header("location:../login.php?err=2");
+	}
+	if($contamail == 1){
+		header("location:../login.php?err=3");
+	}
+	if($contautente == 1){
+		header("location:../login.php?err=4");
+	}
 }
 ?>

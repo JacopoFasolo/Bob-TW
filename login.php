@@ -10,7 +10,7 @@
     
     #includo header della pagina
     echo file_get_contents("Pezzi_di_pagina/header.html");
-    
+
     #includo il menu e middle della pagina
     echo file_get_contents("html/login.html");
 

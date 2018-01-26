@@ -1,3 +1,10 @@
+<?php
+/*$PAGEU = isset($_REQUEST["PAGE"])? $_REQUEST["PAGE"] : null;
+trim ($PAGEU);*/
+if(isset($_REQUEST["PAGE"])) 
+    $PAGEU=$_REQUEST["PAGE"]; 
+trim ($PAGEU);
+?>
  <div id="page">
         <div id="menu">
             <ul id="menu_sito">
@@ -26,7 +33,7 @@
         </div>
 
         <div id="middle">
-            <form id="form_login" method="post" action="phpf/controlloconnessione.php">
+            <form id="form_login" method="post" <?php echo 'action="phpf/controlloconnessione.php?PAGE='.$PAGEU.'"'; ?> >
                 <h1>Login</h1>
                 <label for="Username">Username:</label>
                 <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username"/>

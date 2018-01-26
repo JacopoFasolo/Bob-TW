@@ -1,5 +1,9 @@
 <!-- Prova caricamento pagina princale -->
 <?php
+    session_start();
+    if(isset($_SESSION["login"]))
+    header("location:index.php");
+
     $titolo = "Bob - Login";
     
     #importo il doctype e l'head della pagina

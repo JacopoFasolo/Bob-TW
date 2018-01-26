@@ -1,9 +1,12 @@
 <?php
 /*$PAGEU = isset($_REQUEST["PAGE"])? $_REQUEST["PAGE"] : null;
 trim ($PAGEU);*/
-if(isset($_REQUEST["PAGE"])) 
+if(isset($_REQUEST["PAGE"])){
     $PAGEU=$_REQUEST["PAGE"]; 
-trim ($PAGEU);
+    trim ($PAGEU);
+}else{
+    $PAGEU="/Bob-TW/index.php";
+}
 ?>
  <div id="page">
         <div id="menu">

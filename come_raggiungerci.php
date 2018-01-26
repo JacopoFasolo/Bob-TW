@@ -11,7 +11,7 @@
     #controllo se utente loggato cosi da far vedere la triscia superiore di login o la striscia superiore ciao utente se già loggato
     session_start();
     if(!isset($_SESSION["login"]))
-    	echo file_get_contents("Pezzi_di_pagina/login.html");
+    	include ("phppage/visualloginalto.php");
     else
         include ("phppage/loggedin.php");
     

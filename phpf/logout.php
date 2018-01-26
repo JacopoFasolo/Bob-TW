@@ -5,6 +5,10 @@
     unset($_SESSION["IDUSER"]);
     session_destroy();
     //aggiungere session destroy
-    header("location:../index.php");
+    if(isset($_REQUEST["PAGE"])) 
+        $PAGEU=$_REQUEST["PAGE"]; 
+        trim ($PAGEU);
+        header("location:".$PAGEU);
+    header("location:".$PAGEU);
     //header("location:../index.php"); //ritorno all pagina di login 
 ?>

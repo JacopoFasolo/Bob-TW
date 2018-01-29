@@ -16,7 +16,7 @@
     echo file_get_contents("Pezzi_di_pagina/header.html");
 
     #includo il menu e middle della pagina
-    include ("phppage/login.php");
+    include ("phppage/loginpage.php");
     //echo file_get_contents("html/login.html");
 
     #includo il footer

@@ -15,7 +15,7 @@ CREATE TABLE Utente
 Id_utente int AUTO_INCREMENT primary key,
 Username char(16) NOT NULL,
 Email varchar(50) NOT NULL,
-Password varchar(20) NOT NULL,
+Password varchar(100) NOT NULL,
 Nome varchar(50) NOT NULL,
 Cognome varchar(50) NOT NULL,
 Sesso enum('M','F') NOT NULL,

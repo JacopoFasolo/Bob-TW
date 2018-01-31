@@ -81,7 +81,7 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr
 	$toinsert = "INSERT INTO utente
 		(Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
 		VALUES
-		('".$reg_username."','".$reg_email."','".$reg_password."','".$reg_name."','".$reg_surname."','".$gender."','".$reg_y."''".$reg_m."''".$reg_d."')";
+		('".$reg_username."','".$reg_email."','".md5($reg_password)."','".$reg_name."','".$reg_surname."','".$gender."','".$reg_y."''".$reg_m."''".$reg_d."')";
 
 	$result = $conn->query($toinsert);//eseguo la query
 	if($result){//se ho un risultato true ho eseguito la query quindi tutto ok

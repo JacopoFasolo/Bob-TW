@@ -59,24 +59,24 @@ if(isset($_REQUEST["PAGE"])){
             <form id="form_registrazione" method="post" action="phpf/inserisciutente.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="reg_username" placeholder="Username" required="required"/><br/>
+                <input type="text" class="input" size="20" name="reg_username" placeholder="Username"/><br/>
                 <label for="Password">Password:</label>
                 <input type="password" class="input" size="20" name="reg_password" placeholder="Password"/><br/>
                 <label for="Nome">Nome:</label>
-                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome" required="required"/><br/>
+                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome"/><br/>
                 <label for="Cognome">Cognome:</label>
-                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome" required="required"/><br/>
+                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome"/><br/>
                 <label for="Email"><span xml:lang="en">Email</span>:</label>
                 <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required="required"/> <br/>
                 <label for="Sesso M">Sesso: </label>
                 <div id="sesso_form">
-                    M<input type="radio" class="input" size="20" name="gender" value="M" required="required" checked="checked"/>
+                    M<input type="radio" class="input" size="20" name="gender" value="M" checked="checked"/>
                     F<input type="radio" class="input" size="20" name="gender" value="F"/><br/>
                 </div>
                 <label for="Data di nascita">Data di nascita:</label>
-                <input type="text" class="input" size="20" name="reg_d" placeholder="DD" required="required"/>
-                <input type="text" class="input" size="20" name="reg_m" placeholder="MM" required="required"/>
-                <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY" required="required"/>
+                <input type="text" class="input" size="20" name="reg_d" placeholder="DD"/>
+                <input type="text" class="input" size="20" name="reg_m" placeholder="MM"/>
+                <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY"/>
                 <input class="button"type="submit" value="Registrati"/>
                 <input class="button" type="reset" value="Cancella"/>
                 <br> 
@@ -89,6 +89,12 @@ if(isset($_REQUEST["PAGE"])){
                         echo "Mail già presente nel database";
                     if($var == 4)
                         echo "Username già presente nel database";
+                    if($var == 5)
+                        echo "Inserisci username e di almento tre caratteri";
+                    if($var == 6)
+                        echo "Inserisci un nome";
+                    if($var == 7)
+                        echo "Inserisci un cognome";
                     if($var == 1)
                         echo "Inserimento non avvenuto";
                 }

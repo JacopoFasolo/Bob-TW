@@ -13,6 +13,9 @@ $reg_d = trim($_POST['reg_d']);
 $reg_m = trim($_POST['reg_m']);
 $reg_y = trim($_POST['reg_y']);
 $controlloq = 0;
+$contacarr = 0;
+$nomenull = 0;
+$surnull = 0;
 
 //controllo data di nascita
 if(($reg_y > 1900 && $reg_y < 2000) && ($reg_d >= 1 && $reg_d <= 31) && ($reg_m >= 1 && $reg_m <= 12)){
@@ -49,6 +52,22 @@ if(($reg_y > 1900 && $reg_y < 2000) && ($reg_d >= 1 && $reg_d <= 31) && ($reg_m 
 	}
 }
 
+//controllo lunghezza nome se è troppo corto o nullo
+$lungusername = strlen($reg_username);
+if( ($lungusername == NULL) || ($lungusername < 3) ){
+	$contacarr = 1;
+}
+
+$lungname = strlen($reg_name);
+if($lungname == NULL){
+	$nomenull = 1;
+}
+
+$lungsur = strlen($reg_surname);
+if($lungsur == NULL){
+	$surnull = 1;
+}
+
 $controlloutente = "select * from utente where Username='".$reg_username."'";
 $rescontrolloutente = mysqli_query($conn,$controlloutente);
 $contautente = mysqli_num_rows($rescontrolloutente);
@@ -58,7 +77,7 @@ $rescontrollomail = mysqli_query($conn,$controllomail);
 $contamail = mysqli_num_rows($rescontrollomail);
 
 //inserting data
-if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) ){
+if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr == 0) && ($nomenull == 0) && ($surnull == 0)){
 	$toinsert = "INSERT INTO utente
 		(Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
 		VALUES
@@ -71,7 +90,7 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) ){
 		header("location:../login.php?err=1");
 	}
 }else{//dati da inserire sbaglaiti
-	echo "$controlloq"."$contamail"."$contautente";
+	//echo "$controlloq"."$contamail"."$contautente";
 	if($controlloq == 0){
 		header("location:../login.php?err=2");
 	}
@@ -80,6 +99,15 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) ){
 	}
 	if($contautente == 1){
 		header("location:../login.php?err=4");
+	}
+	if($contacarr == 1){
+		header("location:../login.php?err=5");
+	}
+	if($nomenull == 1){
+		header("location:../login.php?err=6");
+	}
+	if($surnull == 1){
+		header("location:../login.php?err=7");
 	}
 }
 ?>

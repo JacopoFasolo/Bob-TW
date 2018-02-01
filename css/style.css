@@ -170,7 +170,6 @@ td{
 	margin-left: 20%;
 	padding-left: 2%;
 	border-left: 1px solid #CCC;
-	padding-bottom: 0.5em;
 }
 
 .immagini_middle_home{
@@ -444,7 +443,7 @@ input[type=submit], input[type=reset] {
     background-color: #4CAF50;
     color: white;
     padding: 1em 1.5em;
-    margin: .5em 0;
+    margin: 1em 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;

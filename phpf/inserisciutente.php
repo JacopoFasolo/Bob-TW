@@ -90,7 +90,6 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr
 		header("location:../login.php?err=1");
 	}
 }else{//dati da inserire sbaglaiti
-	//echo "$controlloq"."$contamail"."$contautente";
 	if($controlloq == 0){
 		header("location:../login.php?err=2");
 	}

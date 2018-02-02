@@ -41,7 +41,9 @@ CREATE TABLE Sci
 (
 Id_s int,
 Prezzo double NOT NULL,
-Marca char(16) NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -51,7 +53,9 @@ CREATE TABLE Piccozze
 (
 Id_p int,
 Prezzo double NOT NULL,
-Marca char(16) NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_p) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -61,7 +65,9 @@ CREATE TABLE Ciaspole
 (
 Id_c int,
 Prezzo double NOT NULL,
-Marca char(16) NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_c) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -71,7 +77,9 @@ CREATE TABLE Scarponi
 (
 Id_sc int,
 Prezzo double NOT NULL,
-Marca char(16) NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_sc) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -81,7 +89,9 @@ CREATE TABLE Caschi
 (
 Id_ca int,
 Prezzo double NOT NULL,
-Marca char(16) NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_ca) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -91,7 +101,9 @@ CREATE TABLE Snowboard
 (
 Id_sn int,
 Prezzo double NOT NULL,
-Marca char(16) NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_sn) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -116,10 +128,23 @@ ON UPDATE NO ACTION
 )ENGINE=InnoDB;
 
 INSERT INTO Utente (Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
-VALUES ('BOB','bob@bob.bob','bob','Bob','Bob','M','1993-12-25');
+VALUES ('BOB','bob@bob.bob','9F9D51BC70EF21CA5C14F307980A29D8','Bob','Bob','M','1970-01-01'),
+	   ('User','user@user.user','EE11CBB19052E40B07AAC0CA060C23EE','User','User','F','1990-12-12');
 
 INSERT INTO Id_oggetti (Id_oggetto)
-VALUES ('1'),('2');
+VALUES ('1'),('2'),('3'),('4'),('5'),('6'),('7');
 
-INSERT INTO Sci (Id_s, Prezzo, Marca)
-VALUES ('1','200','Rossignol'),('2','400','Atomic');
+INSERT INTO Sci (Id_s, Prezzo, Marca, Modello, Url_immagine)
+VALUES ('1','200','Rossignol','Pursuit','URL'),
+	   ('2','599','Atomic','Atomic Redster','URL'),
+	   ('3','385','Atomic','Cloud 11','URL'),
+	   ('4','289','Atomic','Backland 85','URL'),
+	   ('5','400','Rossignol','Pursuit 400','URL'),
+	   ('6','450','Rossignol','Bc 125','URL'),
+	   ('7','350','Head','Wc rebels','URL');
+
+INSERT INTO Commento (Id_commento,Testo)
+VALUES ('1','Questi sci della Atomic sono il massimo, sono come la redbull ti mettono le ali e ti portano dal grande padre');
+
+INSERT INTO Commento_ins (Id_com, Id_ogg, Id_ut)
+VALUES ('1','2','1');

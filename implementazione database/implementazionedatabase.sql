@@ -144,7 +144,11 @@ VALUES ('1','200','Rossignol','Pursuit','URL'),
 	   ('7','350','Head','Wc rebels','URL');
 
 INSERT INTO Commento (Id_commento,Testo)
-VALUES ('1','Questi sci della Atomic sono il massimo, sono come la redbull ti mettono le ali e ti portano dal grande padre');
+VALUES ('1','Questi sci della Atomic sono il massimo, sono come la redbull ti mettono le ali e ti portano dal grande padre'),
+	   ('2','Mia madre li ha venduti il giorno stesso perche erano troppo veloci per me'),
+	   ('3','Si sono rotti quando gli ho tirati in testa a mio cugino, sono deluso');
 
 INSERT INTO Commento_ins (Id_com, Id_ogg, Id_ut)
-VALUES ('1','2','1');
+VALUES ('1','2','1'),
+	   ('2','2','2'),
+	   ('3','3','1');

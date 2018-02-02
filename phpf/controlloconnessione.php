@@ -25,6 +25,6 @@
 ?>
 
 <?php
-$PAGEU = isset($_REQUEST["PAGE"])? $_REQUEST["PAGE"] : null;
-trim ($PAGEU);
+/*$PAGEU = isset($_REQUEST["PAGE"])? $_REQUEST["PAGE"] : null;
+trim ($PAGEU);*/
 ?>

@@ -7,7 +7,9 @@ body{
     margin: 0;
     padding: 0;
     min-width: 0;
-    width: 100%;
+    width: 90%;
+    padding: 0 5%;
+    border: none;
 }
 
 /* Login */
@@ -19,7 +21,7 @@ body{
 /* Header */
 
 #logo{
-    width: 7em;
+    width: 15em;
 }
 
 #header h1{
@@ -38,6 +40,10 @@ body{
     text-align: center;
 }
 
+#menu li {
+    padding: .5em 0;
+}
+
 /* breadcrumb */
 
 #breadcrumb{
@@ -51,7 +57,7 @@ body{
 
 #breadcrumb p{
     display: block;
-    padding: 0.5em;
+    padding: 0.6em;
     font-size: 2em;
 }
 
@@ -171,6 +177,7 @@ nav {
     margin: 0;
     padding-left: 2%;
     width: 96%;
+    border-left: none;
 }
 
 #middle p{
@@ -191,6 +198,10 @@ nav {
 #footer img{
     width: 15%;
     padding: 0;
+ }
+
+ #footer p{
+    font-size: 1.5em;
  }
 
 /* galleria */

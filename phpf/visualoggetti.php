@@ -1,5 +1,6 @@
 <?php
 	require "connessione.php";
+
 ?>
 <div id="tabsci">
 

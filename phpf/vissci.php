@@ -4,8 +4,17 @@
 	if(isset($_REQUEST["ido"])){
         $ido=$_REQUEST["ido"]; 
         trim ($ido);
+    }else{
+    	header("location:../index.php");
     }
-	$sql = "SELECT Marca, Modello, Prezzo FROM sci WHERE Id_s = '".$ido."'";
+    if(isset($_REQUEST["nometab"])){
+        $ntab=$_REQUEST["nometab"]; 
+        trim ($ntab);
+    }else{
+    	header("location:../index.php");
+    }
+
+	$sql = "SELECT Marca, Modello, Prezzo FROM `{$ntab}` WHERE Id_s = '".$ido."'";
  	$result = $conn->query($sql);
  	$tit = mysqli_fetch_array($result);
 

@@ -5,15 +5,13 @@ $PAGE = $_SERVER["REQUEST_URI"];
 	<?php
 	if($PAGE != "/Bob-TW/index.php"){
 	?>
-    	<a href="index.php">
+    	<a href="index.php" tabindex="4">
     	<img id="logo" src="img/logo.jpg" alt="Logo dell'azienda Bob"/>
     	</a>
     <?php
     }else{
     ?>
-    	<a>
     	<img id="logo" src="img/logo.jpg" alt="Logo dell'azienda Bob"/>
-    	</a>
     <?php
 	}
     ?>

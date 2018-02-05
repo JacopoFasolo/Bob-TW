@@ -141,14 +141,12 @@ td{
 	display: block;
 	color: white;
 	padding: 0.5em 1.5em;
-	text-decoration: none;
 }
 
 .punto_sito a {
 	display: block;
 	/*color: #000;*/
 	padding: 0.5em 1.5em;
-	text-decoration: none;
 }
 
 .punto_sito a.active {

@@ -39,13 +39,13 @@ if(isset($_REQUEST["PAGE"])){
             <form id="form_login" method="post" <?php echo 'action="phpf/controlloconnessione.php?PAGE='.$PAGEU.'"'; ?> >
                 <h1>Login</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username"/>
+                <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username" tabindex="20"/>
                 <br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="upassword" id="upassword" placeholder="Password"/>
+                <input type="password" class="input" size="20" name="upassword" id="upassword" placeholder="Password" tabindex="21"/>
                 <br/>
-                <input class="button"type="submit" value="Login"/>
-                <br> 
+                <input class="button"type="submit" value="Login" tabindex="22"/>
+                <br/> 
                 <?php
                 if(isset($_REQUEST["errl"])){
                     $varl=$_REQUEST["errl"];
@@ -59,27 +59,29 @@ if(isset($_REQUEST["PAGE"])){
             <form id="form_registrazione" method="post" action="phpf/inserisciutente.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="reg_username" placeholder="Username"/><br/>
+                <input type="text" class="input" size="20" name="reg_username" placeholder="Username" tabindex="23"/><br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="reg_password" placeholder="Password"/><br/>
+                <input type="password" class="input" size="20" name="reg_password" placeholder="Password" tabindex="24"/><br/>
                 <label for="Nome">Nome:</label>
-                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome"/><br/>
+                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome" tabindex="25"/><br/>
                 <label for="Cognome">Cognome:</label>
-                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome"/><br/>
+                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome" tabindex="26"/><br/>
                 <label for="Email"><span xml:lang="en">Email</span>:</label>
-                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required="required"/> <br/>
+                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required="required" tabindex="27"/> <br/>
                 <label for="Sesso M">Sesso: </label>
                 <div id="sesso_form">
-                    M<input type="radio" class="input" size="20" name="gender" value="M" checked="checked"/>
-                    F<input type="radio" class="input" size="20" name="gender" value="F"/><br/>
+                    M<input type="radio" class="input" size="20" name="gender" value="M" checked="checked" tabindex="28"/>
+                    F<input type="radio" class="input" size="20" name="gender" value="F" tabindex="29"/><br/>
                 </div>
                 <label for="Data di nascita">Data di nascita:</label>
-                <input type="text" class="input" size="20" name="reg_d" placeholder="DD"/>
-                <input type="text" class="input" size="20" name="reg_m" placeholder="MM"/>
-                <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY"/>
-                <input class="button"type="submit" value="Registrati"/>
-                <input class="button" type="reset" value="Cancella"/>
-                <br> 
+                <div id="datanascita">
+                    <input type="text" class="input" size="20" name="reg_d" placeholder="DD" tabindex="30"/>
+                    <input type="text" class="input" size="20" name="reg_m" placeholder="MM" tabindex="31"/>
+                    <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY" tabindex="32"/>
+                </div>
+                <input class="button" type="submit" value="Registrati" tabindex="33"/>
+                <input class="button" type="reset" value="Cancella" tabindex="34"/>
+                <br/> 
                 <?php
                 if(isset($_REQUEST["err"])){
                     $var=$_REQUEST["err"];

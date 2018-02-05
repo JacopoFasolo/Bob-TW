@@ -30,37 +30,38 @@
             <form id="form_login" method="post" action="phpf/controlloconnessione.php">
                 <h1>Login</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username"/>
+                <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username" tabindex="20" />
                 <br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="upassword" id="upassword" placeholder="Password"/>
+                <input type="password" class="input" size="20" name="upassword" id="upassword" placeholder="Password" tabindex="21" />
                 <br/>
-                <input class="button"type="submit" value="Login"/>
+                <input class="button"type="submit" value="Login" tabindex="22" />
             </form>
 
             <form id="form_registrazione" method="post" action="phpf/inserisciutente.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
-                <input type="text" class="input" size="20" name="reg_username" placeholder="Username" required="required"/><br/>
+                <input type="text" class="input" size="20" name="reg_username" placeholder="Username" required="required" tabindex="23" /><br/>
                 <label for="Password">Password:</label>
-                <input type="password" class="input" size="20" name="reg_password" placeholder="Password"/><br/>
+                <input type="password" class="input" size="20" name="reg_password" placeholder="Password" tabindex="24" /><br/>
                 <label for="Nome">Nome:</label>
-                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome" required="required"/><br/>
+                <input type="text" class="input" size="20" name="reg_name" placeholder="Nome" required="required" tabindex="25" /><br/>
                 <label for="Cognome">Cognome:</label>
-                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome" required="required"/><br/>
+                <input type="text" class="input" size="20" name="reg_surname" placeholder="Cognome" required="required" tabindex="26" /><br/>
                 <label for="Email"><span xml:lang="en">Email</span>:</label>
-                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required="required"/> <br/>
+                <input type="email" class="input" size="20" name="reg_email" placeholder="E-mail" required="required" tabindex="27" /> <br/>
                 <label for="Sesso M">Sesso: </label>
                 <div id="sesso_form">
-                    M<input type="radio" class="input" size="20" name="gender" value="M" required="required" checked="checked"/>
-                    F<input type="radio" class="input" size="20" name="gender" value="F"/><br/>
+                    M<input type="radio" class="input" size="20" name="gender" value="M" required="required" checked="checked" tabindex="28" />
+                    F<input type="radio" class="input" size="20" name="gender" value="F" tabindex="29" /><br/>
                 </div>
                 <label for="Data di nascita">Data di nascita:</label>
-                <input type="text" class="input" size="20" name="reg_d" placeholder="DD" required="required"/>/
-                <input type="text" class="input" size="20" name="reg_m" placeholder="MM" required="required"/>/
-                <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY" required="required"/>
-                <input class="button"type="submit" value="Registrati"/>
-                <input class="button" type="reset" value="Cancella"/>
+                <input type="text" class="input" size="20" name="reg_d" placeholder="DD" required="required" tabindex="30" />/
+                <input type="text" class="input" size="20" name="reg_m" placeholder="MM" required="required" tabindex="31" />/
+                <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY" required="required"
+                tabindex="32" />
+                <input class="button"type="submit" value="Registrati" tabindex="33" />
+                <input class="button" type="reset" value="Cancella" tabindex="34" />
             </form>
         </div>
         <!-- middle -->

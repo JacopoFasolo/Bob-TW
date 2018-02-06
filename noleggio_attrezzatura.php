@@ -20,7 +20,8 @@
     include ("phppage/header.php");
     
     #includo il menu e middle della pagina
-    echo file_get_contents("html/noleggio_attrezzatura.html");
+    //echo file_get_contents("html/noleggio_attrezzatura.html");
+    include ("phppage/noleggioattrezzatura.php");
 
     #includo il footer
     echo file_get_contents("Pezzi_di_pagina/footer.html");

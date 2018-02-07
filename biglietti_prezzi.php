@@ -3,7 +3,8 @@
     $titolo = "Bob - Biglietti e prezzi";
 
     #importo il doctype e l'head della pagina
-    echo file_get_contents("Pezzi_di_pagina/doctype(modificare).html");
+    //echo file_get_contents("Pezzi_di_pagina/doctype(modificare).html");
+    include ("Pezzi_di_pagina/doctype.php");
     
 	#inizio del tag body della pagina
     echo "<body>";

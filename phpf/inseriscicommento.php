@@ -6,11 +6,12 @@ session_start();
 if(isset($_REQUEST["ido"])){
 	$ido=$_REQUEST["ido"]; 
     trim ($ido);
+}else{
+	header("location:../index.php");
 }
 $comm = trim($_POST['Comm']);
 trim($comm);
 //fare la prova se non esiste questo rimandare alla pagina prima per favore;
-echo "$comm"; echo '<br/>'; echo "$ido"; echo '<br/>'; echo $_SESSION["IDUSER"];
 $idutente = $_SESSION["IDUSER"];
 
 $toinsert = "INSERT INTO commento
@@ -18,15 +19,12 @@ $toinsert = "INSERT INTO commento
 		VALUES
 		('".$comm."')";
 $result = $conn->query($toinsert);//eseguo la query
-if($result){//se sono riuscito a inserire il testo del commento
-	echo "ok commento";
 
+if($result){//se sono riuscito a inserire il testo del commento
 	// faccio la select di id ultimo commento
 	$sql = "SELECT max(Id_commento) FROM commento";
  	$res = $conn->query($sql);
  	$idcommins = mysqli_fetch_array($res);
-
- 	echo '<br/>'; echo $idcommins['max(Id_commento)']; echo $ido; echo $idutente; echo '<br/>';
 
  	//vado a iserire nella tabella commento ins
  	$toinsert = "INSERT INTO commento_ins
@@ -34,15 +32,12 @@ if($result){//se sono riuscito a inserire il testo del commento
 	VALUES ('".$idcommins['max(Id_commento)']."','".$ido."','".$idutente."')";
 	$resinsdue = $conn->query($toinsert);
 	if($resinsdue){//se ho fatto inserimento del commento
-		echo "inserimento 2 ok";
+		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}else{//andato male inserimento del commento
-		echo "inserimento 2 no";
+		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}
 	//header("location:../login.php");
 }else{//se ho fallito la query di inserimento testo nel commento
-	echo "non inserito";
-	//header("location:../login.php?err=1");
+	header("Location: ".$_SERVER['HTTP_REFERER']);
 }
-
-// fare la query di inserimento che rimanda alla pagina di vis del prodotto..quindi mandarmi con ? andiamo qua vissci.php?ido='.$ido.';
 ?>

@@ -9,6 +9,6 @@
         $PAGEU=$_REQUEST["PAGE"]; 
         trim ($PAGEU);
         header("location:".$PAGEU);
-    header("location:".$PAGEU);
+    //header("location:".$PAGEU);
     //header("location:../index.php"); //ritorno all pagina di login 
 ?>

@@ -164,6 +164,7 @@ td{
 #middle, #middle_galleria{
 	background-color: white;
 	width: 76%;
+	min-height: 16em;
 	padding-right: 1.9%;
 	margin-left: 20%;
 	padding-left: 2%;
@@ -459,4 +460,12 @@ input[type=submit]:hover {
 #middle_form{
 	margin-top: 1em;
     margin-left: 1.5em;
+}
+
+/* 404 */
+#erroreimg{
+	float: right;
+	width: 50%;
+	padding: 1.3em;
+	display: block;
 }

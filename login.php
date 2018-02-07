@@ -20,7 +20,7 @@
     include ("phppage/menu.php");
 
     #includo il menu e middle della pagina
-    include ("html/login.html");
+    include ("phppage/loginpage.php");
     //echo file_get_contents("html/login.html");
 
     #includo il footer

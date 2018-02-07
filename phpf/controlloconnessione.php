@@ -17,7 +17,7 @@
         echo $PAGE;*/
         if(isset($_REQUEST["PAGE"])) 
         $PAGEU=$_REQUEST["PAGE"]; 
-        trim ($PAGEU);
+        trim($PAGEU);
         header("location:".$PAGEU);
     } else {
         header("location:../login.php?errl=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.

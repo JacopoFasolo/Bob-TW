@@ -8,32 +8,7 @@ if(isset($_REQUEST["PAGE"])){
     $PAGEU="/Bob-TW/index.php";
 }
 ?>
- <div id="page">
-        <div id="menu">
-            <ul id="menu_sito">
-                <li class="punto_sito">
-                    <a href="index.php"><span xml:lang="en"> Home </span></a>
-                </li>
-                <li class="punto_sito">
-                    <a href="chi_siamo.php"> Chi siamo </a>
-                </li>
-                <li class="punto_sito">
-                    <a href="come_raggiungerci.php"> Come raggiungerci</a>
-                </li>
-                <li class="punto_sito">
-                    <a href="impianti.php"> Impianti </a>
-                </li>
-                <li class="punto_sito">
-                    <a href="biglietti_prezzi.php"> Biglietti &amp; prezzi</a>
-                </li>
-                <li class="punto_sito">
-                    <a href="noleggio_attrezzatura.php"> Noleggio attrezzature </a>
-                </li>
-                <li class="punto_sito">
-                    <a href="galleria.php"> Galleria </a>
-                </li>
-            </ul>
-        </div>
+ 
 
         <div id="middle">
             <form id="form_login" method="post" <?php echo 'action="phpf/controlloconnessione.php?PAGE='.$PAGEU.'"'; ?> >

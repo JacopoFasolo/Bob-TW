@@ -19,10 +19,13 @@
     #includo header della pagina
     //echo file_get_contents("Pezzi_di_pagina/header.html");
     include ("phppage/header.php");
+
+    echo '<div id="page">';
+    include ("phppage/menu.php");
     
     #includo il menu e middle della pagina
     //echo file_get_contents("html/noleggio_attrezzatura.html");
-    include ("phppage/noleggioattrezzatura.php");
+    include ("html/noleggio_attrezzatura.html");
 
     #includo il footer
     echo file_get_contents("Pezzi_di_pagina/footer.html");

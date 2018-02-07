@@ -27,7 +27,7 @@ if(isset($_REQUEST["Titolo"])){
         $TITOLO=$_REQUEST["Titolo"]; 
         trim ($TITOLO);
 }
-if($TITOLO == "log"){
+if(isset($_REQUEST["Titolo"]) == "log"){
 	echo "Bob - Login Registrazione";
 }
 ?>

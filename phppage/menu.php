@@ -1,7 +1,7 @@
 <?php $PAGE = $_SERVER["REQUEST_URI"]; //mi richiedo la pagina dove sono la salvo in page ?>
 <div id="menu">
     <ul id="menu_sito">
-        <?php if($PAGE == "/Bob-TW/index.php"){ ?>
+        <?php if($PAGE == "/Bob-TW/index.php" || $PAGE == "/Bob-TW/"){ ?>
                 <li id="pagina_corrente"><span xml:lang="en"> Home </span></li>
         <?php }else{ ?>
                 <li class="punto_sito"> <a href="index.php"> Home </a></li>

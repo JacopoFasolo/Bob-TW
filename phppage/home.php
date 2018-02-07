@@ -3,8 +3,7 @@
     </div>
     <!--breadcrumb-->
 
-    <div id="page">
-        <?php include ("menu.php"); ?>
+    
         
         <div id="middle"> 
             <h1><span xml:lang="fr">Courmayeur</span></h1>

@@ -26,8 +26,8 @@ if($PAGE == "/Bob-TW/galleria.php"){
 if(isset($_REQUEST["Titolo"])){
         $TITOLO=$_REQUEST["Titolo"]; 
         trim ($TITOLO);
-}
-if($TITOLO == "log"){
-	echo "Bob - Login Registrazione";
+        if($TITOLO == "log"){
+			echo "Bob - Login Registrazione";
+		}
 }
 ?>

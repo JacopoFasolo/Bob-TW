@@ -26,7 +26,11 @@
  	$count = mysqli_num_rows($res);
 
  	session_start();
- 	$id_utente = $_SESSION["IDUSER"];
+ 	if(isset($_SESSION["login"])){
+ 		$id_utente = $_SESSION["IDUSER"];
+ 	}else{
+ 		$id_utente = null;
+ 	}
 
  	//query per vedere se l'utente loggato ha già fatto un commento
  	$sql = "SELECT * FROM Commento_ins JOIN Commento

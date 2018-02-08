@@ -22,4 +22,7 @@ if($PAGE == "/Bob-TW/noleggio_attrezzatura.php"){
 if($PAGE == "/Bob-TW/galleria.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; Galleria</p>';
 }
+if($PAGE == "/Bob-TW/carrello.php"){
+	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; Carrello</p>';
+}
 ?>

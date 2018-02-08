@@ -1,0 +1,11 @@
+Nel cestino sono state messe tutte le cose che andranno poi eliminate
+- Pezzi di pagina -> page (Ridenominare indrizzi)
+- implementazione db -> Database
+- rimosso login da html, va usato loginpage.php
+- Tabindex da rifare
+- Da phppage in php spostati: 
+    - Loggedin
+    - loginpage
+    - menu
+    - header
+    - visuallogoinalto

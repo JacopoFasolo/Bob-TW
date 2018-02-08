@@ -419,6 +419,7 @@ table caption{
 }
 
 label{
+	padding-top: 0.4em;
 	float: left;
 	display: block;
 }
@@ -429,8 +430,7 @@ input[type=password], input[type=email], input[type=text]{
 	margin-left: 35%;
 	display: block;
 	border: 1px solid #ccc;
-	/* border-radius: 4px; */
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 input[type=radio]{
@@ -460,6 +460,18 @@ input[type=submit]:hover {
 #middle_form{
 	margin-top: 1em;
     margin-left: 1.5em;
+}
+
+#datanascita {
+	width: 65%;
+	margin-left: 35%;
+	margin-right: 0;
+}
+
+#datanascita input{
+	width: 20%;
+	margin: 0.3em;
+	display: inline-block;
 }
 
 /* 404 */

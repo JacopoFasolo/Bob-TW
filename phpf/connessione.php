@@ -16,7 +16,7 @@
 	$conn = new mysqli($host, $user, $password, $db);
 	// verifica su eventuali errori di connessione
 	if ($conn->connect_errno) {
-		echo "Connessione fallita: ". $conn->connect_error . ".";
+		header("Location:./404.php");
 		exit();
 	}    
 ?>

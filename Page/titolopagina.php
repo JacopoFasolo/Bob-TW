@@ -22,6 +22,9 @@ if($PAGE == "/Bob-TW/noleggio_attrezzatura.php"){
 if($PAGE == "/Bob-TW/galleria.php"){
 	echo "Bob - Galleria";
 }
+if($PAGE == "/Bob-TW/carrello.php"){
+	echo "Bob - Carrello";
+}
 
 if(isset($_REQUEST["Titolo"])){
         $TITOLO=$_REQUEST["Titolo"]; 

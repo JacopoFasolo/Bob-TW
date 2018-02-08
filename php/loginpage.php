@@ -11,7 +11,7 @@ if(isset($_REQUEST["PAGE"])){
  
 
         <div id="middle">
-            <form id="form_login" method="post" <?php echo 'action="phpf/controlloconnessione.php?PAGE='.$PAGEU.'"'; ?> >
+            <form id="form_login" method="post" <?php echo 'action="php/controlloconnessione.php?PAGE='.$PAGEU.'"'; ?> >
                 <h1>Login</h1>
                 <label for="Username">Username:</label>
                 <input type="text" class="input" size="20" name="uname" id="uname" placeholder="Username" tabindex="20"/>
@@ -31,7 +31,7 @@ if(isset($_REQUEST["PAGE"])){
                 ?>
             </form>
 
-            <form id="form_registrazione" method="post" action="phpf/inserisciutente.php">
+            <form id="form_registrazione" method="post" action="php/inserisciutente.php">
                 <h1>Registrati</h1>
                 <label for="Username">Username:</label>
                 <input type="text" class="input" size="20" name="reg_username" placeholder="Username" tabindex="23"/><br/>

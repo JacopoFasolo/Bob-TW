@@ -1,4 +1,4 @@
-<?php
+<?php 
 	/*
 	  Connessione al DBMS e selezione del database.
 	*/

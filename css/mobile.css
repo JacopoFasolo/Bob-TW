@@ -11,6 +11,10 @@ body{
     border: none;
 }
 
+h1{
+    font-size:1.5em;
+}
+
 /* Login */
 
 #login{
@@ -19,16 +23,21 @@ body{
 
 /* Header */
 
+#utenteloggato{
+    height: 2em;
+    font-size: 1em;
+}
+
 #logo{
     width: 10em;
 }
 
 #header h1{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 #header p{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 /* menu */
@@ -43,133 +52,40 @@ body{
     text-align: center;
 }
 
-#menu li {
-    padding: .5em 0;
-}
-
 /* breadcrumb */
 
+#burgermenu{
+    display: inline-block;
+    float: right;
+    width: 15%;
+    height: 2em;
+    background-color: #00A86B;
+}
+
+.stick{
+    background-color: white;
+    width: 80%;
+    height: 10%;
+}
+
+#stick1, #stick2{
+    margin-top: 13%;
+}
+
+#stick2, #stick3{
+    margin-bottom: 13%;
+}
+
 #breadcrumb{
-    height: 3em;
+    height: 2em;
+    width: 85%;
 }
 
 #breadcrumb p{
     display: block;
-    padding: 0.7em;
-    font-size: 1.5em;
+    padding: 0.4em;
+    font-size: 1em;
 }
-
-/*#main {
-  z-index: 2;
-  position: relative;
-  height: 100%;
-  background-color: #00A86B;
-  -webkit-transition: transform .7s ease-in-out;
-  -moz-transition: transform .7s ease-in-out;
-  -ms-transition: transform .7s ease-in-out;
-  -o-transition: transform .7s ease-in-out;
-  transition: transform .7s ease-in-out;
-}
-
-.sidebar{
-    height: 100%;
-    width: 25em;
-    position: fixed;
-    top: 0em;
-    z-index: 1em;
-    right: 0em;
-    background-color: #00A86B;
-}
-
-.bar{
-    display: block;
-    height: 0.3px;
-    width: 3px;
-    background-color: #00A86B;
-    margin: 10px auto;
-}
-
-.button {
-    cursor: pointer;
-    display: inline-block;
-    width: auto;
-    margin: 0 auto;
-    -webkit-transition: all .7s ease;
-    -moz-transition: all .7s ease;
-    -ms-transition: all .7s ease;
-    -o-transition: all .7s ease;
-    transition: all .7s ease;
-}
-
-.nav-left {
-    position: fixed;
-    right: 1.3em;
-    top: 2.5em;
-}
-
-.nav-left.visible-xs {
-    z-index: 3;
-}
-
-.hidden-xs {
-    display: none;
-}
-
-.middle {
-    margin:auto;
-}
-
-.bar {
-    -webkit-transition: all .7s ease;
-    -moz-transition: all .7s ease;
-    -ms-transition: all .7s ease;
-    -o-transition: all .7s ease;
-    transition: all .7s ease;
-}
-
-.nav-left.visible-xs .active .bar {
-    background-color: #FFF;
-    -webkit-transition: all .7s ease;
-    -moz-transition: all .7s ease;
-    -ms-transition: all .7s ease;
-    -o-transition: all .7s ease;
-    transition: all .7s ease;
-}
-
-.button.active .top {
-    -webkit-transform: translateY(15px) rotateZ(45deg);
-    -moz-transform: translateY(15px) rotateZ(45deg);
-    -ms-transform: translateY(15px) rotateZ(45deg);
-    -o-transform: translateY(15px) rotateZ(45deg);
-    transform: translateY(15px) rotateZ(45deg);
-}
-
-.button.active .bottom {
-    -webkit-transform: translateY(-15px) rotateZ(-45deg);
-    -moz-transform: translateY(-15px) rotateZ(-45deg);
-    -ms-transform: translateY(-15px) rotateZ(-45deg);
-    -o-transform: translateY(-15px) rotateZ(-45deg);
-    transform: translateY(-15px) rotateZ(-45deg);
-}
-
-.button.active .middle {
-    width: 0;
-}
-
-nav {
-    padding-top: 1.9em;
-}
-
-#menu_sito{
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
-    position: relative;
-    margin-top: 9.3em;
-    text-align: center;
-}*/
-
-/* middle */
 
 #middle, #middle_galleria{
     margin: 0;
@@ -180,10 +96,17 @@ nav {
 
 #middle p, #middle_galleria p{
     font-size: 1em;
+    margin-bottom: 0.5em;
 }
 
-#middle img{
+#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria){
     display: none;
+}
+
+/* biglietti e prezzi */
+
+#tablebiglietti{
+    zoom: 1;
 }
 
 /* Impianti */
@@ -192,10 +115,18 @@ nav {
     padding-left: 3em;
 }
 
-/* footer */
-#footer{
-	border: 0;
+#download_cartina{
+    font-size: 1.2em;
 }
+
+#piste2, #piste1{
+    font-size: 0.8em;
+    width: 96%;
+    margin: 0.5em 2%;
+    zoom: 1.5;
+}
+
+/* footer */
 
 #footer img{
     width: 15%;
@@ -203,7 +134,7 @@ nav {
  }
 
  #footer p{
-    font-size: 1em;
+    font-size: 0.7em;
  }
 
 /* galleria */
@@ -215,18 +146,22 @@ dl#foto dd{
     padding-right: 10%;
 }
 
-#piste2, #piste1{
-	font-size: 0.8em;
-    width: 96%;
-    margin: 0.5em 2%;
-    zoom: 2;
+/* form registrazione */
+
+#form_login, #form_registrazione{
+    float: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
-#tablebiglietti{
-    zoom: 2;
+/* pagina registrazione e login */
+input[type=password], input[type=email], input[type=text]{
+    font-size: 1em;
 }
 
-#middle_galleria dt{
-    text-align: center;
+input[type=submit], input[type=reset]{
+    padding: 1em;
+    margin: 1em 0;
 }
-

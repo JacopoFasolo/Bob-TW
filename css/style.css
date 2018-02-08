@@ -109,6 +109,10 @@ td{
 	display: inline-block;
 }
 
+#burgermenu{
+	display: none;
+}
+
 #page{
 	background-color: #f1f1f1;
 	border-top: 1px solid #CCC;
@@ -161,7 +165,7 @@ td{
 
 /*middle*/
 
-#middle, #middle_galleria{
+#middle{
 	background-color: white;
 	width: 76%;
 	min-height: 16em;
@@ -178,7 +182,7 @@ td{
 	overflow: auto;    
 }
 
-#middle h1, #middle_galleria h1{
+#middle h1{
 	color: #1d4e7c;
 	text-align: center;
 	padding-top: 0.3em;
@@ -186,7 +190,7 @@ td{
 	font-size: 2em;
 }
 
-#middle p,#middle_galleria p{
+#middle p{
 	font-size: 1em;
 	line-height: 1.5em;
 }
@@ -220,6 +224,11 @@ td{
 	width: 5em;
 	padding: 1em;
 
+}
+
+#torna_su{
+	float: right;
+	padding: 0.5em;
 }
 
 /*chi siamo*/
@@ -358,6 +367,14 @@ table caption{
 	list-style-type: square;
 }
 
+.cat_piste{
+	width: 30%;
+}
+
+.difficolta{
+	display: block;
+}
+
 /*Galleria*/
 
 #foto dd{
@@ -380,7 +397,7 @@ table caption{
 	display: block;
 }
 
-#middle_galleria dd p{
+#middle dd p{
 	width: 90%;
 	margin-left: 5%;
 	font-size: 0.8em;

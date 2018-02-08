@@ -20,9 +20,7 @@
     //echo file_get_contents("page/header.html");
     include ("php/header.php");
 
-    echo '<div id="breadcrumb">';
     include ("php/breadcrumb.php");
-    echo '</div>';
 
     echo '<div id="page">';
     include ("php/menu.php");

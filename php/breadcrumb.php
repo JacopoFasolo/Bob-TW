@@ -1,7 +1,15 @@
 <?php
+
+echo '<div id="burgermenu">
+  <div class="stick" id="stick1"></div>
+  <div class="stick" id="stick2"></div>
+  <div class="stick" id="stick3"></div>
+</div>';
+
+echo '<div id="breadcrumb">';
 $PAGE = $_SERVER["REQUEST_URI"];
 
-if($PAGE == "/Bob-TW/index.php"){
+if($PAGE == "/Bob-TW/index.php" || $PAGE == "/Bob-TW/"){
 	echo "<p> Ti trovi in: Home </p>";
 }
 if($PAGE == "/Bob-TW/chi_siamo.php"){
@@ -25,4 +33,5 @@ if($PAGE == "/Bob-TW/galleria.php"){
 if($PAGE == "/Bob-TW/carrello.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; Carrello</p>';
 }
+echo '</div>';
 ?>

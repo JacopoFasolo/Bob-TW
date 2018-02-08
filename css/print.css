@@ -175,6 +175,7 @@ dl #foto{
 }
 
 #form_login, #form_registrazione{
+    padding: 5em;
 	height: 100%;
 	width: 48%;
 	display: block;

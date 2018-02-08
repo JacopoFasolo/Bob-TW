@@ -10,6 +10,6 @@
     <meta name="author" content="Carlotta Segna, Alessio Brunetta, Jacopo Fasolo, Ilenia Zanetti" />
     <meta name="language" content="italian it" />
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
-    <link href="css/mobile.css" media="handheld, screen and (max-width:1024px), only screen and (max-device-width:1024px)" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" rel="stylesheet" type="text/css" />
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
 </head>

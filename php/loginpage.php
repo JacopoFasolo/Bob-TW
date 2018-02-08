@@ -19,7 +19,7 @@ if(isset($_REQUEST["PAGE"])){
                 <label for="Password">Password:</label>
                 <input type="password" class="input" size="20" name="upassword" id="upassword" placeholder="Password" tabindex="21"/>
                 <br/>
-                <input class="button"type="submit" value="Login" tabindex="22"/>
+                <input class="button" type="submit" value="Login" tabindex="22"/>
                 <br/> 
                 <?php
                 if(isset($_REQUEST["errl"])){
@@ -50,8 +50,8 @@ if(isset($_REQUEST["PAGE"])){
                 </div>
                 <label for="Data di nascita">Data di nascita:</label>
                 <div id="datanascita">
-                    <input type="text" class="input" size="20" name="reg_d" placeholder="DD" tabindex="30"/>
-                    <input type="text" class="input" size="20" name="reg_m" placeholder="MM" tabindex="31"/>
+                    <input type="text" class="input" size="20" name="reg_d" placeholder="DD" tabindex="30"/>/
+                    <input type="text" class="input" size="20" name="reg_m" placeholder="MM" tabindex="31"/>/
                     <input type="text" class="input" size="20" name="reg_y" placeholder="YYYY" tabindex="32"/>
                 </div>
                 <input class="button" type="submit" value="Registrati" tabindex="33"/>

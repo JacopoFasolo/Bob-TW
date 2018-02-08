@@ -9,3 +9,13 @@ Nel cestino sono state messe tutte le cose che andranno poi eliminate
     - menu
     - header
     - visuallogoinalto
+- Da phpf spostati in php:
+    - breadcrumb
+    - connessione
+    - controlloconnesione
+    - inserisci commento
+    - inserisci utente
+    - logout
+    - updatecommento
+    - vissci
+    - visualoggetti

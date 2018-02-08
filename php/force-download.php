@@ -1,5 +1,5 @@
 <?php
-$path = "img/cartina-piste.pdf";
+$path = "../img/cartina-piste.pdf";
 $filename = "cartina-piste.pdf";
 header('Content-Transfer-Encoding: binary');  // For Gecko browsers mainly
 header('Last-Modified: ' . gmdate('D, d M Y H:i:s', filemtime($path)) . ' GMT');

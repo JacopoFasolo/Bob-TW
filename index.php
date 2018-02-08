@@ -4,7 +4,7 @@
 
     #importo il doctype e l'head della pagina
     //echo file_get_contents("Pezzi_di_pagina/doctype(modificare).html");
-    include ("page/doctype.php");
+    include ("page/doctype.php"); 
     
 	#inizio del tag body della pagina
     echo "<body>";
@@ -23,8 +23,6 @@
     echo '<div id="breadcrumb">';
     include ("php/breadcrumb.php");
     echo '</div>';
-
-
 
     echo '<div id="page">';
     include ("php/menu.php");

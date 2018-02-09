@@ -9,29 +9,21 @@
     }
 
 ?>
-<div id="tabsci">
-
-	<table>
-  		<th> <?php echo $ntab; ?> </th>
-  		<tr>
-    	<td>Marca</td>
-    	<td>Modello</td>
-    	<td>Prezzo</td>
-    	    
-  		</tr>
- 			<?php
- 				$sql = "SELECT Id_s, Prezzo, Marca, Modello FROM `{$ntab}` ORDER BY marca ";
- 				$result = $conn->query($sql);
- 				foreach ($result as $asd) {
- 					echo '<tr>';
-					echo '<td>'; print $asd["Marca"]; echo '</td>';
-					echo '<td>'; print $asd["Modello"]; echo '</td>';
-					echo '<td>'; print $asd["Prezzo"]; echo '</td>' ;
-					echo '<td>'; echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'">Visualizza</a>';
-					echo '</tr>';
- 				}
- 				//`" . $mysql_tb . "`  `{$ntab}`
+<?php
+        $sql = "SELECT Id_s, Prezzo, Marca, Modello FROM `{$ntab}` ORDER BY marca ";
+        $result = $conn->query($sql);
+        foreach ($result as $asd) {
 ?>
-	</table>
+        <div class="prodottonoleggio">
+          <img src="*****PERCORSO PRODOTTO*********"/>
+          <h1> <?php print $asd["Marca"]; echo " "; print $asd["Modello"]; ?> </h1>
+          <p>*******DESCRIZIONE PRODOTTO*********</p>
+          <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"]; ?> </p>
+          <?php echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'">Visualizza</a>'; ?>
+          
+        </div>
+  <?php
+        }
+  ?>
 </div>
 

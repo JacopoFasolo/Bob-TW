@@ -48,6 +48,16 @@ if(isset($_REQUEST["bread"])){
 	if($bread == "ciaspole"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; ciaspole</p>';
 	}
+	if($bread == "piccozze"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; piccozze</p>';
+	}
+	if($bread == "snowboard"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; snowboard</p>';
+	}
+	if($bread == "mountainbike"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; mountainbike</p>';
+	}
+
 }
 if(isset($_REQUEST["brpro"])){
 	$brpro=$_REQUEST["brpro"];

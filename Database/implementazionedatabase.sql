@@ -152,7 +152,7 @@ VALUES ('BOB','bob@bob.bob','9F9D51BC70EF21CA5C14F307980A29D8','Bob','Bob','M','
 	   ('User','user@user.user','EE11CBB19052E40B07AAC0CA060C23EE','User','User','F','1990-12-12');
 
 INSERT INTO Id_oggetti (Id_oggetto)
-VALUES ('1'),('2'),('3'),('4'),('5'),('6'),('7'),('8'),('9'),('10');
+VALUES ('1'),('2'),('3'),('4'),('5'),('6'),('7'),('8'),('9'),('10'),('11'),('12'),('13'),('14');
 
 INSERT INTO Sci (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
 VALUES ('1','200','Rossignol','Pursuit','img/Prodotti/Sci/sciuno.jpg','Adatti a tutti, sci per ogni tipo di neve. Molto leggeri.'),
@@ -170,7 +170,17 @@ INSERT INTO Ciaspole (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
 VALUES ('9','89','Ferrino','Castor','img/Prodotti/Ciaspole/ciaspoleuno.jpg','Modello molto comodo adatto a lunghe camminate.');
 
 INSERT INTO Caschi (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
-VALUES ('10','150','Bolle','Backline','img/Prodotti/Caschi/cascouno.jpg','Casco molto rigido, protezione ottima, adatto a gare.');
+VALUES ('10','150','Bolle','Backline','img/Prodotti/Caschi/caschiuno.jpg','Casco molto rigido, protezione ottima, adatto a gare.');
+
+INSERT INTO Snowboard (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('11','150','Burton','Flight','img/Prodotti/Snowboard/snowboarduno.jpg','Tavola molto rigida, adatta a gare.'),
+	   ('12','150','Burton','Flight attends','img/Prodotti/Snowboard/snowboarddue.jpg','Tavola molto rigida, adatta a gente molto esperte, se usata nel modo giusto regala ottime soddisfazioni.');
+
+INSERT INTO Mountainbike (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('13','150','Speedmax','cf slx 9','img/Prodotti/Bici/biciuno.jpg','La punta di diamante dei nostri prodotti, la migliore nel suo campo.');
+
+INSERT INTO Piccozze (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('14','150','Alpin','tour 9000','img/Prodotti/Martelli/martellouno.jpg','La punta di diamante dei nostri prodotti, la migliore nel suo campo.');
 
 INSERT INTO Commento (Id_commento,Testo)
 VALUES ('1','Questi sci della Atomic sono il massimo, sono come la redbull ti mettono le ali e ti portano dal grande padre'),

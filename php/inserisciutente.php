@@ -85,11 +85,20 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr
 
 	$result = $conn->query($toinsert);//eseguo la query
 	if($result){//se ho un risultato true ho eseguito la query quindi tutto ok
-		header("location:../login.php");
+		header("location:../login.php?ris=0");
 	} else{//se ho false qualcosa è andato storto return alla pagina con errore
 		header("location:../login.php?err=1");
 	}
 }else{//dati da inserire sbaglaiti
+	//salvo i dati nella sessione
+	$_SESSION["errorereg"]="1";
+	$_SESSION["regusername"]=$reg_username;
+	$_SESSION["regname"]=$reg_name;
+	$_SESSION["regsurname"]=$reg_surname;
+	$_SESSION["regemail"]=$reg_email;
+	$_SESSION["regd"]=$reg_d;
+	$_SESSION["regm"]=$reg_m;
+	$_SESSION["regy"]=$reg_y;
 	if($controlloq == 0){
 		header("location:../login.php?err=2");
 	}

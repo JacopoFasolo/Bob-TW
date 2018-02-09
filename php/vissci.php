@@ -15,7 +15,7 @@
     }
 
     //query per dare titolo alla tabella
-	$sql = "SELECT Marca, Modello, Prezzo FROM `{$ntab}` WHERE Id_s = '".$ido."'";
+	$sql = "SELECT Marca, Modello, Prezzo, Descrizione, Url_immagine FROM `{$ntab}` WHERE Id_s = '".$ido."'";
  	$result = $conn->query($sql);
  	$tit = mysqli_fetch_array($result);
 
@@ -93,9 +93,9 @@
 ?>
 
 <div class="prodottonoleggio">
-	<img src="*****PERCORSO PRODOTTO*********"/>
+	<img src="<?php echo $tit["Url_immagine"]; ?>"/>
     <h1> <?php print $tit["Marca"]; echo " "; print $tit["Modello"]; ?> </h1>
-    <p>*******DESCRIZIONE PRODOTTO*********</p>
+    <p><?php echo $tit["Descrizione"]; ?></p>
     <p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>
     <br/>
     <?php

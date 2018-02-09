@@ -6,6 +6,7 @@ DROP TABLE IF EXISTS Scarponi;
 DROP TABLE IF EXISTS Ciaspole;
 DROP TABLE IF EXISTS Piccozze;
 DROP TABLE IF EXISTS Sci;
+DROP TABLE IF EXISTS Mountainbike;
 DROP TABLE IF EXISTS Id_oggetti;
 DROP TABLE IF EXISTS Biglietti;
 DROP TABLE IF EXISTS Utente;
@@ -43,7 +44,8 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
-Url_immagine char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -55,7 +57,8 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
-Url_immagine char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -67,7 +70,8 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
-Url_immagine char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -79,7 +83,8 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
-Url_immagine char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -91,7 +96,8 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
-Url_immagine char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -103,7 +109,21 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
-Url_immagine char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
+FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
+ON DELETE CASCADE
+ON UPDATE NO ACTION
+) ENGINE=InnoDB;
+
+CREATE TABLE Mountainbike
+(
+Id_s int,
+Prezzo double NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Url_immagine char(50) NOT NULL,
+Descrizione varchar(255) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
 ON UPDATE NO ACTION
@@ -134,23 +154,23 @@ VALUES ('BOB','bob@bob.bob','9F9D51BC70EF21CA5C14F307980A29D8','Bob','Bob','M','
 INSERT INTO Id_oggetti (Id_oggetto)
 VALUES ('1'),('2'),('3'),('4'),('5'),('6'),('7'),('8'),('9'),('10');
 
-INSERT INTO Sci (Id_s, Prezzo, Marca, Modello, Url_immagine)
-VALUES ('1','200','Rossignol','Pursuit','URL'),
-	   ('2','599','Atomic','Atomic Redster','URL'),
-	   ('3','385','Atomic','Cloud 11','URL'),
-	   ('4','289','Atomic','Backland 85','URL'),
-	   ('5','400','Rossignol','Pursuit 400','URL'),
-	   ('6','450','Rossignol','Bc 125','URL'),
-	   ('7','350','Head','Wc rebels','URL');
+INSERT INTO Sci (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('1','200','Rossignol','Pursuit','img/Prodotti/Sci/sciuno.jpg','Adatti a tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('2','599','Atomic','Atomic Redster','img/Prodotti/Sci/scicinque.jpg','Adatti a tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('3','385','Atomic','Cloud 11','img/Prodotti/Sci/scisei.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('4','289','Atomic','Backland 85','img/Prodotti/Sci/scisette.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('5','400','Rossignol','Pursuit 400','img/Prodotti/Sci/sciuno.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('6','450','Rossignol','Bc 125','img/Prodotti/Sci/sciotto.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('7','350','Head','Wc rebels','img/Prodotti/Sci/scinove.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.');
 
-INSERT INTO Scarponi (Id_s, Prezzo, Marca, Modello, Url_immagine)
-VALUES ('8','250','Atomic','Hawk','URL');
+INSERT INTO Scarponi (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('8','250','Atomic','Hawk','img/Prodotti/Scarponi/scarponeuno.jpg','Scarponi di ottima fattura. Adatti ad esperti, molto rigidi ma ottimo per agonisti.');
 
-INSERT INTO Ciaspole (Id_s, Prezzo, Marca, Modello, Url_immagine)
-VALUES ('9','89','Ferrino','Castor','URL');
+INSERT INTO Ciaspole (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('9','89','Ferrino','Castor','img/Prodotti/Ciaspole/ciaspoleuno.jpg','Modello molto comodo adatto a lunghe camminate.');
 
-INSERT INTO Caschi (Id_s, Prezzo, Marca, Modello, Url_immagine)
-VALUES ('10','150','Bollé','Backline','URL');
+INSERT INTO Caschi (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
+VALUES ('10','150','Bolle','Backline','img/Prodotti/Caschi/cascouno.jpg','Casco molto rigido, protezione ottima, adatto a gare.');
 
 INSERT INTO Commento (Id_commento,Testo)
 VALUES ('1','Questi sci della Atomic sono il massimo, sono come la redbull ti mettono le ali e ti portano dal grande padre'),

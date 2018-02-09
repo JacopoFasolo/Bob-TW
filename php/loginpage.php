@@ -56,6 +56,14 @@ if(isset($_REQUEST["PAGE"])){
                     <input type="text" size="20" name="reg_y" placeholder="YYYY" tabindex="32"/>
                 </div>
                 <input class="button" type="submit" value="Registrati" tabindex="33"/>
+                <?php
+                    echo '<br/>';
+                    if(isset($_REQUEST["ris"])){
+                        $var=$_REQUEST["ris"];
+                        if($var == 0)
+                            echo "Registrazione avvenuta correttamente";
+                    }
+                ?>
             </form>
             <?php
             }else{

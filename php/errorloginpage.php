@@ -16,10 +16,5 @@
                     if($var == 1)
                         echo "Inserimento non avvenuto";
                 }
-                if(isset($_REQUEST["ris"])){
-                    $var=$_REQUEST["ris"];
-                    if($var == 0)
-                        echo "Registrazione avvenuta correttamente";
-                }
                 //BR VA BENE? SE SI DEVO CHUDERLO? A SEMPRE FISSO O SOLO IN CASO DI ERRORE CIOE' DENTRO IF
 ?>

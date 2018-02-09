@@ -605,3 +605,29 @@ max-width: 80%;
 top: 0px;
 }
 
+/* noleggio attrezzatura */
+
+.prodottonoleggio{
+	margin: 1em 0 1em 10%;
+	width: 80%;
+	border-bottom: 1px solid #AAA;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.prodottonoleggio img{
+	width: 90%;
+	margin-left: 5%;
+}
+
+.prodottonoleggio h1{
+	color: black;
+	text-align: left;
+	padding-left: 2em;
+}
+
+.prezzoprodotto{
+	float: right;
+	font-size: 1.5em;
+	font-style: bold;
+}

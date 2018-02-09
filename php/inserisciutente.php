@@ -85,9 +85,9 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr
 
 	$result = $conn->query($toinsert);//eseguo la query
 	if($result){//se ho un risultato true ho eseguito la query quindi tutto ok
-		header("location:../login.php?ris=0");
+		header("location:../login.php?ris=0&Titolo=log");
 	} else{//se ho false qualcosa è andato storto return alla pagina con errore
-		header("location:../login.php?err=1");
+		header("location:../login.php?err=1&Titolo=log");
 	}
 }else{//dati da inserire sbaglaiti
 	//salvo i dati nella sessione
@@ -100,22 +100,22 @@ if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr
 	$_SESSION["regm"]=$reg_m;
 	$_SESSION["regy"]=$reg_y;
 	if($controlloq == 0){
-		header("location:../login.php?err=2");
+		header("location:../login.php?err=2&Titolo=log");
 	}
 	if($contamail == 1){
-		header("location:../login.php?err=3");
+		header("location:../login.php?err=3&Titolo=log");
 	}
 	if($contautente == 1){
-		header("location:../login.php?err=4");
+		header("location:../login.php?err=4&Titolo=log");
 	}
 	if($contacarr == 1){
-		header("location:../login.php?err=5");
+		header("location:../login.php?err=5&Titolo=log");
 	}
 	if($nomenull == 1){
-		header("location:../login.php?err=6");
+		header("location:../login.php?err=6&Titolo=log");
 	}
 	if($surnull == 1){
-		header("location:../login.php?err=7");
+		header("location:../login.php?err=7&Titolo=log");
 	}
 }
 ?>

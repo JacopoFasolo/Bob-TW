@@ -12,15 +12,15 @@
         $_SESSION["USER"]=$uname;//creo var session globale per mantenere il nome utente
         $_SESSION["IDUSER"]=$idutente['Id_utente'];//crea var session globale per mantenere Id_utente
 
-        /*$PAGE = isset($_REQUEST["PAGEU"])? $_REQUEST["PAGEU"] : null;
-        trim ($PAGE);
-        echo $PAGE;*/
-        if(isset($_REQUEST["PAGE"])) 
+        /*if(isset($_REQUEST["PAGE"])) 
         $PAGEU=$_REQUEST["PAGE"]; 
-        trim($PAGEU);
+        trim($PAGEU);*/
+
+        $PAGEU=$_SESSION["page"];
+
         header("location:".$PAGEU);
     } else {
-        header("location:../login.php?errl=1");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
+        header("location:../login.php?errl=1&Titolo=log");//qualcosa è andato storto, riprovare! Torno nella pagina di login.
     }
 ?>
 

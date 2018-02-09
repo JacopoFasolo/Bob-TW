@@ -5,7 +5,7 @@
         $ntab=$_REQUEST["nometab"]; 
         trim ($ntab);
     }else{
-    	header("location:../index.php");
+    	header("location:index.php");
     }
 
 ?>
@@ -17,7 +17,7 @@
     	<td>Marca</td>
     	<td>Modello</td>
     	<td>Prezzo</td>
-    	<td>Id</td>    
+    	    
   		</tr>
  			<?php
  				$sql = "SELECT Id_s, Prezzo, Marca, Modello FROM `{$ntab}` ORDER BY marca ";
@@ -27,7 +27,7 @@
 					echo '<td>'; print $asd["Marca"]; echo '</td>';
 					echo '<td>'; print $asd["Modello"]; echo '</td>';
 					echo '<td>'; print $asd["Prezzo"]; echo '</td>' ;
-					echo '<td>'; echo '<a href="php/vissci.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'">'.$asd["Id_s"].'</a>';
+					echo '<td>'; echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'">Visualizza</a>';
 					echo '</tr>';
  				}
  				//`" . $mysql_tb . "`  `{$ntab}`

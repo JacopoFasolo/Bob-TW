@@ -7,7 +7,7 @@ if(isset($_REQUEST["ido"])){
 	$ido=$_REQUEST["ido"]; 
     trim ($ido);
 }else{
-	header("location:../index.php");
+	header("location:index.php");
 }
 $comm = trim($_POST['Comm']);
 trim($comm);

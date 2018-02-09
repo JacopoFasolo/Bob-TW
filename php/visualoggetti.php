@@ -1,5 +1,5 @@
 <?php
-	require "connessione.php";
+	require "connessione.php"; 
 
 	if(isset($_REQUEST["nometab"])){
         $ntab=$_REQUEST["nometab"]; 
@@ -7,7 +7,7 @@
     }else{
     	header("location:index.php");
     }
-
+    $_SESSION["nometabbre"]="$ntab";
 ?>
 <?php
         $sql = "SELECT Id_s, Prezzo, Marca, Modello FROM `{$ntab}` ORDER BY marca ";
@@ -19,7 +19,7 @@
           <h1> <?php print $asd["Marca"]; echo " "; print $asd["Modello"]; ?> </h1>
           <p>*******DESCRIZIONE PRODOTTO*********</p>
           <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"]; ?> </p>
-          <?php echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'">Visualizza</a>'; ?>
+          <?php echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'&brpro=prodotto">Visualizza</a>'; ?>
           
         </div>
   <?php

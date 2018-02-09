@@ -39,7 +39,10 @@
  	$contacommentoutente = mysqli_num_rows($risquerycercacommento);
  	$arraydaticommento = mysqli_fetch_array($risquerycercacommento);
 ?>
-<div id="tabelladinamica">
+
+<?php
+
+/*<div id="tabelladinamica">
 	<table>
   		<th> <?php echo $tit["Marca"]; echo " "; echo $tit["Modello"]; ?> </th>
   		<tr>
@@ -85,4 +88,42 @@
 					echo '</tr>';
 			?>
 	</table>
+</div>*/
+
+?>
+
+<div class="prodottonoleggio">
+	<img src="*****PERCORSO PRODOTTO*********"/>
+    <h1> <?php print $tit["Marca"]; echo " "; print $tit["Modello"]; ?> </h1>
+    <p>*******DESCRIZIONE PRODOTTO*********</p>
+    <p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>
+    <br/>
+    <?php
+    if($count > 0){//ho almeno un commento
+		foreach ($res as $com) {
+			if($com["Id_ut"] != $id_utente){//se il commento non è del mio utente lo stampo
+				print $com["Testo"];
+					echo '<br/>';
+				}
+			}
+	}else{//non ho nessun commento
+		echo '<p>'; print "Nessun commento per questo prodotto"; echo '</p>';//echo '</td>' ;
+		echo '<br/>';
+	}
+	if(isset($_SESSION["login"])){//c'è qualcuno loggato
+    	if($contacommentoutente > 0){//se l'utente loggato ha fatto un commento lo stampo nel form poi modificabile
+    		echo '<form method="post" action="php/updatecommento.php?ido='.$arraydaticommento["Id_commento"].'">';
+    		echo '<input type="text" name="Comm" value="'; echo $arraydaticommento["Testo"]; echo ' " size="150">';
+			echo '<br/>';
+			echo '<input type="submit" name="submit" value="Modifica">';//qua fare update e non inserire
+    	}else{//l'utente non ha fatto aclucn commento
+			echo '<form method="post" action="php/inseriscicommento.php?ido='.$ido.'">';
+			echo '<input type="text" name="Comm" placeholder="Inserisci il tuo commento" size="150">';
+			echo '<br/>';
+			echo '<input type="submit" name="submit" value="Inserisci commento">';
+		}
+	}else{//non c'è nessuno loggato
+		echo '<input type="text" name="percommentare" readonly value="Devi efettuare il login per inserire un commento" size="150">';
+	}
+    ?>
 </div>

@@ -33,5 +33,22 @@ if($PAGE == "/Bob-TW/galleria.php"){
 if($PAGE == "/Bob-TW/carrello.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; Carrello</p>';
 }
+
+if(isset($_REQUEST["bread"])){
+	$bread=$_REQUEST["bread"];
+	if($bread == "sci"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">Noleggio attrezzature</a> &gt;&gt; sci</p>';
+	}
+	if($bread == "scarponi"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">Noleggio attrezzature</a> &gt;&gt; scarponi</p>';
+	}
+	if($bread == "caschi"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">Noleggio attrezzature</a> &gt;&gt; caschi</p>';
+	}
+	if($bread == "ciaspole"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">Noleggio attrezzature</a> &gt;&gt; ciaspole</p>';
+	}
+}
+
 echo '</div>';
 ?>

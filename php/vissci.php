@@ -25,7 +25,7 @@
  	$res = $conn->query($sql);
  	$count = mysqli_num_rows($res);
 
- 	session_start();
+ 	//session_start();
  	if(isset($_SESSION["login"])){
  		$id_utente = $_SESSION["IDUSER"];
  	}else{
@@ -68,12 +68,12 @@
 					}
     				if(isset($_SESSION["login"])){//c'è qualcuno loggato
     					if($contacommentoutente > 0){//se l'utente loggato ha fatto un commento lo stampo nel form poi modificabile
-    						echo '<form method="post" action="updatecommento.php?ido='.$arraydaticommento["Id_commento"].'">';
+    						echo '<form method="post" action="php/updatecommento.php?ido='.$arraydaticommento["Id_commento"].'">';
     						echo '<input type="text" name="Comm" value="'; echo $arraydaticommento["Testo"]; echo ' " size="150">';
 							echo '<br/>';
 							echo '<input type="submit" name="submit" value="Modifica">';//qua fare update e non inserire
     					}else{//l'utente non ha fatto aclucn commento
-							echo '<form method="post" action="inseriscicommento.php?ido='.$ido.'">';
+							echo '<form method="post" action="php/inseriscicommento.php?ido='.$ido.'">';
 							echo '<input type="text" name="Comm" placeholder="Inserisci il tuo commento" size="150">';
 							echo '<br/>';
 							echo '<input type="submit" name="submit" value="Inserisci commento">';

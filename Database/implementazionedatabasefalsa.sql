@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS Commento_ins;
 DROP TABLE IF EXISTS Commento;
+DROP TABLE IF EXISTS Mountainbike;
 DROP TABLE IF EXISTS Snowboard;
 DROP TABLE IF EXISTS Caschi;
 DROP TABLE IF EXISTS Scarponi;
@@ -43,6 +44,7 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
 Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
@@ -55,6 +57,7 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
 Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
@@ -67,6 +70,7 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
 Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
@@ -79,6 +83,7 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
 Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
@@ -91,6 +96,7 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
 Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE
@@ -103,6 +109,20 @@ Id_s int,
 Prezzo double NOT NULL,
 Marca char(20) NOT NULL,
 Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
+Url_immagine char(20) NOT NULL,
+FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
+ON DELETE CASCADE
+ON UPDATE NO ACTION
+) ENGINE=InnoDB;
+
+CREATE TABLE Mountainbike
+(
+Id_s int,
+Prezzo double NOT NULL,
+Marca char(20) NOT NULL,
+Modello char(20) NOT NULL,
+Descrizione char(255) NOT NULL,
 Url_immagine char(20) NOT NULL,
 FOREIGN KEY (Id_s) REFERENCES Id_oggetti(Id_oggetto)
 ON DELETE CASCADE

@@ -605,7 +605,7 @@ max-width: 80%;
 top: 0px;
 }
 
-/* noleggio attrezzatura */
+/* pagina prodotti */
 
 .prodottonoleggio{
 	margin: 1em 0 1em 10%;
@@ -630,4 +630,29 @@ top: 0px;
 	float: right;
 	font-size: 1.5em;
 	font-style: bold;
+}
+
+/* noleggio attrezzatura */
+
+.iconeprodotti{
+	width: 30%;
+	height: 4em;
+	margin: 1em 2%;
+	opacity: 0.8;
+	background-position: center;
+	text-indent: -999em;
+}
+
+.iconeprodotti:hover{
+	opacity: 1.0;
+}
+
+#iconasci{
+	display: block;
+	background-image:url(img/Prodotti/iconasci.ipg);
+}
+
+#iconasnowboard{
+	display: inline-block;
+	background-image:url(img/Prodotti/iconasnowboard.jpg);
 }

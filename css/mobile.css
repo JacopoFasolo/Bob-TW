@@ -63,9 +63,9 @@ h1{
 }
 
 .stick{
-    padding-left: 30%;
+    margin-left: 30%;
     background-color: white;
-    width: 2em;
+    width: 1em;
     height: 0.5em;
 }
 

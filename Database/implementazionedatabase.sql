@@ -156,11 +156,11 @@ VALUES ('1'),('2'),('3'),('4'),('5'),('6'),('7'),('8'),('9'),('10'),('11'),('12'
 
 INSERT INTO Sci (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
 VALUES ('1','200','Rossignol','Pursuit','img/Prodotti/Sci/sciuno.jpg','Adatti a tutti, sci per ogni tipo di neve. Molto leggeri.'),
-	   ('2','599','Atomic','Atomic Redster','img/Prodotti/Sci/scicinque.jpg','Adatti a tutti, sci per ogni tipo di neve. Molto leggeri.'),
-	   ('3','385','Atomic','Cloud 11','img/Prodotti/Sci/scisei.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
-	   ('4','289','Atomic','Backland 85','img/Prodotti/Sci/scisette.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
-	   ('5','400','Rossignol','Pursuit 400','img/Prodotti/Sci/sciuno.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
-	   ('6','450','Rossignol','Bc 125','img/Prodotti/Sci/sciotto.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('2','599','Atomic','Atomic Redster','img/Prodotti/Sci/scicinque.jpg','Adatti ad esperti, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('3','385','Atomic','Cloud 11','img/Prodotti/Sci/scisei.jpg','Adatti a bambini, sci molto leggere, molto divertenti essendo molto larghi.'),
+	   ('4','289','Atomic','Backland 85','img/Prodotti/Sci/scisette.jpg','Adatti a ogni persona, sci per ogni tipo di neve. Molto leggeri.'),
+	   ('5','400','Rossignol','Pursuit 400','img/Prodotti/Sci/sciuno.jpg','Adatti alle donno, sci da gara, adatti a slalom speciale. Molto leggeri.'),
+	   ('6','450','Rossignol','Bc 125','img/Prodotti/Sci/sciotto.jpg','Campioni mondiale dello scorso anno, assolutamente da provare.'),
 	   ('7','350','Head','Wc rebels','img/Prodotti/Sci/scinove.jpg','Adatti a ogni tutti, sci per ogni tipo di neve. Molto leggeri.');
 
 INSERT INTO Scarponi (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)

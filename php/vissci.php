@@ -5,13 +5,13 @@
         $ido=$_REQUEST["ido"]; 
         trim ($ido);
     }else{
-    	header("location:../index.php");
+    	header("location:index.php");
     }
     if(isset($_REQUEST["nometab"])){
         $ntab=$_REQUEST["nometab"]; 
         trim ($ntab);
     }else{
-    	header("location:../index.php");
+    	header("location:index.php");
     }
 
     //query per dare titolo alla tabella

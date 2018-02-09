@@ -33,4 +33,10 @@ if(isset($_REQUEST["Titolo"])){
 			echo "Bob - Login Registrazione";
 		}
 }
+if(isset($_REQUEST["brpro"])){
+			echo "Bob - Prodotto";
+}
+if(isset($_REQUEST["bread"])){
+			echo "Bob - Prodotto";
+}
 ?>

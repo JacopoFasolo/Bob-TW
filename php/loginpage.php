@@ -1,6 +1,4 @@
 <?php
-/*$PAGEU = isset($_REQUEST["PAGE"])? $_REQUEST["PAGE"] : null;
-trim ($PAGEU);*/
 if(isset($_REQUEST["PAGE"])){
     $PAGEU=$_REQUEST["PAGE"]; 
     trim ($PAGEU);
@@ -27,9 +25,12 @@ if(isset($_REQUEST["PAGE"])){
                     if($varl == 1)
                         echo "Username o password non validi";
                 }
-                //BR VA BENE? SE SI DEVO CHUDERLO? A SEMPRE FISSO O SOLO IN CASO DI ERRORE CIOE' DENTRO IF
                 ?>
-            </form>
+            </form> 
+
+            <?php
+            if(!isset($_SESSION["errorereg"])){
+            ?>
 
             <form id="form_registrazione" method="post" action="php/inserisciutente.php">
                 <h1>Registrati</h1>
@@ -55,29 +56,12 @@ if(isset($_REQUEST["PAGE"])){
                     <input type="text" size="20" name="reg_y" placeholder="YYYY" tabindex="32"/>
                 </div>
                 <input class="button" type="submit" value="Registrati" tabindex="33"/>
-                <input class="button" type="reset" value="Cancella" tabindex="34"/>
-                <br/> 
-                <?php
-                if(isset($_REQUEST["err"])){
-                    $var=$_REQUEST["err"];
-                    if($var == 2)
-                        echo "Inserisci una data valida";
-                    if($var == 3)
-                        echo "Mail già presente nel database";
-                    if($var == 4)
-                        echo "Username già presente nel database";
-                    if($var == 5)
-                        echo "Inserisci username e di almento tre caratteri";
-                    if($var == 6)
-                        echo "Inserisci un nome";
-                    if($var == 7)
-                        echo "Inserisci un cognome";
-                    if($var == 1)
-                        echo "Inserimento non avvenuto";
-                }
-                //BR VA BENE? SE SI DEVO CHUDERLO? A SEMPRE FISSO O SOLO IN CASO DI ERRORE CIOE' DENTRO IF
-                ?>
             </form>
+            <?php
+            }else{
+                include ("visualoginerrore.php"); 
+            }
+            ?>
         </div>
         <!-- middle -->
     </div>

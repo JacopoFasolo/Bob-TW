@@ -25,7 +25,7 @@ if(@isset($_GET['action']))
         $toinsert = "INSERT INTO carrello
 		(Id_utente,Id_oggetto)
 		VALUES
-		('".$id_utente."','".$Id_s."')";
+		('".$id_utente."','".$carrello."')";
 
 	$result = $conn->query($toinsert);//eseguo la query
         
@@ -34,7 +34,7 @@ if(@isset($_GET['action']))
            $toinsert = "INSERT INTO carrello
 		(Id_utente,Id_oggetto)
 		VALUES
-		('".$id_utente."','".$Id_s."')";
+		('".$id_utente."','".$carrello."')";
 
 	$result = $conn->query($toinsert);//eseguo la query
     }

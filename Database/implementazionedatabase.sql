@@ -10,6 +10,8 @@ DROP TABLE IF EXISTS Mountainbike;
 DROP TABLE IF EXISTS Id_oggetti;
 DROP TABLE IF EXISTS Biglietti;
 DROP TABLE IF EXISTS Utente;
+DROP TABLE IF EXISTS Carrello;
+
 
 CREATE TABLE Utente
 (
@@ -37,6 +39,16 @@ CREATE TABLE Id_oggetti
 (
 Id_oggetto int AUTO_INCREMENT primary key
 )ENGINE=InnoDB;
+
+
+CREATE TABLE Carrello (
+  Id_utente int NOT NULL,
+  Id_oggetto int NOT NULL,
+    FOREIGN KEY (Id_oggetto) REFERENCES Id_oggetti(Id_oggetto),
+    FOREIGN KEY (Id_utente) REFERENCES Utente(Id_utente)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION
+) ENGINE=InnoDB
 
 CREATE TABLE Sci
 (

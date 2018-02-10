@@ -10,17 +10,16 @@
     $_SESSION["nometabbre"]="$ntab";
 ?>
 <?php
-        $sql = "SELECT Id_s, Prezzo, Marca, Modello FROM `{$ntab}` ORDER BY marca ";
+        $sql = "SELECT Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione FROM `{$ntab}` ORDER BY marca ";
         $result = $conn->query($sql);
         foreach ($result as $asd) {
 ?>
         <div class="prodottonoleggio">
-          <img src="*****PERCORSO PRODOTTO*********"/>
+          <img src="<?php echo $asd["Url_immagine"]; ?>"/>
           <h1> <?php print $asd["Marca"]; echo " "; print $asd["Modello"]; ?> </h1>
-          <p>*******DESCRIZIONE PRODOTTO*********</p>
+          <p><?php print $asd["Descrizione"];?></p>
           <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"]; ?> </p>
           <?php echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'&brpro=prodotto">Visualizza</a>'; ?>
-          
         </div>
   <?php
         }

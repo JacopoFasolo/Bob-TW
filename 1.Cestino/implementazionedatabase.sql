@@ -8,7 +8,10 @@ DROP TABLE IF EXISTS Piccozze;
 DROP TABLE IF EXISTS Sci;
 DROP TABLE IF EXISTS Mountainbike;
 DROP TABLE IF EXISTS Id_oggetti;
+DROP TABLE IF EXISTS Biglietti;
 DROP TABLE IF EXISTS Utente;
+DROP TABLE IF EXISTS Carrello;
+
 
 CREATE TABLE Utente
 (
@@ -22,10 +25,30 @@ Sesso enum('M','F') NOT NULL,
 Data_Nascita date NOT NULL
 ) ENGINE=InnoDB;
 
+CREATE TABLE Biglietti
+(
+Id_biglietto int AUTO_INCREMENT primary key,
+Durata enum('Giornaliero','Settimanale','Bisettimanale','Dieciingressi','Mezzastagione','Stagionale') NOT NULL,
+Tipo enum('Interoas','Interobs','Ridottoas','Ridottobs') NOT NULL,
+Prezzo double NOT NULL,
+Data_Inizio date NOT NULL,
+Data_Fine date NOT NULL
+)ENGINE=InnoDB;
+
 CREATE TABLE Id_oggetti
 (
 Id_oggetto int AUTO_INCREMENT primary key
 )ENGINE=InnoDB;
+
+
+CREATE TABLE Carrello (
+  Id_utente int NOT NULL,
+  Id_oggetto int NOT NULL,
+    FOREIGN KEY (Id_oggetto) REFERENCES Id_oggetti(Id_oggetto),
+    FOREIGN KEY (Id_utente) REFERENCES Utente(Id_utente)
+    ON DELETE CASCADE
+    ON UPDATE NO ACTION
+) ENGINE=InnoDB
 
 CREATE TABLE Sci
 (

@@ -641,6 +641,7 @@ top: 0px;
 	opacity: 0.8;
 	background-position: center;
 	text-indent: -999em;
+	text-decoration: none;
 }
 
 .iconeprodotti:hover{

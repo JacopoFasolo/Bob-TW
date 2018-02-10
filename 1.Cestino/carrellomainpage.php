@@ -25,6 +25,10 @@
 
     echo '<div id="page">';
     include ("php/menu.php");
+
+    echo '<div id="middle">';
+    include ("php/carrello.php");
+    
     
     #includo il menu e middle della pagina
     echo file_get_contents("html/carrello.html");

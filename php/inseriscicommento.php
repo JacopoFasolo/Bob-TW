@@ -32,12 +32,13 @@ if($result){//se sono riuscito a inserire il testo del commento
 	VALUES ('".$idcommins['max(Id_commento)']."','".$ido."','".$idutente."')";
 	$resinsdue = $conn->query($toinsert);
 	if($resinsdue){//se ho fatto inserimento del commento
+		$_SESSION["inscom"]="ok";
 		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}else{//andato male inserimento del commento
 		header("Location: ".$_SERVER['HTTP_REFERER']);
 	}
 	//header("location:../login.php");
 }else{//se ho fallito la query di inserimento testo nel commento
-	header("Location: ".$_SERVER['HTTP_REFERER']);
+	header("Location: ".$_SERVER['HTTP_REFERER']); 
 }
 ?>

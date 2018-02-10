@@ -7,5 +7,5 @@
 	
 	echo '<a href="php/logout.php?PAGE='.$PAGE.'" tabindex="2">Logout</a>';
 	?>
-<a href = "carrello.php" tabindex="1">Il tuo carrello</a>
+<!--  <a href = "carrello.php" tabindex="1">Il tuo carrello</a> -->
 </div>

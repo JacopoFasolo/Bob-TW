@@ -14,7 +14,9 @@
         include ("php/visualloginalto.php");
     else
     	include ("php/loggedin.php");
-    
+
+    $urlbread = $_SERVER["REQUEST_URI"];
+    $_SESSION["urlbread"]="$urlbread";
     #includo header della pagina
     //echo file_get_contents("page/header.html");
     include ("php/header.php");
@@ -32,5 +34,5 @@
     echo file_get_contents("page/footer.html");
     
     #chiudo tags aperti prima
-    echo "</body></html>";
+    echo "</body></html>"; 
 ?>

@@ -680,19 +680,3 @@ textarea{
 .iconeprodotti img:hover{
 	opacity: 1.0;
 }
-
-
-button.hamburger{
-    display:none;
-}
-button.cross{
-    display:none;
-    
-}
-#header{
-    display:none;
-}
-
-.menum{
-    display:none;
-}

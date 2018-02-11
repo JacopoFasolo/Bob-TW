@@ -5,8 +5,7 @@
 
 @font-face{
 	font-family: 'Roboto';
-	src:source('Roboto'),
-		url(../font/Roboto_Regular.ttf) format("truetype");
+	src: url(../font/Roboto_Regular.ttf) format("truetype");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -229,7 +228,7 @@ td{
 #torna_su{
 	float: right;
 	padding: 0.5em;
-	display: block;
+	display: inline-block;
 	width: 50%;
 	text-align: right;
 }
@@ -635,7 +634,6 @@ a.lightbox-close:after {
 .prezzoprodotto{
 	float: right;
 	font-size: 1.5em;
-	font-style: bold;
 }
 
 /* noleggio attrezzatura */

@@ -645,12 +645,18 @@ top: 0px;
 
 #sezionecommenti p{
 	font-style: italic;
-	margin-left: 1em;
+	margin: .5em 1em;
+}
+
+#sezionecommenti input{
+	display: block;
+	margin-left: 2em;
 }
 
 textarea{
-	margin-left: auto;
-	margin-right: auto;
+	display: block;
+	margin-left: 2em;
+	margin-top: .5em;
 	padding: 0.2em;
 }
 

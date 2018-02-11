@@ -112,7 +112,7 @@ h1{
     margin-bottom: 0.5em;
 }
 
-#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria){
+#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria):not(.imgprodotti):not(.class="imnoleggio"){
     display: none;
 }
 
@@ -139,6 +139,10 @@ h1{
     width: 96%;
     margin: 0.5em 2%;
     zoom: 2.3;
+}
+
+#clickfoto{
+    display: none;
 }
 
 /* footer */

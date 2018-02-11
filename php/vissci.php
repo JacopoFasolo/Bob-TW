@@ -46,8 +46,8 @@
     <p><?php echo $tit["Descrizione"]; ?></p>
     <p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>
     <br/>
-    <p>Commenti degli utenti: </p>
     <?php
+    echo '<p>Ci sono ',$count,' commenti:</p>';
     if($count > 0){//ho almeno un commento
 		foreach ($res as $com) {
 			if($com["Id_ut"] != $id_utente){//se il commento non è del mio utente lo stampo

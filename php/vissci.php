@@ -46,6 +46,7 @@
     <p><?php echo $tit["Descrizione"]; ?></p>
     <p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>
     <br/>
+    <p>Commenti degli utenti: </p>
     <?php
     if($count > 0){//ho almeno un commento
 		foreach ($res as $com) {

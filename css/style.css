@@ -635,6 +635,26 @@ top: 0px;
 	font-size: 1.5em;
 }
 
+#commentoaltrui{
+	margin: .5em 5em;
+}
+
+#sezionecommenti{
+	width: 70%;
+	margin-left: 15%;
+}
+
+#sezionecommenti p{
+	font-style: italic;
+	margin-left: 1em;
+}
+
+textarea{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.2em;
+}
+
 /* noleggio attrezzatura */
 
 .iconeprodotti{

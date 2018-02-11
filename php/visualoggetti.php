@@ -20,8 +20,6 @@
           <p><?php print $asd["Descrizione"];?></p>
           <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"]; ?> </p>
           <?php echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'&brpro=prodotto">Visualizza</a>'; ?>
-             <?php echo '<a href="carrello.php?action=aggiungi&Id_s='.$asd["Id_s"].'&nometab='.$ntab.'">Aggiungi al carrello</a>'; ?>
-          
         </div>
   <?php
         }

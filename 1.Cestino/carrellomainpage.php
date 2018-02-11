@@ -26,7 +26,7 @@
     echo '<div id="page">';
     include ("php/menu.php");
 
-  echo '<div id="middle">';
+    echo '<div id="middle">';
     include ("php/carrello.php");
     
     

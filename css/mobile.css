@@ -112,7 +112,7 @@ h1{
     margin-bottom: 0.5em;
 }
 
-#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria):not(.imgprodotti):not(.class="imnoleggio"){
+#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria):not(.imgprodotti):not(.imnoleggio){
     display: none;
 }
 

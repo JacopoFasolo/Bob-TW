@@ -27,8 +27,8 @@ if($result){//se sono riuscito a inserire il testo del commento
  	$idcommins = mysqli_fetch_array($res);
 
  	//vado a iserire nella tabella commento ins
- 	$toinsert = "INSERT INTO commento_ins
-	(id_com, Id_ogg, Id_ut)
+ 	$toinsert = "INSERT INTO Commento_ins
+	(Id_com, Id_ogg, Id_ut)
 	VALUES ('".$idcommins['max(Id_commento)']."','".$ido."','".$idutente."')";
 	$resinsdue = $conn->query($toinsert);
 	if($resinsdue){//se ho fatto inserimento del commento

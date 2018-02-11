@@ -28,7 +28,7 @@
     
     #includo il menu e middle della pagina
     //echo file_get_contents("html/biglietti_prezzi.html");
-    include ("html/biglietti_prezzi.html");
+    include ("html/biglietti_prezzi.html"); 
 
     #includo il footer
     echo file_get_contents("page/footer.html");

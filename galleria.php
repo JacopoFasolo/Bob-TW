@@ -29,7 +29,6 @@
     //echo file_get_contents("html/foto.html");
     include ("html/foto.html");
 
-
     #includo il footer
     echo file_get_contents("page/footer.html");
     

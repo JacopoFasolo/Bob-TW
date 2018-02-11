@@ -210,7 +210,7 @@ VALUES ('14','20','Alpin','tour 9000','img/Prodotti/Martelli/martellouno.jpg','L
 INSERT INTO Slittini (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
 VALUES ('36','9000','Plastkon','Schlittenbob','img/Prodotti/Bob/bobuno.jpg','Slittino adatto a bambini, in plastica temprata.'),
 	   ('37','9000','Plastkon','Schlittenbob','img/Prodotti/Bob/bobdue.jpg','Slittino usato da dexter per trasportare i cadaveri dentro i sacchi neri dopo averli fatti a pezzi con la piccozza.'),
-	   ('38','5000','Alpen','Gaudi-Double-Race','img/Prodotti/Bob/bobtre.jpg','Modello creato da Marchionne in persona, segue lo stile della rossa 2019, raggiunge picchi di 300 orari questo lo rendo adatto ai bambini'),
+	   ('38','5000','Alpen','Gaudi-Double-Race','img/Prodotti/Bob/bobtre.jpg','Modello creato da Marchionne in persona, segue lo stile della rossa 2019, raggiunge picchi di 300 orari questo lo rendo adatto ai bambini.'),
 	   ('39','1','Chil','Snowrage','img/Prodotti/Bob/bobquattro.jpg','Slittino adatto ai neonati, dotato di cintura di sucurezza e airbag.');
 
 INSERT INTO Commento (Id_commento,Testo)

@@ -79,7 +79,7 @@
 			echo '<input type="submit" name="submit" value="Inserisci commento">';
 		}
 	}else{//non c'è nessuno loggato
-		echo '<input type="text" name="percommentare" readonly value="Devi efettuare il login per inserire un commento" size="150">';
+		echo '<input type="text" name="percommentare" readonly value="Devi effettuare il login per inserire un commento" size="150">';
 	}
     ?>
 </div>

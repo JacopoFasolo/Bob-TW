@@ -636,24 +636,25 @@ top: 0px;
 
 .iconeprodotti{
 	width: 30%;
-	height: 4em;
-	margin: 1em 2%;
-	opacity: 0.8;
-	background-position: center;
-	text-indent: -999em;
-	text-decoration: none;
-}
-
-.iconeprodotti:hover{
-	opacity: 1.0;
-}
-
-#iconasci{
-	display: block;
-	background-image:url(img/Prodotti/iconasci.ipg);
-}
-
-#iconasnowboard{
+	margin: 1em 0 1em 12%;
 	display: inline-block;
-	background-image:url(img/Prodotti/iconasnowboard.jpg);
+}
+
+.iconeprodotti img{
+	width: 100%;
+	display: inline-block;
+	opacity: 0.7;
+}
+
+.iconeprodotti p{
+	background-color: #4CAF50;
+	padding: 0.3em 10%;
+	width: 80%;
+	float: left;
+	color: white;
+	display: inline-block;
+}
+
+.iconeprodotti img:hover{
+	opacity: 1.0;
 }

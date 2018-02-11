@@ -57,6 +57,9 @@ if(isset($_REQUEST["bread"])){
 	if($bread == "mountainbike"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; mountainbike</p>';
 	}
+	if($bread == "slittini"){
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; bob</p>';
+	}
 
 }
 if(isset($_REQUEST["brpro"])){

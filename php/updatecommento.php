@@ -22,8 +22,10 @@ $toinsert = "UPDATE Commento SET Testo = '".$comm."'
 			$ris = $conn->query($toinsert);
 
 if($ris){//se ho fatto inserimento del commento
+	session_start();
+	$_SESSION["inscom"]="okk";
 	header("Location: ".$_SERVER['HTTP_REFERER']);
 }else{//andato male inserimento del commento
 	header("Location: ".$_SERVER['HTTP_REFERER']);
 }
-?>
+?> 

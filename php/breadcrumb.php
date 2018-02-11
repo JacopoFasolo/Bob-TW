@@ -75,25 +75,8 @@ include("html/menum.html");
 
 echo '</div>'; 
 
-<<<<<<< HEAD
 
 ?>
   <button class="hamburger">&#9776;</button>
   <button class="cross">&#735;</button>
 </header>
-=======
-echo ' 
-	<div id="burgermenu" onclick="menu_animato(this)">
-  		<div class="stick" id="stick1"></div>
-  		<div class="stick" id="stick2"></div>
-  		<div class="stick" id="stick3"></div>
-	</div>
-
-	<script>
-		function menu_animato(x){
-			x.classList.toogle("change");
-		}
-	</script>
-'
-?>
->>>>>>> 62e09b5e34214fd34c8bec4cf60f913d74119633

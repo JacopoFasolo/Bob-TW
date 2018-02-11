@@ -18,7 +18,7 @@
     
     #includo il menu e middle della pagina
     //echo file_get_contents("html/biglietti_prezzi.html");
-    include ("html/erroreconnessione.html");
+    include ("html/erroreconnessione.html");  
 
     echo '</div>';
 

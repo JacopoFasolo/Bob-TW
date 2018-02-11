@@ -26,9 +26,7 @@
     echo '<div id="page">';
     include ("php/menu.php");
     
-    echo '<div id="middle">'; 
     include ("php/visualoggetti.php");
-    echo '</div>';
 
     #includo il footer
     echo file_get_contents("page/footer.html");

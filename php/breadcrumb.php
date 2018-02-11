@@ -1,11 +1,5 @@
 <?php
 
-echo '<div id="burgermenu">
-  <div class="stick" id="stick1"></div>
-  <div class="stick" id="stick2"></div>
-  <div class="stick" id="stick3"></div>
-</div>';
-
 echo '<div id="breadcrumb">';
 $PAGE = $_SERVER["REQUEST_URI"];
 
@@ -71,4 +65,14 @@ if(isset($_REQUEST["brpro"])){
 	}
 }
 echo '</div>'; 
+
+echo '
+<script src="JavaScript/menu_animato.js" type="text/javascript"> 
+	<div id="burgermenu" onclick="menu(this)">
+  		<div class="stick" id="stick1"></div>
+  		<div class="stick" id="stick2"></div>
+  		<div class="stick" id="stick3"></div>
+	</div>
+	</script>';
+
 ?>

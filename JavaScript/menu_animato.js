@@ -1,4 +1,4 @@
-function menu_animato(){
+function menu(js){
     $(document).ready(function() {
     $("#burgermenu").click(function() {
       $(".stick").toggleClass(function () {

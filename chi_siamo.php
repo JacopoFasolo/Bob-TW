@@ -28,6 +28,7 @@
     #includo il menu e middle della pagina
     //echo file_get_contents("html/chi_siamo.html");
     include ("html/chi_siamo.html");
+    echo '</div>';
     
     #includo il footer
     echo file_get_contents("page/footer.html");

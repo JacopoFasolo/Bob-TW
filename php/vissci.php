@@ -1,3 +1,4 @@
+<div id="middle">
 <?php
 	require "connessione.php";
 

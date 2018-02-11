@@ -29,6 +29,7 @@
     #includo il menu e middle della pagina
     //echo file_get_contents("html/come_raggiungerci.html");
     include ("html/come_raggiungerci.html");
+    echo '</div>';
 
     #includo il footer
     echo file_get_contents("page/footer.html");

@@ -17,8 +17,12 @@ h1{
 
 /* Login */
 
+#login_link{
+    font-size: 1.7em;
+}
+
 #login{
-    font-size: 1em;
+    font-size: 1.3em;
 }
 
 /* Header */
@@ -47,6 +51,7 @@ h1{
 }
 
 #menu{
+    font-size: 1.5em;
     float: none;
     width: 100%;
     text-align: center;
@@ -57,7 +62,7 @@ h1{
 #burgermenu{
     margin-right: 5%;
     margin-left: 5%;
-    display: inline-block;
+    display: block;
     float: right;
     width: 15%;
     height: 5em;
@@ -85,8 +90,8 @@ h1{
 
 #breadcrumb p{
     display: block;
-    padding: 0.6em;
-    font-size: 1.7em;
+    padding: 1em;
+    font-size: 2em;
 }
 
 #middle, #middle_galleria{
@@ -108,7 +113,9 @@ h1{
 /* biglietti e prezzi */
 
 #tablebiglietti{
-    zoom: 1;
+    margin: 2%;
+    float: left;
+    zoom: 1.6;
 }
 
 /* Impianti */
@@ -122,21 +129,21 @@ h1{
 }
 
 #piste2, #piste1{
-    font-size: 0.8em;
+    font-size: 1em;
     width: 96%;
     margin: 0.5em 2%;
-    zoom: 1.5;
+    zoom: 2.3;
 }
 
 /* footer */
 
 #footer img{
-    width: 15%;
+    width: 20%;
     padding: 0;
  }
 
  #footer p{
-    font-size: 0.7em;
+    font-size: 1.3em;
  }
 
 /* galleria */
@@ -150,6 +157,10 @@ dl#foto dd{
 
 /* form registrazione */
 
+#middle h1{
+    font-size: 3em;
+}
+
 #form_login, #form_registrazione{
     float: none;
     width: 100%;
@@ -158,12 +169,25 @@ dl#foto dd{
     border: 0;
 }
 
+#form_login label, #form_registrazione label, #sesso_form{
+    font-size: 2em;
+}
+
 /* pagina registrazione e login */
+
+
 input[type=password], input[type=email], input[type=text]{
-    font-size: 1em;
+    font-size: 2em;
 }
 
 input[type=submit], input[type=reset]{
     padding: 1em;
     margin: 1em 0;
+    font-size: 2em;
+}
+
+input[type=radio]{
+    padding-top: 1.5em;
+    height: 3em;
+    width: 20%;
 }

@@ -202,6 +202,158 @@ input[type=radio]{
     width: 20%;
 }
 
+<<<<<<< HEAD
+.stick:last-child {
+    margin-bottom: 0px;
+  }
+  
+  .stick-1.open {
+    animation: stick-1-open .6s ease-out forwards;
+  }
+  
+  .stick-2.open {
+    animation: stick-2-open .6s linear forwards;
+  }
+  
+  .stick-3.open {
+    animation: stick-3-open .6s linear forwards;
+  }
+  
+  @keyframes stick-1-open {
+    0%   {width: 80px;}
+    40%  {background-color: #ff1456; width: 8px; transform: translate(40px, 0px);}
+    75%, 80%  {width: 8px; transform: translate(40px, -50px); animation-timing-function: cubic-bezier(0,1,1,1);}
+    100% {background-color: #ff1456; width: 8px; transform: translate(35px, 46px);}
+  }
+  
+  @keyframes stick-2-open {
+    80%  {background-color: #2DFDB9; transform: translate(0px, 0px) rotate(0deg);}
+    100% {background-color: #ff1456; transform: translate(8px, 0px) rotate(40deg);}
+  }
+  
+  @keyframes stick-3-open {
+    80%  {background-color: #2DFDB9; transform: translate(0px, 0px) rotate(0deg);}
+    100% {background-color: #ff1456; transform: translate(8px, -23px) rotate(-40deg);}
+  }
+  
+  .stick-1.close {
+    width: 8px; 
+    transform: translate(27px, 26px);
+    animation: stick-1-close .6s ease-out forwards;
+  }
+  
+  .stick-2.close {
+    transform: translate(0px, 0px) rotate(40deg);
+    animation: stick-2-close .6s ease-out forwards;
+  }
+  
+  .stick-3.close {
+    transform: translate(0px, -23px) rotate(-40deg);
+    animation: stick-3-close .6s ease-out forwards;
+  }
+  
+  @keyframes stick-1-close {
+    0%, 70% {width: 0px;}
+    100%    {width: 80px; transform: translate(0, 0);}
+  }
+  
+  @keyframes stick-2-close {
+    0%   {background-color: #ff1456; width: 80px;}
+    20%  {background-color: #ff1456; width: 8px; transform: translate(0, 0px) rotate(40deg);}
+    40%  {background-color: #2DFDB9; width: 0px;}
+    65%  {transform: translate(0, -70px); animation-timing-function: cubic-bezier(0,1,1,1);}
+    80%  {width: 0px;}
+    100% {width: 80px; transform: translate(0, 0px);}
+  }
+  
+  @keyframes stick-3-close {
+    0%   {background-color: #ff1456; width: 80px;}
+    20%  {background-color: #ff1456; width: 8px; transform: translate(0, -23px) rotate(-40deg);}
+    40%  {background-color: #2DFDB9;}
+    65%  {transform: translate(0, -93px); animation-timing-function: cubic-bezier(0,1,1,1);}
+    90%  {width: 8px;}
+    100% {width: 80px; transform: translate(0, 0px);}
+      
+  }
+
+#menu{
+    display:none;
+}
+
+
+    
+#breadcrumb{
+	height: 4em;
+	background-color: rgb(6, 70, 46);
+}
+
+#breadcrumb p{
+	color: white;
+	font-weight: bold;
+    font-size: 20px;
+	padding-top: 0.2em;
+	padding-left: 1em;
+	display: inline-block;
+}
+
+button.hamburger{
+    display:block;}
+header{
+	width:100%; 
+	background:#ffffff; 
+	height:60px; 
+	line-height:60px;
+	border-bottom:1px solid #dddddd;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#000000;
+  border:0;
+  font-size:2.5em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  
+  right:0;
+  padding:7px 15px 0px 15px;
+  color:#000000;
+  border:0;
+  font-size:5em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menum{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;;  position:absolute; text-align:center; font-size:12px;}
+.menum ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menum li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menum li:hover{display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menum ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menum ul li a:hover {  color: ##c0c0c0; text-decoration:none;}
+.menum a{text-decoration:none; color:#666;}
+.menum a:hover{text-decoration:none; color:#FFFFFF;}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+header{display:inline-block; font-size:12px;}
+span{padding-left:20px;}
+a{color:#336699;}
+=======
 .change #stick1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
     transform: rotate(-45deg) translate(-9px, 6px);
@@ -213,3 +365,4 @@ input[type=radio]{
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
     transform: rotate(45deg) translate(-8px, -8px);
 }
+>>>>>>> 62e09b5e34214fd34c8bec4cf60f913d74119633

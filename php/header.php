@@ -18,3 +18,5 @@ $PAGE = $_SERVER["REQUEST_URI"];
     <h1> BOB - La montagna in ogni stagione </h1>
     <p> <span xml:lang="fr">Courmayeur</span>, nel cuore della montagna </p>    
 </div>
+
+

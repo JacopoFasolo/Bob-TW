@@ -2,6 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
 
 <head>
+<<<<<<< HEAD
+    <title> <?php include ("titolopagina.php"); ?> </title>
+    <link href="img/logo.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="Bob, montagna, noleggio sci, sci, snowboard, Courmayeur, Val D'Aosta, Valle D'Aosta, Monte Bianco, sciare, neve, passeggiate, mountain bike" />
+    <meta name="description" content="Sito realizzato per il progetto di Tecnologie Web - a.a. 2017/2018" />
+    <meta name="author" content="Carlotta Segna, Alessio Brunetta, Jacopo Fasolo, Ilenia Zanetti" />
+    <meta name="language" content="italian it" />
+    <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" rel="stylesheet" type="text/css" />
+    <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="JavaScript/jquery.js"></script>
+    <script type="text/javascript" src="JavaScript/mob.js"></script>
+=======
     <title><?php include ("titolopagina.php"); ?></title>
     <link href="img/logo.ico" rel="shortcut icon"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -12,4 +26,5 @@
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css"/>
     <link href="css/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" rel="stylesheet" type="text/css"/>
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css"/>
+>>>>>>> 62e09b5e34214fd34c8bec4cf60f913d74119633
 </head>

@@ -22,6 +22,7 @@
     #includo il menu e middle della pagina
     include ("php/loginpage.php");
     //echo file_get_contents("html/login.html");
+    echo '</div>';
 
     #includo il footer
     echo file_get_contents("page/footer.html");

@@ -11,12 +11,12 @@
     $_SESSION["nometabbre"]="$ntab";
 ?>
 <?php
-        $sql = "SELECT Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione FROM `{$ntab}` ORDER BY marca ";
+        $sql = "SELECT Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione FROM `{$ntab}` ORDER BY Marca ";
         $result = $conn->query($sql);
         foreach ($result as $asd) {
 ?>
         <div class="prodottonoleggio">
-            <img src="<?php echo $asd["Url_immagine"]; ?>"/>
+            <img class="imnoleggio" src="<?php echo $asd["Url_immagine"]; ?>"/>
             <h1> <?php print $asd["Marca"]; echo " "; print $asd["Modello"]; ?> </h1>
             <p><?php print $asd["Descrizione"];?></p>
             <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"]; ?></p>

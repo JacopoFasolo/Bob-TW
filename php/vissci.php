@@ -1,3 +1,4 @@
+<div id="middle">
 <?php
 	require "connessione.php";
 
@@ -46,6 +47,7 @@
     <p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>
     <br/>
     <?php
+    echo '<p>Ci sono ',$count,' commenti:</p>';
     if($count > 0){//ho almeno un commento
 		foreach ($res as $com) {
 			if($com["Id_ut"] != $id_utente){//se il commento non è del mio utente lo stampo

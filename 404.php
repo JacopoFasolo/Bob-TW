@@ -19,6 +19,7 @@
     #includo il menu e middle della pagina
     //echo file_get_contents("html/biglietti_prezzi.html");
     include ("html/404.html");
+    echo '</div>';
 
     #includo il footer
     echo file_get_contents("page/footer.html");

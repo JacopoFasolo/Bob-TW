@@ -1,4 +1,4 @@
-function menu(js){
+
     $(document).ready(function() {
     $("#burgermenu").click(function() {
       $(".stick").toggleClass(function () {
@@ -6,4 +6,3 @@ function menu(js){
       });
     });
   });
-};

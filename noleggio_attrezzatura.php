@@ -28,6 +28,7 @@
     #includo il menu e middle della pagina
     //echo file_get_contents("html/noleggio_attrezzatura.html");
     include ("html/noleggio_attrezzatura.html");
+    echo '</div>';
 
     #includo il footer
     echo file_get_contents("page/footer.html");

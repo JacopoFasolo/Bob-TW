@@ -27,7 +27,7 @@
     include ("php/menu.php");
     
     include ("php/visualoggetti.php");
-
+    echo '</div>';
     #includo il footer
     echo file_get_contents("page/footer.html");
     

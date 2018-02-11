@@ -71,6 +71,7 @@ h1{
     background-color: white;
     width: 1em;
     height: 0.5em;
+    transition: 0.4s;
 }
 
 #stick1, #stick2{
@@ -111,7 +112,7 @@ h1{
     margin-bottom: 0.5em;
 }
 
-#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria){
+#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria):not(.imgprodotti):not(.imnoleggio){
     display: none;
 }
 
@@ -138,6 +139,10 @@ h1{
     width: 96%;
     margin: 0.5em 2%;
     zoom: 2.3;
+}
+
+#clickfoto{
+    display: none;
 }
 
 /* footer */
@@ -197,6 +202,7 @@ input[type=radio]{
     width: 20%;
 }
 
+<<<<<<< HEAD
 .stick:last-child {
     margin-bottom: 0px;
   }
@@ -347,3 +353,16 @@ header{
 header{display:inline-block; font-size:12px;}
 span{padding-left:20px;}
 a{color:#336699;}
+=======
+.change #stick1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change #stick2 {opacity: 0;}
+
+.change #stick3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+>>>>>>> 62e09b5e34214fd34c8bec4cf60f913d74119633

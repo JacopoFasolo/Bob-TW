@@ -40,11 +40,17 @@
       
             <p>La lista delle nostre piste con la loro difficolt&agrave;.<br/> In ordine di difficolt&agrave; ci sono Blu, Rossa ed infine Nera.
             </p>
-            <table id="piste1">
+            <table id="piste1" summary="Le due tabelle di seguito presentano le piste che sono presenti a Courmayeur. 
+            Ogni riga presenta come primo elemento il nome della pista e, come secondo, la difficolt&agrave; della pista che pu&ograve; essere nera,
+            rossa o blu a seconda della difficolt&agrave;.">
+                <caption> Tabella delle piste presenti nel nostro impianto. </caption>
+                <thead>
                 <tr>
-                    <th>Pista</th>
-                    <th>Difficolt&agrave;</th>
+                    <th colspan="1">Pista</th>
+                    <th colspan="1">Difficolt&agrave;</th>
                 </tr>
+                </thead>
+                <tbody>
                 <tr>
                     <td>Gigante</td>
                     <td class="cat_piste"><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td>
@@ -103,14 +109,18 @@
                 <tr>
                     <td><span xml:lang="FR">Maison Vielle</span></td>
                     <td class="cat_piste"><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td>
-                </tr>
-                
+                 </tr>
+            </tbody>
             </table>
+            
             <table id="piste2">
-                <tr>
-                    <th>Pista</th>
-                    <th>Difficolt&agrave;</th>
-                </tr>
+                <caption>Tabella delle piste presenti nel nostro impianto.</caption>
+                <thead>
+                    <tr>
+                        <th colspan="1">Pista</th>
+                        <th colspan="1">Difficolt&agrave;</th>
+                    </tr>
+                </thead>
                 <tr>
                     <td>Chiecco</td>
                     <td class="cat_piste"><img class="difficolta" src="img/pallozzoblu.png" alt=""/> Blu</td>
@@ -172,7 +182,6 @@
                     <td>Stadio Slalom</td>
                     <td class="cat_piste"><img class="difficolta" src="img/pallozzorosso.png" alt=""/> Rossa</td>
                 </tr>
-
             </table>
         </div>
         <!--middle-->

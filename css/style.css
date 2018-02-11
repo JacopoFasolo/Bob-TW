@@ -98,6 +98,7 @@ td{
 #breadcrumb{
 	height: 2em;
 	background-color: rgb(6, 70, 46);
+	width: 100%;
 }
 
 #breadcrumb p{

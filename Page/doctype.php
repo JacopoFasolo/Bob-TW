@@ -12,4 +12,6 @@
     <link href="css/style.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="css/mobile.css" media="handheld, screen and (max-width:768px), only screen and (max-device-width:768px)" rel="stylesheet" type="text/css" />
     <link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="JavaScript/jquery.js"></script>
+    <script type="text/javascript" src="JavaScript/mob.js"></script>
 </head>

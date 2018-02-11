@@ -1,4 +1,6 @@
+<header>
 <?php
+
 
 echo '<div id="breadcrumb">';
 $PAGE = $_SERVER["REQUEST_URI"];
@@ -64,15 +66,17 @@ if(isset($_REQUEST["brpro"])){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; <a href="'.$urlbread.'" tabindex="5">'.$ntabbre.'</a> &gt;&gt; prodotto</p>';
 	}
 }
+
+
+
+include("html/menum.html");
+
+
+
 echo '</div>'; 
 
-echo '
-<script src="JavaScript/menu_animato.js" type="text/javascript"> 
-	<div id="burgermenu" onclick="menu(this)">
-  		<div class="stick" id="stick1"></div>
-  		<div class="stick" id="stick2"></div>
-  		<div class="stick" id="stick3"></div>
-	</div>
-	</script>';
 
 ?>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</header>

@@ -181,7 +181,7 @@ VALUES ('11','40','Burton','Flight','img/Prodotti/Snowboard/snowboarduno.jpg','T
 	   ('17','30','Jones','Twin Mountain','img/Prodotti/Snowboard/snowboardcinque.jpg','Modello con estetica molto accattivante. Tavola stretta rispetto allo standard, per questo si consiglia di usarla in pista.');
 
 INSERT INTO Mountainbike (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
-VALUES ('13','200','Speedmax','cf slx 9','img/Prodotti/Bici/biciuno.jpg','La punta di diamante dei nostri prodotti, la migliore nel suo campo, le sue ruote fine la renddono adatta a impervi percorsi, la sua leggerezza la rendono degna della bici di ET.'),
+VALUES ('13','200','Speedmax','cf slx 9','img/Prodotti/Bici/biciuno.jpg','La punta di diamante dei nostri prodotti, la migliore nel suo campo, le sue ruote fine la renddono adatta a impervi percorsi, la sua leggerezza la rende degna della bici di ET.'),
        ('29','20','BTT','MT 9','img/Prodotti/Bici/bicidue.jpg','Bici da montagna, Cambio Shimano TX-55 24 ve.'),
        ('30','20','Sprint','GTS PRO','img/Prodotti/Bici/bicitre.jpg','Bici da montagna, telaio in alluminio, forcella della logan, deragliatore posteriore della Shimano, bici ottima.'),
        ('31','35','Orbita','Europa 26','img/Prodotti/Bici/biciquattro.jpg','Bici da montagna, telaio in alluminio, deragliatore posteriore della Shimano, bici ottima per tutti i percorsi, una delle migliori.'),
@@ -189,9 +189,9 @@ VALUES ('13','200','Speedmax','cf slx 9','img/Prodotti/Bici/biciuno.jpg','La pun
 
 INSERT INTO Piccozze (Id_s, Prezzo, Marca, Modello, Url_immagine, Descrizione)
 VALUES ('14','20','Alpin','tour 9000','img/Prodotti/Martelli/martellouno.jpg','La punta di diamante dei nostri prodotti, la migliore nel suo campo.'),
-	   ('33','10','Alpin','Climbing','img/Prodotti/Martelli/martellodue.jpg','Tipo pickels: piccozza da alta montagna'),
-	   ('34','10','Salewa','Tour-X','img/Prodotti/Martelli/martellotre.jpg','Design accattivante, ottima per un omicidio in grande stile'),
-	   ('35','10','Climbing','Hound G','img/Prodotti/Martelli/martelloquattro.jpg','Design accattivante, ottima per risalire le cascate ghiacciate non presenti da noi');
+	   ('33','10','Alpin','Climbing','img/Prodotti/Martelli/martellodue.jpg','Tipo pickels: piccozza da alta montagna.'),
+	   ('34','10','Salewa','Tour-X','img/Prodotti/Martelli/martellotre.jpg','Design accattivante, ottima per un omicidio in grande stile.'),
+	   ('35','10','Climbing','Hound G','img/Prodotti/Martelli/martelloquattro.jpg','Design accattivante, ottima per risalire le cascate ghiacciate non presenti da noi.');
 
 INSERT INTO Commento (Id_commento,Testo)
 VALUES ('1','Questi sci della Atomic sono il massimo, sono come la redbull ti mettono le ali e ti portano dal grande padre'),

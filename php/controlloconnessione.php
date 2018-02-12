@@ -3,7 +3,7 @@
 	require "connessione.php"; //file per la connessione al server
     $uname = $_POST["uname"];  //imposto le variabili ricevute dal form 
     $upassword = $_POST["upassword"];
-    $query = "select * from utente where Username='".$uname."' and Password='".md5($upassword)."'"; //la query per controllare se esiste l'utente nel db
+    $query = "select * from Utente where Username='".$uname."' and Password='".md5($upassword)."'"; //la query per controllare se esiste l'utente nel db
     $result = mysqli_query($conn,$query); //eseguo la query
     $count = mysqli_num_rows($result); //variabile count contiene numero di righe ricevute come risultato
     $idutente = mysqli_fetch_array($result);//serve per ricavare poi il risultato della query, in questo caso serve per mantenere id dell'utente che effettua il login

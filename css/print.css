@@ -19,10 +19,12 @@ html, body{
 #breadcrumb a:link{
     color: black;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 #breadcrumb a:visited{
     color: black;
+    text-decoration: underline;
 }
 
 #login_link{
@@ -73,10 +75,6 @@ html, body{
 }
 
 #middle .immagini_middle_home{
-    display: none;
-}
-
-#middle img{
     display: none;
 }
 
@@ -155,6 +153,9 @@ dl #foto{
     font-weight: bold;
 }
 
+#torna_su{
+    display: none;
+}
 /* Impianti */
 
 #download_cartina{
@@ -175,25 +176,28 @@ dl #foto{
 }
 
 #form_login, #form_registrazione{
-    padding: 5em;
 	height: 100%;
 	width: 48%;
 	display: block;
 }
 
+fieldset{
+	border: 0;
+}
+
 #form_login{
-	float: left;
+    padding-right: 5%;
+    float: left;
 }
 
 #form_registrazione{
-	padding-left: 2%;
+	padding-left: 5%;
 	margin-left: 50%;
 	border-left: 1px solid #CCC;
 }
 
 label{
-    float: left;
-    padding: 0.5em;
+	float: left;
 	display: block;
 }
 
@@ -203,8 +207,7 @@ input[type=password], input[type=email], input[type=text]{
 	margin-left: 35%;
 	display: block;
 	border: 1px solid #ccc;
-	/* border-radius: 4px; */
-	box-sizing: border-box;
+	/*box-sizing: border-box;*/
 }
 
 input[type=radio]{
@@ -212,14 +215,11 @@ input[type=radio]{
 }
 
 input[type=submit], input[type=reset] {
-    width: 30%;
-    background-color: White;
-    color: black;
-    padding: 1em 1.5em;
-    margin: .5em 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+    display: none;
+}
+
+input[type=submit]:hover {
+    background-color: #1d4e7c;
 }
 
 #sesso_form{
@@ -230,4 +230,65 @@ input[type=submit], input[type=reset] {
 #middle_form{
 	margin-top: 1em;
     margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+
+#middle img:not(.difficolta):not(.imgalleria):not(.imgprodotti):not(.imnoleggio){
+    display:none;
+}
+
+.iconeprodotti{
+    text-align: center;
+	width: 30%;
+	margin: 1em 0 0 12%;
+	display: inline-block;
+}
+
+.iconeprodotti img{
+	width: 100%;
+	display: inline-block;
+	opacity: 0.7;
+}
+
+.iconeprodotti p{
+    padding: 0.3em;
+    text-decoration: underline;
+}
+
+.prodottonoleggio{
+	margin: 0 0 1em 10%;
+	width: 80%;
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+
+.prodottonoleggio a{
+    display: none;
+}
+.prodottonoleggio img{
+	max-width: 90%;
+	max-height: 15em;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.prodottonoleggio h1{
+	color: black;
+	text-align: left;
+	padding-left: 2em;
+}
+
+.prezzoprodotto{
+    padding: 0.5em;
+	float: right;
+	font-size: 1.5em;
+}
+
+#commentoaltrui{
+	margin: .5em 5em;
+}
+
+#sezionecommenti{
+	display: none;
 }

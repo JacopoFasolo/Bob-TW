@@ -24,9 +24,6 @@ if($PAGE == "/Bob-TW/noleggio_attrezzatura.php"){
 if($PAGE == "/Bob-TW/galleria.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; galleria</p>';
 }
-if($PAGE == "/Bob-TW/login.php"){
-	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; login</p>';
-}
 
 if(isset($_REQUEST["bread"])){
 	$bread=$_REQUEST["bread"];
@@ -63,6 +60,13 @@ if(isset($_REQUEST["brpro"])){
 	if($brpro == "prodotto"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; <a href="'.$urlbread.'" tabindex="7">'.$ntabbre.'</a> &gt;&gt; prodotto</p>';
 	}
+}
+if(isset($_REQUEST["Titolo"])){
+        $TITOLO=$_REQUEST["Titolo"]; 
+        trim ($TITOLO);
+        if($TITOLO == "log"){
+			echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; login</p>';
+		}
 }
 
 echo '</div>'; 

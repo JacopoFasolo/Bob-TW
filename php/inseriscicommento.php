@@ -14,7 +14,7 @@ trim($comm);
 //fare la prova se non esiste questo rimandare alla pagina prima per favore;
 $idutente = $_SESSION["IDUSER"];
 
-$toinsert = "INSERT INTO commento
+$toinsert = "INSERT INTO Commento
 		(Testo)
 		VALUES
 		('".$comm."')";
@@ -22,7 +22,7 @@ $result = $conn->query($toinsert);//eseguo la query
 
 if($result){//se sono riuscito a inserire il testo del commento
 	// faccio la select di id ultimo commento
-	$sql = "SELECT max(Id_commento) FROM commento";
+	$sql = "SELECT max(Id_commento) FROM Commento";
  	$res = $conn->query($sql);
  	$idcommins = mysqli_fetch_array($res);
 

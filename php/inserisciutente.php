@@ -68,17 +68,17 @@ if($lungsur == NULL){
 	$surnull = 1;
 }
 
-$controlloutente = "select * from utente where Username='".$reg_username."'";
+$controlloutente = "select * from Utente where Username='".$reg_username."'";
 $rescontrolloutente = mysqli_query($conn,$controlloutente);
 $contautente = mysqli_num_rows($rescontrolloutente);
 
-$controllomail = "select * from utente where Email='".$reg_email."'";
+$controllomail = "select * from Utente where Email='".$reg_email."'";
 $rescontrollomail = mysqli_query($conn,$controllomail);
 $contamail = mysqli_num_rows($rescontrollomail);
 
 //inserting data
 if(($controlloq == 1) && ($contamail == 0) && ($contautente == 0) && ($contacarr == 0) && ($nomenull == 0) && ($surnull == 0)){
-	$toinsert = "INSERT INTO utente
+	$toinsert = "INSERT INTO Utente
 		(Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
 		VALUES
 		('".$reg_username."','".$reg_email."','".md5($reg_password)."','".$reg_name."','".$reg_surname."','".$gender."','".$reg_y."''".$reg_m."''".$reg_d."')";

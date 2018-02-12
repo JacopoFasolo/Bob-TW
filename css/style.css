@@ -426,6 +426,10 @@ table caption{
 	display: block;
 }
 
+fieldset{
+	border: 0;
+}
+
 #form_login{
 	float: left;
 }

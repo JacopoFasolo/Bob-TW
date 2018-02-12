@@ -27,6 +27,6 @@
         $tab = $tab + 1;
         }
     ?>
-<a href="#" id=torna_su>Torna su</a>
+    <a href="#" id="torna_su" tabindex="35">Torna su</a>
 </div>
 

@@ -227,11 +227,9 @@ td{
 
 }
 
-a#torna_su{
-	display: block;
-	float: right;
+#torna_su{
 	padding: 0.5em;
-	width: 50%;
+	display: block;
 }
 
 /*chi siamo*/
@@ -647,7 +645,7 @@ top: 0px;
 
 #sezionecommenti p{
 	font-style: italic;
-	margin: .5em 1em;
+	padding: .5em 1em;
 }
 
 #sezionecommenti input{

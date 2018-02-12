@@ -16,6 +16,8 @@
     #includo header della pagina
     echo file_get_contents("page/header.html");
 
+    include ("php/breadcrumb.php");
+
     echo '<div id="page">';
     include ("php/menu.php");
 

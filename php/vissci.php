@@ -70,7 +70,7 @@
 		if(isset($_SESSION["login"])){//c'è qualcuno loggato
     		if($contacommentoutente > 0){//se l'utente loggato ha fatto un commento lo stampo nel form poi modificabile
     			echo '<form method="post" action="php/updatecommento.php?ido='.$arraydaticommento["Id_commento"].'">';
-    			echo '<br/>Il tuo commento:<br/>';
+    			echo '<br/>&#9749;Il tuo commento:<br/>'; 
     			echo '<textarea rows="6"  cols="50" name="Comm">';
     			echo $arraydaticommento["Testo"];
 				echo '</textarea>';
@@ -91,8 +91,9 @@
 				echo '<input type="submit" name="submit" value="Inserisci commento">';
 			}
 		}else{//non c'è nessuno loggato
-			echo '<input type="text" name="percommentare" readonly value="Devi effettuare il login per inserire un commento">';
+			echo '<p>Devi effettuare il login per poter inserire un commento</p>';
 		}
     	?>
     </div>
+    <a href="#" id="torna_su">Torna su</a>
 </div>

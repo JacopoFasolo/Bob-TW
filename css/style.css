@@ -15,7 +15,7 @@
     #menu_mobile{display:none;}
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
     #menu{display:none;}
     #btn{display:block;}
 }*/
@@ -97,7 +97,7 @@ td{
 
 #breadcrumb{
 	height: 2em;
-	background-color: rgb(6, 70, 46);
+	background-color: #00A86B;
 	width: 100%;
 }
 

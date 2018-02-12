@@ -1,9 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
 html{
     font-family: Helvetica, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body{
-    font-size: 1.3em;
+    font-size: 1.8em;
     margin: 0;
     padding: 0;
     width: 90%;
@@ -32,7 +38,7 @@ h1{
 /* Header */
 
 #utenteloggato{
-    height: 2em;
+    height: 2.5em;
     font-size: 1em;
 }
 
@@ -55,67 +61,40 @@ h1{
 }
 
 #menu{
-    font-size: 1.5em;
     float: none;
     width: 100%;
     text-align: center;
 }
 
+#menu a{
+    font-size: 1.5em;
+}
+
 /* breadcrumb */
-
-#burgermenu{
-    display: block;
-    float: right;
-    width: 15%;
-    height: 5em;
-    background-color: #00A86B;
-}
-
-.stick{
-    background-color: white;
-    width: 1em;
-    height: 0.5em;
-    transition: 0.4s;
-}
-
-#stick1, #stick2{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 13%;
-}
-
-#stick2, #stick3{
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 13%;
-}
 
 #breadcrumb{
     float:left;
-    height: 5em;
+    height: auto;
 }
 
 #breadcrumb p{
     display: block;
-    padding: 1em;
-    font-size: 2em;
+    padding: .5em;
+    font-size: 1.5em;
 }
 
-#middle, #middle_galleria{
+#middle{
     margin: 0;
     padding-left: 2%;
     width: 96%;
     border-left: none;
 }
 
-#middle p, #middle_galleria p{
-    font-size: 1em;
+#middle p{
     margin-bottom: 0.5em;
 }
 
-#middle img:not(.difficolta):not(#impianti_di_risalita):not(.imgalleria):not(.imgprodotti):not(.imnoleggio):not(.prodottonoleggio){
+#middle img:not(#immagine_arrivi):not(.difficolta):not(#impianti_di_risalita):not(.imgalleria):not(.imgprodotti):not(.imnoleggio){
     display: none;
 }
 
@@ -124,7 +103,7 @@ h1{
 #tablebiglietti{
     margin: 2%;
     float: left;
-    zoom: 1.6;
+    zoom: 1.4;
 }
 
 /* Impianti */
@@ -142,10 +121,6 @@ h1{
     width: 96%;
     margin: 0.5em 2%;
     zoom: 2.3;
-}
-
-#clickfoto{
-    display: none;
 }
 
 /* footer */
@@ -182,39 +157,69 @@ dl#foto dd{
     border: 0;
 }
 
+#datanascita input[type=text]{
+    width: 50%;
+}
+
 #form_login label, #form_registrazione label, #sesso_form{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 /* pagina registrazione e login */
 
 
 input[type=password], input[type=email], input[type=text]{
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 input[type=submit], input[type=reset]{
     padding: 1em;
     margin: 1em 0;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 input[type=radio]{
     padding-top: 1.5em;
     height: 3em;
-    width: 20%;
+    width: 1.5em;
 }
 
 .iconeprodotti{
-    font-size: 1.7em;
+    font-size: 1.4em;
     padding: 0;
-    max-height: 7em;
+    width: 45%;
+    margin: 2%;
 }
 .iconeprodotti img{
     opacity: 1;
-    margin: 0;
 }
 
-.iconeprodotti p{
-    margin 0;
+textarea{
+    zoom: 2;
+    max-width: 90%;
+    margin: 0;
+    font-size: 2em;
 }
+
+.prezzoprodotto{
+    font-size: 2em;
+}
+
+#sezionecommenti{
+    width: 85%;
+    margin-left: 7%;
+}
+
+#sezionecommenti p{
+    font-size: 1.5em;
+}
+
+.prodottonoleggio{
+    width: 95%;
+    margin: 2%; 
+}
+
+.prodottonoleggio h1{
+    font-size: .7em;
+}
+

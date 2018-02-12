@@ -20,7 +20,7 @@
             <img class="imnoleggio" src="<?php echo $asd["Url_immagine"]; ?>"/>
             <h1> <?php print $asd["Marca"]; echo " "; print $asd["Modello"]; ?> </h1>
             <p><?php print $asd["Descrizione"];?></p>
-            <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"]; ?></p>
+            <p class ="prezzoprodotto">&euro; <?php print $asd["Prezzo"];?>.00</p>
             <?php echo '<a href="visoggetto.php?ido='.$asd["Id_s"].'&nometab='.$ntab.'&brpro=prodotto" tabindex="'.$tab.'">Visualizza</a>'; ?>
         </div>
     <?php

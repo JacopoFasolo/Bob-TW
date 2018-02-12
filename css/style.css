@@ -192,7 +192,6 @@ td{
 }
 
 #middle p{
-	font-size: 1em;
 	line-height: 1.5em;
 }
 
@@ -639,7 +638,7 @@ top: 0px;
 }
 
 #commentoaltrui{
-	margin: .5em 5em;
+	margin: .2em 5em;
 }
 
 #sezionecommenti{
@@ -648,13 +647,16 @@ top: 0px;
 }
 
 #sezionecommenti p{
-	font-style: italic;
-	padding: .5em 1em;
+	padding: .2em 1em;
 }
 
 #sezionecommenti input{
 	display: block;
 	margin-left: 2em;
+}
+
+#sezionecommenti .commentoaltrui{
+	font-style: italic;
 }
 
 textarea{

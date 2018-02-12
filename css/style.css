@@ -668,7 +668,7 @@ textarea{
 
 .iconeprodotti{
 	width: 30%;
-	margin: 1em 0 1em 12%;
+	margin: 1em 0 0 12%;
 	display: inline-block;
 }
 
@@ -682,10 +682,12 @@ textarea{
 	background-color: #1d4e7c;
 	padding: 0.3em 10%;
 	width: 80%;
+	margin: 0;
 	color: white;
 	display: block;
 }
 
 .iconeprodotti img:hover{
 	opacity: 1.0;
+	margin: 0;
 }

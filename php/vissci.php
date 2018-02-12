@@ -41,7 +41,7 @@
  	$arraydaticommento = mysqli_fetch_array($risquerycercacommento);
 	?>
 	<div class="prodottonoleggio">
-        <a href="#clickfoto"><img src="<?php echo $tit["Url_immagine"]; ?>"/></a>
+        <a href="#clickfoto" class="clickfoto"><img src="<?php echo $tit["Url_immagine"]; ?>"/></a>
     	<h1> <?php print $tit["Marca"]; echo " "; print $tit["Modello"]; ?> </h1>
     	<p><?php echo $tit["Descrizione"]; ?></p>
     	<p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>

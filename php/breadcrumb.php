@@ -30,28 +30,28 @@ if($PAGE == "/Bob-TW/carrello.php"){
 
 if(isset($_REQUEST["bread"])){
 	$bread=$_REQUEST["bread"];
-	if($bread == "sci"){
+	if($bread == "sci" || $bread =="Sci"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; sci</p>';
 	}
-	if($bread == "scarponi"){
+	if($bread == "scarponi" || $bread =="Scarponi"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; scarponi</p>';
 	}
-	if($bread == "caschi"){
+	if($bread == "caschi" || $bread =="Caschi"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; caschi</p>';
 	}
-	if($bread == "ciaspole"){
+	if($bread == "ciaspole" || $bread =="Ciaspole"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; ciaspole</p>';
 	}
-	if($bread == "piccozze"){
+	if($bread == "piccozze"  || $bread =="Piccozze"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; piccozze</p>';
 	}
-	if($bread == "snowboard"){
+	if($bread == "snowboard" || $bread =="Snowboard"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; snowboard</p>';
 	}
-	if($bread == "mountainbike"){
+	if($bread == "mountainbike"  || $bread =="Mountainbike"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; mountainbike</p>';
 	}
-	if($bread == "slittini"){
+	if($bread == "slittini" || $bread =="Slittini"){
 		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; bob</p>';
 	}
 

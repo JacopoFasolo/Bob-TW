@@ -460,7 +460,7 @@ input[type=radio]{
 }
 
 input[type=submit], input[type=reset] {
-    width: 30%;
+    width: auto;
     background-color: #4CAF50;
     color: white;
     padding: 1em 1.5em;

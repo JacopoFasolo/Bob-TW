@@ -14,7 +14,8 @@
     echo "<body>";
     
     #includo header della pagina
-    echo file_get_contents("page/header.html");
+    //echo file_get_contents("page/header.html");
+    include ("php/header.php");
 
     include ("php/breadcrumb.php");
 

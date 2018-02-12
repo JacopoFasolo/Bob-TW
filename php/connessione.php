@@ -16,7 +16,11 @@
 	$conn = new mysqli($host, $user, $password, $db);
 	// verifica su eventuali errori di connessione
 	if ($conn->connect_errno) {
-		header("Location:../erroreconnessione.php");
+		$PAGE = $_SERVER["REQUEST_URI"];
+		if($PAGE == "/Bob-TW/visoggetti.php?nometab=sci&bread=sci"){
+			header("Location:erroreconnessione.php");
+		}
+		//header("Location:../erroreconnessione.php");
 		exit();
 	}
 ?>

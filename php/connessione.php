@@ -16,7 +16,15 @@
 	$conn = new mysqli($host, $user, $password, $db);
 	// verifica su eventuali errori di connessione
 	if ($conn->connect_errno) {
-		header("Location:../erroreconnessione.php");
+		if(isset($_REQUEST["vct"])){
+        	$vct=$_REQUEST["vct"]; 
+        	trim ($vct);
+        	if($vct == "er"){
+				header("Location:erroreconnessione.php");
+			}
+		}else{
+			header("Location:../erroreconnessione.php");
+		}
 		exit();
 	}
 ?>

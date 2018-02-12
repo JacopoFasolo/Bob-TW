@@ -166,6 +166,7 @@ td{
 /*middle*/
 
 #middle{
+	display: block;
 	background-color: white;
 	width: 76%;
 	min-height: 16em;
@@ -226,11 +227,11 @@ td{
 
 }
 
-#torna_su{
+a#torna_su{
+	display: block;
+	float: right;
 	padding: 0.5em;
-	display: inline-block;
 	width: 50%;
-	text-align: right;
 }
 
 /*chi siamo*/

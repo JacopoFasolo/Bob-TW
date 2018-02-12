@@ -31,28 +31,28 @@ if($PAGE == "/Bob-TW/carrello.php"){
 if(isset($_REQUEST["bread"])){
 	$bread=$_REQUEST["bread"];
 	if($bread == "sci"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; sci</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; sci</p>';
 	}
 	if($bread == "scarponi"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; scarponi</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; scarponi</p>';
 	}
 	if($bread == "caschi"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; caschi</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; caschi</p>';
 	}
 	if($bread == "ciaspole"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; ciaspole</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; ciaspole</p>';
 	}
 	if($bread == "piccozze"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; piccozze</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; piccozze</p>';
 	}
 	if($bread == "snowboard"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; snowboard</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; snowboard</p>';
 	}
 	if($bread == "mountainbike"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; mountainbike</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; mountainbike</p>';
 	}
 	if($bread == "slittini"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; bob</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; bob</p>';
 	}
 
 }
@@ -61,7 +61,7 @@ if(isset($_REQUEST["brpro"])){
 	$urlbread=$_SESSION["urlbread"];
 	$ntabbre=$_SESSION["nometabbre"];
 	if($brpro == "prodotto"){
-		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="5">noleggio attrezzature</a> &gt;&gt; <a href="'.$urlbread.'" tabindex="5">'.$ntabbre.'</a> &gt;&gt; prodotto</p>';
+		echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; <a href="noleggio_attrezzatura.php" tabindex="6">noleggio attrezzature</a> &gt;&gt; <a href="'.$urlbread.'" tabindex="7">'.$ntabbre.'</a> &gt;&gt; prodotto</p>';
 	}
 }
 

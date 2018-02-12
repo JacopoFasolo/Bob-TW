@@ -14,7 +14,7 @@ if($PAGE == "/Bob-TW/impianti.php"){
 	echo "Bob - Impianti";
 }
 if($PAGE == "/Bob-TW/biglietti_prezzi.php"){
-	echo "Bob - Biglietti & Prezzi";
+	echo "Bob - Biglietti &amp; Prezzi";
 }
 if($PAGE == "/Bob-TW/noleggio_attrezzatura.php"){
 	echo "Bob - Noleggio attrezzatura";

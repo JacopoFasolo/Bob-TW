@@ -3,7 +3,7 @@
 		$PAGEU=$_REQUEST["PAGE"]; 
 		trim ($PAGEU);
 	}else{
-		$PAGEU="/Bob-TW/index.php";
+		$PAGEU="/index.php";
 	}
 ?>
 

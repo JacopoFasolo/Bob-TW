@@ -3,7 +3,7 @@ $PAGE = $_SERVER["REQUEST_URI"];
 ?>
 <div id="header">
 	<?php
-	if($PAGE != "/Bob-TW/index.php" && $PAGE != "/Bob-TW/"){
+	if($PAGE != "/index.php" && $PAGE != "/"){
 	?>
     	<a href="index.php" tabindex="4">
     	<img id="logo" src="img/logo.jpg" alt="Logo dell'azienda Bob"/>

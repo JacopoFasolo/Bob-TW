@@ -151,7 +151,7 @@ ON UPDATE NO ACTION
 )ENGINE=InnoDB;
 
 INSERT INTO Utente (Username, Email, Password, Nome, Cognome, Sesso, Data_Nascita)
-VALUES ('BOB','bob@bob.bob','9F9D51BC70EF21CA5C14F307980A29D8','Bob','Bob','M','1970-01-01'),
+VALUES ('BOBO','bob@bob.bob','9F9D51BC70EF21CA5C14F307980A29D8','Bob','Bob','M','1970-01-01'),
 	   ('User','user@user.user','EE11CBB19052E40B07AAC0CA060C23EE','User','User','F','1990-12-12');
 
 INSERT INTO Id_oggetti (Id_oggetto)

@@ -3,25 +3,25 @@
 echo '<div id="breadcrumb">';
 $PAGE = $_SERVER["REQUEST_URI"];
 
-if($PAGE == "/Bob-TW/index.php" || $PAGE == "/Bob-TW/"){
+if($PAGE == "/index.php" || $PAGE == "/"){
 	echo "<p> Ti trovi in: Home </p>";
 }
-if($PAGE == "/Bob-TW/chi_siamo.php"){
+if($PAGE == "/chi_siamo.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; chi siamo</p>';
 }
-if($PAGE == "/Bob-TW/come_raggiungerci.php"){
+if($PAGE == "/come_raggiungerci.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; come raggiungerci </p>';
 }
-if($PAGE == "/Bob-TW/impianti.php"){
+if($PAGE == "/impianti.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5"> Home</a> &gt;&gt; impianti</p>';
 }
-if($PAGE == "/Bob-TW/biglietti_prezzi.php"){
+if($PAGE == "/biglietti_prezzi.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5"> Home</a> &gt;&gt; biglietti &amp; prezzi</p>';
 }
-if($PAGE == "/Bob-TW/noleggio_attrezzatura.php"){
+if($PAGE == "/noleggio_attrezzatura.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; noleggio attrezzature</p>';
 }
-if($PAGE == "/Bob-TW/galleria.php"){
+if($PAGE == "/galleria.php"){
 	echo '<p> Ti trovi in: <a href="index.php" tabindex="5">Home</a> &gt;&gt; galleria</p>';
 }
 

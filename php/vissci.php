@@ -41,11 +41,16 @@
  	$arraydaticommento = mysqli_fetch_array($risquerycercacommento);
 	?>
 	<div class="prodottonoleggio">
-		<img src="<?php echo $tit["Url_immagine"]; ?>"/>
+        <a href="#clickfoto"><img src="<?php echo $tit["Url_immagine"]; ?>"/></a>
     	<h1> <?php print $tit["Marca"]; echo " "; print $tit["Modello"]; ?> </h1>
     	<p><?php echo $tit["Descrizione"]; ?></p>
     	<p class ="prezzoprodotto">&euro; <?php print $tit["Prezzo"]; ?> </p>
     	<br/>
+        <div class="lightbox-target" id="clickfoto">
+			<img src="<?php echo $tit["Url_immagine"]; ?>"/>
+
+		<a class="lightbox-close" href=""></a>
+	</div>
 	</div>
 	<div id="sezionecommenti">
     	<?php
@@ -65,7 +70,7 @@
 		if(isset($_SESSION["login"])){//c'è qualcuno loggato
     		if($contacommentoutente > 0){//se l'utente loggato ha fatto un commento lo stampo nel form poi modificabile
     			echo '<form method="post" action="php/updatecommento.php?ido='.$arraydaticommento["Id_commento"].'">';
-    			echo '<br/>&#9749;Il tuo commento:<br/>';
+    			echo '<br/>Il tuo commento:<br/>';
     			echo '<textarea rows="6"  cols="50" name="Comm">';
     			echo $arraydaticommento["Testo"];
 				echo '</textarea>';
@@ -86,7 +91,7 @@
 				echo '<input type="submit" name="submit" value="Inserisci commento">';
 			}
 		}else{//non c'è nessuno loggato
-			echo '<p>Devi effettuare il login per poter inserire un commento</p>';
+			echo '<input type="text" name="percommentare" readonly value="Devi effettuare il login per inserire un commento">';
 		}
     	?>
     </div>
